@@ -1,0 +1,36 @@
+{
+    "status": "Success",
+    "signature": "mrZmMwTWWis9ZSoDHgrAgw5ktan4pTA3VzupxwurM4dYxTB1gt46xChmXWu8fdNCHk63osRrjtKB6qK9JDrmJqR",
+    "slot": "380955975",
+    "code": 0,
+    "totalInputAmount": "1000000",
+    "totalOutputAmount": "572216800740",
+    "inputAmountResult": "999000",
+    "outputAmountResult": "572216800740",
+    "swapEvents": [
+        {
+            "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "inputAmount": "999000",
+            "outputMint": "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS",
+            "outputAmount": "17925126"
+        },
+        {
+            "inputMint": "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS",
+            "inputAmount": "3405773",
+            "outputMint": "So11111111111111111111111111111111111111112",
+            "outputAmount": "1339500"
+        },
+        {
+            "inputMint": "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS",
+            "inputAmount": "14519353",
+            "outputMint": "So11111111111111111111111111111111111111112",
+            "outputAmount": "5710293"
+        },
+        {
+            "inputMint": "So11111111111111111111111111111111111111112",
+            "inputAmount": "7049793",
+            "outputMint": "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT",
+            "outputAmount": "572216800740"
+        }
+    ]
+}

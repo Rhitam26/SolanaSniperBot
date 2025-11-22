@@ -1,0 +1,739 @@
+2025-11-16 00:01:22,814 - token_tracker - INFO - Initializing application...
+2025-11-16 00:01:22,815 - token_tracker - INFO - No existing token file found, starting fresh
+2025-11-16 00:01:22,815 - token_tracker - INFO - 🔌 Connecting to WebSocket...
+2025-11-16 00:01:23,810 - token_tracker - INFO - ✅ WebSocket connected successfully
+2025-11-16 00:01:23,811 - token_tracker - INFO - ✅ Subscribed to Raydium_V4
+2025-11-16 00:01:23,811 - token_tracker - INFO - ✅ Subscribed to Raydium_CLMM
+2025-11-16 00:01:23,812 - token_tracker - INFO - ✅ Subscribed to Orca_Whirlpool
+2025-11-16 00:01:23,812 - token_tracker - INFO - ✅ Subscribed to Pump_fun
+2025-11-16 00:02:51,747 - token_tracker - INFO - ✅ Valid token: 3tjcn51d... (3tjc...)
+2025-11-16 00:02:51,749 - token_tracker - INFO - ➕ Added new token to track: pumpoeat at $0.0001818
+2025-11-16 00:02:51,780 - token_tracker - INFO - ✅ Valid token: 97JvTiKY... (97Jv...)
+2025-11-16 00:02:51,780 - token_tracker - INFO - ➕ Added new token to track: Donni at $0.0003238
+2025-11-16 00:02:51,831 - token_tracker - INFO - ✅ Valid token: 8fi31cTT... (8fi3...)
+2025-11-16 00:02:51,831 - token_tracker - INFO - ➕ Added new token to track: GHETTOGUS at $0.0001607
+2025-11-16 00:03:50,261 - token_tracker - INFO - ✅ Valid token: BBKPiLM9... (BBKP...)
+2025-11-16 00:03:50,263 - token_tracker - INFO - ➕ Added new token to track: GHOST at $0.01177
+2025-11-16 00:03:50,513 - token_tracker - INFO - ✅ Valid token: Lhgmypk4... (Lhgm...)
+2025-11-16 00:03:50,513 - token_tracker - INFO - ➕ Added new token to track: SOYJAK at $0.0001407
+2025-11-16 00:05:50,422 - token_tracker - INFO - ✅ Valid token: BWwXyKwo... (BWwX...)
+2025-11-16 00:05:50,423 - token_tracker - INFO - ➕ Added new token to track: AF at $0.0009496
+2025-11-16 00:05:54,984 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in YcHcNdUzHkgPUxfU6SkzipPMyNYFbT1ztiLCn8K7gtaxzmVFUNQv9h96Eq4tMuMgbdwG8vhh44RoRTLc3xPnbZu
+2025-11-16 00:06:08,351 - token_tracker - ERROR - Transaction YcHcNdUzHkgPUxfU6SkzipPMyNYFbT1ztiLCn8K7gtaxzmVFUNQv9h96Eq4tMuMgbdwG8vhh44RoRTLc3xPnbZu not available after 3 tries
+2025-11-16 00:06:35,539 - token_tracker - INFO - ✅ Valid token: 8x5VqbHA... (8x5V...)
+2025-11-16 00:06:35,540 - token_tracker - INFO - ➕ Added new token to track: ZEREBRO at $0.03219
+2025-11-16 00:06:35,580 - token_tracker - INFO - ✅ Valid token: 8x5VqbHA... (8x5V...)
+2025-11-16 00:06:35,580 - token_tracker - INFO - ➕ Added new token to track: ZEREBRO at $0.03219
+2025-11-16 00:06:35,590 - token_tracker - INFO - ✅ Valid token: 8x5VqbHA... (8x5V...)
+2025-11-16 00:06:35,590 - token_tracker - INFO - ➕ Added new token to track: ZEREBRO at $0.03219
+2025-11-16 00:06:35,592 - token_tracker - INFO - ✅ Valid token: 9e9Xqcxf... (9e9X...)
+2025-11-16 00:06:35,592 - token_tracker - INFO - ➕ Added new token to track: 67Rizzmas at $0.00008906
+2025-11-16 00:06:35,604 - token_tracker - INFO - ✅ Valid token: 9e9Xqcxf... (9e9X...)
+2025-11-16 00:06:35,604 - token_tracker - INFO - ➕ Added new token to track: 67Rizzmas at $0.00008906
+2025-11-16 00:06:35,621 - token_tracker - INFO - ✅ Valid token: 8x5VqbHA... (8x5V...)
+2025-11-16 00:06:35,621 - token_tracker - INFO - ➕ Added new token to track: ZEREBRO at $0.03219
+2025-11-16 00:06:50,296 - token_tracker - INFO - ✅ Valid token: 6v8bcbMX... (6v8b...)
+2025-11-16 00:06:50,297 - token_tracker - INFO - ➕ Added new token to track: BARRON at $0.0005361
+2025-11-16 00:07:06,630 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in nURrMkd4YvczP6GrpJZdKUuxRXpQCzhA3NwQ2WBfYNvGxfiyE6xM2ujmvM8o2uod48kEgMjX7apUYYndqv8DCv5
+2025-11-16 00:07:20,019 - token_tracker - ERROR - Transaction nURrMkd4YvczP6GrpJZdKUuxRXpQCzhA3NwQ2WBfYNvGxfiyE6xM2ujmvM8o2uod48kEgMjX7apUYYndqv8DCv5 not available after 3 tries
+2025-11-16 00:07:20,042 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 389wz2fxpyxKTnbfs4Kf18XJjT28Xfu4SksLBc2PxgkgcdYtZD25kfs6UpuFkkrcgJu3TNuMGvxPtw14zD7Xq7W5
+2025-11-16 00:07:33,020 - token_tracker - ERROR - Transaction 389wz2fxpyxKTnbfs4Kf18XJjT28Xfu4SksLBc2PxgkgcdYtZD25kfs6UpuFkkrcgJu3TNuMGvxPtw14zD7Xq7W5 not available after 3 tries
+2025-11-16 00:07:34,286 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2xGBvbvwCbuLzJv3mHdFkkx8MBzrCMiWAGUiy2RdjydgbaKU16ruPuopniRpoymPYjT89vsA5mVCcymRmwkcXk8i
+2025-11-16 00:07:47,324 - token_tracker - ERROR - Transaction 2xGBvbvwCbuLzJv3mHdFkkx8MBzrCMiWAGUiy2RdjydgbaKU16ruPuopniRpoymPYjT89vsA5mVCcymRmwkcXk8i not available after 3 tries
+2025-11-16 00:08:02,048 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5USMd1TTJVDa9yLj2yNQx2sBXRq6ipu2UexMUP9qpgHbPyHzMa7skYPCdVvS9Wkid2x1DKJBVgn1JSuY3NTX3PYv
+2025-11-16 00:08:15,673 - token_tracker - ERROR - Transaction 5USMd1TTJVDa9yLj2yNQx2sBXRq6ipu2UexMUP9qpgHbPyHzMa7skYPCdVvS9Wkid2x1DKJBVgn1JSuY3NTX3PYv not available after 3 tries
+2025-11-16 00:08:15,689 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in B8moq6HLjHqo7KBAu6XJWEWaMUzv3ufuEr3PkpouxjUhuWTGbtTr4ixqBD4n6kUDjTdhKdSC56VjDtgygX2958R
+2025-11-16 00:08:29,107 - token_tracker - ERROR - Transaction B8moq6HLjHqo7KBAu6XJWEWaMUzv3ufuEr3PkpouxjUhuWTGbtTr4ixqBD4n6kUDjTdhKdSC56VjDtgygX2958R not available after 3 tries
+2025-11-16 00:09:05,356 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4zqF4W73BdMyggR4p41JcFotvx4K8bs9zSxnvoY6BMkJLD5BuhwTexwdEvr2GG2XmfZpJMzwF7JFio8CHTcYRjA9
+2025-11-16 00:09:18,922 - token_tracker - ERROR - Transaction 4zqF4W73BdMyggR4p41JcFotvx4K8bs9zSxnvoY6BMkJLD5BuhwTexwdEvr2GG2XmfZpJMzwF7JFio8CHTcYRjA9 not available after 3 tries
+2025-11-16 00:09:18,936 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 57SvLGzsy7G5FXGW4Qji6eXxsWm72Ub6MnCoFx9mLfiQNnUAkYr5ukeNSn6dXnbXW7tADtoFZ2gKtEdRByAJay6v
+2025-11-16 00:09:32,442 - token_tracker - ERROR - Transaction 57SvLGzsy7G5FXGW4Qji6eXxsWm72Ub6MnCoFx9mLfiQNnUAkYr5ukeNSn6dXnbXW7tADtoFZ2gKtEdRByAJay6v not available after 3 tries
+2025-11-16 00:09:39,616 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3BVscg1YPqQXRDyuaU39SqfV6uvrxqFbm737VpMhnF3XNDNdxAh4DCkgaXhxg8BvLWJg91sERk3WTfhffRNDpSi4
+2025-11-16 00:09:53,112 - token_tracker - ERROR - Transaction 3BVscg1YPqQXRDyuaU39SqfV6uvrxqFbm737VpMhnF3XNDNdxAh4DCkgaXhxg8BvLWJg91sERk3WTfhffRNDpSi4 not available after 3 tries
+2025-11-16 00:10:01,142 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3e1cUzkdLKyWLvmHovLHyNT5c3ruq2dnjfTESFyWJ4kFCCbLgx7NtduCR69eqiXakMQZBp5XGZTvyEEETAgs8SRw
+2025-11-16 00:10:08,227 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3K5G5FctgqHz6UcmA3zc4cBWrPuAs1NycdEbgFVdESrf91raH6TpCeQKsBTQ9BwMtGtZQW6EjZVnTFQRdgQwzd7m
+2025-11-16 00:10:14,824 - token_tracker - ERROR - Transaction 3e1cUzkdLKyWLvmHovLHyNT5c3ruq2dnjfTESFyWJ4kFCCbLgx7NtduCR69eqiXakMQZBp5XGZTvyEEETAgs8SRw not available after 3 tries
+2025-11-16 00:10:21,203 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in N9ZH5XFYdVy3nx4MzR5YYYxCvN5jpLbHu7bZ8JtckFXpgdQ1HwddEEjHzgfWg8z6m41NUaPZuEP7znZxoqAf1ee
+2025-11-16 00:10:34,658 - token_tracker - ERROR - Transaction N9ZH5XFYdVy3nx4MzR5YYYxCvN5jpLbHu7bZ8JtckFXpgdQ1HwddEEjHzgfWg8z6m41NUaPZuEP7znZxoqAf1ee not available after 3 tries
+2025-11-16 00:10:41,796 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3XwkcSgtvHe7WPzmRkFTtVBG3RoZV9x2BHbZ7C5EtNwygG9Xns1EEfJvpGtzRRoNac5nw2Am8VQA7ovraJUahRWn
+2025-11-16 00:10:48,674 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2cNrTebEgx4MoAFAoSKKPsXedL5xPMDDc8KCjv5BXgiTVR2id6PMntXwNTpQrPShw47wkomGMc6JUnmp2TauJb43
+2025-11-16 00:10:54,932 - token_tracker - ERROR - Transaction 3XwkcSgtvHe7WPzmRkFTtVBG3RoZV9x2BHbZ7C5EtNwygG9Xns1EEfJvpGtzRRoNac5nw2Am8VQA7ovraJUahRWn not available after 3 tries
+2025-11-16 00:10:57,011 - token_tracker - INFO - ✅ Valid token: oreoU2P8... (oreo...)
+2025-11-16 00:10:57,012 - token_tracker - INFO - ➕ Added new token to track: ORE at $170.24
+2025-11-16 00:10:57,155 - token_tracker - INFO - ✅ Valid token: 6Vik7Zf4... (6Vik...)
+2025-11-16 00:10:57,155 - token_tracker - INFO - ➕ Added new token to track: Donica at $0.001045
+2025-11-16 00:12:12,040 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2XLnaiDDvbnej6qpuz81FeiPJArQKBAqetn3dCJeWaf9PhuQsTbLdaAtRHoGAjgTyPewHZtrWN2SX26cBtASdzVZ
+2025-11-16 00:12:25,221 - token_tracker - ERROR - Transaction 2XLnaiDDvbnej6qpuz81FeiPJArQKBAqetn3dCJeWaf9PhuQsTbLdaAtRHoGAjgTyPewHZtrWN2SX26cBtASdzVZ not available after 3 tries
+2025-11-16 00:13:20,523 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5QmdGzRwRtnEsus3vZafATumVYsDyaQ8osvKcvNxk7CUP35jX5KymQH6ACL36gudJRaF1iaRMizqgFSBtbTXbhc3
+2025-11-16 00:13:33,816 - token_tracker - ERROR - Transaction 5QmdGzRwRtnEsus3vZafATumVYsDyaQ8osvKcvNxk7CUP35jX5KymQH6ACL36gudJRaF1iaRMizqgFSBtbTXbhc3 not available after 3 tries
+2025-11-16 00:13:47,088 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2aSAWkdMKZzTc8dGVV8n4wyhE8J3Q73L8DVu3sJAN8PH6AMgfNAz93xBd3z1JadNnjP62KiLbhj7PTPRR3wbsan6
+2025-11-16 00:13:47,090 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 39PxUCw31os8Jg7BTUx9aWNBBeHuSqbJkfPMAiHr2HqbfG3zf4pyNJLV95RoeZGpqTkKSggqB2yVXTYfETUyYeRj
+2025-11-16 00:13:59,885 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4MyVJdzufmeMeacgdvfdnrMaSGVt9pCWeHu6ffVFStQmVZjDfiYxwWucW3ucfv3ktm5T5e9XkmYFy2PixWc9Pyes
+2025-11-16 00:14:05,890 - token_tracker - ERROR - Transaction 39PxUCw31os8Jg7BTUx9aWNBBeHuSqbJkfPMAiHr2HqbfG3zf4pyNJLV95RoeZGpqTkKSggqB2yVXTYfETUyYeRj not available after 3 tries
+2025-11-16 00:14:05,899 - token_tracker - WARNING - Failed to get metadata for BANKJmvhT8tiJRsBSS1n2HryMBPvT5Ze4HU95DUAmeta: 
+2025-11-16 00:14:05,900 - token_tracker - INFO - ✅ Valid token: BANKJmvh... (BANK...)
+2025-11-16 00:14:05,900 - token_tracker - INFO - ➕ Added new token to track: AVICI at $4.29
+2025-11-16 00:14:05,946 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4JkmUXxvDT8pmJ4wLpQuFDv64NdoXH9KxfpNoEYBADVnurVk2oEhDfXpgvNB7GdXjzkS6sCtTZiv99Agw3m4zVXx
+2025-11-16 00:14:06,479 - token_tracker - ERROR - Error processing message: unsupported operand type(s) for -: 'float' and 'str'
+2025-11-16 00:14:08,494 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in MaTsnPiz6xAbXoeTJ9uQj97kAGiz9STomqEMzhxDptest6vSdq4U9EK3gRW6UChc2JgEfveqbBQJCvky9zuMpQq
+2025-11-16 00:14:08,495 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in YqmSScCdj8M74mWKxP8Mqhm3sUQVPSgMoshkVgUQy1RJpDYp1QEk69oMLALukawjLS3RsTAWnAj4Mcq8Hu5137e
+2025-11-16 00:14:08,496 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2rhcp7Nbt1aYZeAj6CyADT418tdeuQd6PhBvLe2RP8qk3Jpns1RZ1T3xaHSdvAJ7AMjtWmXpgMBkSXgz7DQw97Aj
+2025-11-16 00:14:08,496 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5dHbmW7AXttQH82R1LR2D9q4G8L1LwH9DQtGMYvwYHUANn1qkeLYwAr1Y7SsYqJaFMVLMzkjVwCJNhfECn77zPAd
+2025-11-16 00:14:08,502 - token_tracker - ERROR - Error processing message: unsupported operand type(s) for -: 'float' and 'str'
+2025-11-16 00:14:08,503 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in MaTsnPiz6xAbXoeTJ9uQj97kAGiz9STomqEMzhxDptest6vSdq4U9EK3gRW6UChc2JgEfveqbBQJCvky9zuMpQq
+2025-11-16 00:14:08,504 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in YqmSScCdj8M74mWKxP8Mqhm3sUQVPSgMoshkVgUQy1RJpDYp1QEk69oMLALukawjLS3RsTAWnAj4Mcq8Hu5137e
+2025-11-16 00:14:08,504 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2rhcp7Nbt1aYZeAj6CyADT418tdeuQd6PhBvLe2RP8qk3Jpns1RZ1T3xaHSdvAJ7AMjtWmXpgMBkSXgz7DQw97Aj
+2025-11-16 00:14:08,504 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5dHbmW7AXttQH82R1LR2D9q4G8L1LwH9DQtGMYvwYHUANn1qkeLYwAr1Y7SsYqJaFMVLMzkjVwCJNhfECn77zPAd
+2025-11-16 00:14:28,811 - token_tracker - WARNING - [attempt 2] getTransaction failed for MaTsnPiz6xAbXoeTJ9uQj97kAGiz9STomqEMzhxDptest6vSdq4U9EK3gRW6UChc2JgEfveqbBQJCvky9zuMpQq: 
+2025-11-16 00:14:28,812 - token_tracker - WARNING - [attempt 2] getTransaction failed for YqmSScCdj8M74mWKxP8Mqhm3sUQVPSgMoshkVgUQy1RJpDYp1QEk69oMLALukawjLS3RsTAWnAj4Mcq8Hu5137e: 
+2025-11-16 00:14:28,812 - token_tracker - WARNING - [attempt 3] getTransaction failed for 4JkmUXxvDT8pmJ4wLpQuFDv64NdoXH9KxfpNoEYBADVnurVk2oEhDfXpgvNB7GdXjzkS6sCtTZiv99Agw3m4zVXx: 
+2025-11-16 00:14:28,814 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in nsNSch6MymtpifHPowi1dU5FmvsdsXme2troqAxn1pbT1rdrykcJfci3xsnjqjRFSiGnRixNCCmzUo6ViGB6UAk
+2025-11-16 00:14:29,438 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3nXepM41u6m9iS6Aba2Dg3LwdVTEsqoE42Mk9tJGvdWcSV4JYv7ghZVAiBZz6UwqxTRTWeCky2gV9xHsazLKUs16
+2025-11-16 00:14:29,636 - token_tracker - ERROR - Error processing message: unsupported operand type(s) for -: 'float' and 'str'
+2025-11-16 00:14:36,001 - token_tracker - ERROR - Transaction 4JkmUXxvDT8pmJ4wLpQuFDv64NdoXH9KxfpNoEYBADVnurVk2oEhDfXpgvNB7GdXjzkS6sCtTZiv99Agw3m4zVXx not available after 3 tries
+2025-11-16 00:14:42,359 - token_tracker - ERROR - Transaction 3nXepM41u6m9iS6Aba2Dg3LwdVTEsqoE42Mk9tJGvdWcSV4JYv7ghZVAiBZz6UwqxTRTWeCky2gV9xHsazLKUs16 not available after 3 tries
+2025-11-16 00:15:44,175 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in EZA3gW1oBvx7ym2mhhXtL4GXeL9mDEKWHGw4rz8LvRCft3wiGRo1hEZnkE6gfVG58mGExqP34sgQQQLwd81cJDG
+2025-11-16 00:15:51,263 - token_tracker - INFO - ✅ Valid token: 9AvytnUK... (9Avy...)
+2025-11-16 00:15:51,263 - token_tracker - INFO - ➕ Added new token to track: 67 at $0.008012
+2025-11-16 00:15:57,354 - token_tracker - ERROR - Transaction EZA3gW1oBvx7ym2mhhXtL4GXeL9mDEKWHGw4rz8LvRCft3wiGRo1hEZnkE6gfVG58mGExqP34sgQQQLwd81cJDG not available after 3 tries
+2025-11-16 00:15:57,357 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in kUux7kz6meycd6ifWJFMdDSzLNes4RJggbMw1t2frrS8fk57adakmJTPYMcxwhDHb25PBEAXcuiqQxw8mrvWxwK
+2025-11-16 00:16:04,425 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5QCRUbNi1bdnMfVQGtGHJsSjMxRqGRMfVeHDN2oswVnivUNNZm9jUjB6JEpNNqDwKm6sG6HebtNd9GuDcy95dmsY
+2025-11-16 00:16:04,427 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5QCRUbNi1bdnMfVQGtGHJsSjMxRqGRMfVeHDN2oswVnivUNNZm9jUjB6JEpNNqDwKm6sG6HebtNd9GuDcy95dmsY
+2025-11-16 00:16:10,677 - token_tracker - ERROR - Transaction kUux7kz6meycd6ifWJFMdDSzLNes4RJggbMw1t2frrS8fk57adakmJTPYMcxwhDHb25PBEAXcuiqQxw8mrvWxwK not available after 3 tries
+2025-11-16 00:16:22,717 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3Fdbi3ZmLV5urZ6vNDVfw9WWgkCrf75Ms6V5SZTVDZPFtnJ8QA3GNgAFg7VBP5XFg3F5YoNND6ofTBjDaBdy51Zm
+2025-11-16 00:16:22,731 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5XQ91y6n6TvD1AWV9D1Km1kFXxHf6u1Ce8fdQqLQ3LibhoA1smDiwkB5KfR4XL8YiQgQF2V3yup4o4namtFYPzUC
+2025-11-16 00:16:23,274 - token_tracker - ERROR - Error processing message: unsupported operand type(s) for -: 'float' and 'str'
+2025-11-16 00:16:23,294 - token_tracker - ERROR - Error processing message: unsupported operand type(s) for -: 'float' and 'str'
+2025-11-16 00:16:24,503 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 29YxMQ5z6kSmnsoWGE59simdhfiT9qPYZXDd9diqLyfW964gurRwXJmooZoHL5KNDghCAsj531nq8mppQE1WZrCN
+2025-11-16 00:16:37,585 - token_tracker - ERROR - Transaction 29YxMQ5z6kSmnsoWGE59simdhfiT9qPYZXDd9diqLyfW964gurRwXJmooZoHL5KNDghCAsj531nq8mppQE1WZrCN not available after 3 tries
+2025-11-16 00:16:37,601 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2yavXWMRbzxkpKWwo4BxgWk5wf9oCiiCVqKRiNHbe8QESWAgKGuhsJXNdD5HfUPhRbD4J43p5RhN4ybj7xFucamt
+2025-11-16 00:16:51,086 - token_tracker - ERROR - Transaction 2yavXWMRbzxkpKWwo4BxgWk5wf9oCiiCVqKRiNHbe8QESWAgKGuhsJXNdD5HfUPhRbD4J43p5RhN4ybj7xFucamt not available after 3 tries
+2025-11-16 00:16:51,361 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4xAH1299hJeWuFA6En95FMTMQwwsSmwLkHaYaSj9jkXKfVgTf7x2CDDMyuoF4oBbUVsvARpkaxDe7d6wzZy42Zjp
+2025-11-16 00:16:51,870 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in YShTYGqRT2t9kZMYHJUV4WnJQKZgcedZXVth88bbtV58PNM5WPh4bUPDJybKCHHg3wPE5Vo6aUCUxH7jVPgR1qu
+2025-11-16 00:17:09,986 - token_tracker - ERROR - Transaction 4xAH1299hJeWuFA6En95FMTMQwwsSmwLkHaYaSj9jkXKfVgTf7x2CDDMyuoF4oBbUVsvARpkaxDe7d6wzZy42Zjp not available after 3 tries
+2025-11-16 00:17:10,037 - token_tracker - ERROR - Error processing message: unsupported operand type(s) for -: 'float' and 'str'
+2025-11-16 00:17:19,996 - token_tracker - WARNING - WebSocket connection closed
+2025-11-16 00:17:19,996 - token_tracker - INFO - 🔄 Reconnecting in 1 seconds...
+2025-11-16 00:17:20,998 - token_tracker - INFO - 🔌 Connecting to WebSocket...
+2025-11-16 00:17:21,565 - token_tracker - INFO - ✅ WebSocket connected successfully
+2025-11-16 00:17:21,565 - token_tracker - INFO - ✅ Subscribed to Raydium_V4
+2025-11-16 00:17:21,566 - token_tracker - INFO - ✅ Subscribed to Raydium_CLMM
+2025-11-16 00:17:21,566 - token_tracker - INFO - ✅ Subscribed to Orca_Whirlpool
+2025-11-16 00:17:21,566 - token_tracker - INFO - ✅ Subscribed to Pump_fun
+2025-11-16 00:17:40,080 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 52YtFbaYjFLyiFHm6kmSgPeWxa8Pu1pY92zo7yMCSPkqzW6CPeNqAHrA2VaCUQJf1RivzvSJqVG3hVTnhKAwFK4Y
+2025-11-16 00:17:53,470 - token_tracker - ERROR - Transaction 52YtFbaYjFLyiFHm6kmSgPeWxa8Pu1pY92zo7yMCSPkqzW6CPeNqAHrA2VaCUQJf1RivzvSJqVG3hVTnhKAwFK4Y not available after 3 tries
+2025-11-16 00:18:08,056 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in eTxCy2zUN9xefFitaBEjsmq5L6mBGRSYvDo3rkTeieicVj4Yotw1BSUjwW1fBnbAcF6eRXmPzUkPoKiNgq2S5Kt
+2025-11-16 00:18:21,327 - token_tracker - ERROR - Transaction eTxCy2zUN9xefFitaBEjsmq5L6mBGRSYvDo3rkTeieicVj4Yotw1BSUjwW1fBnbAcF6eRXmPzUkPoKiNgq2S5Kt not available after 3 tries
+2025-11-16 00:18:49,538 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5RmtS5PFSpmPiacDUQhzFLANS5Sz5hhQXur5WC2GETn8FBuxrdDaJComjSV11qpTUMtWjW9kzAHqAmD89VnW6Jq9
+2025-11-16 00:18:50,001 - token_tracker - INFO - ✅ Valid token: CkTFDNGU... (CkTF...)
+2025-11-16 00:18:50,001 - token_tracker - INFO - ➕ Added new token to track: KERMIT at $0.0008132
+2025-11-16 00:18:52,408 - token_tracker - INFO - ✅ Valid token: H74CYmXg... (H74C...)
+2025-11-16 00:18:52,409 - token_tracker - INFO - ➕ Added new token to track: LMAO! at $0.002364
+2025-11-16 00:19:03,198 - token_tracker - ERROR - Transaction 5RmtS5PFSpmPiacDUQhzFLANS5Sz5hhQXur5WC2GETn8FBuxrdDaJComjSV11qpTUMtWjW9kzAHqAmD89VnW6Jq9 not available after 3 tries
+2025-11-16 00:19:06,015 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in KLaLa99KmxrQTXvKEYxDM4xtQBRSSVaetq1TzAvwciuTMvJTdGdw6BXHdJ8rxwhA5xJsHrzdyUNv5vCkEcF63oG
+2025-11-16 00:19:08,608 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3AyYfU6GWytAHkNQjTh3vx8d9WTr3HLAG9tTcWDHnY3jkjTLB7Cdj2idsUR8uRHT4yNfXL1o3TwiR41MXpoZ1NGs
+2025-11-16 00:19:08,615 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2KMvU6LYcgg1N27TCJM8XjBEfdSbfqp96RLAqHvfancj83UgNXZft3V3Ajad5C3KU3JdeoPYNCwo8H4bjbVqEepj
+2025-11-18 09:10:44,268 - token_tracker - INFO - Initializing application...
+2025-11-18 09:10:44,269 - token_tracker - INFO - Loaded 15 tokens from file
+2025-11-18 09:10:44,269 - token_tracker - INFO - 🔌 Connecting to WebSocket...
+2025-11-18 09:10:45,368 - token_tracker - INFO - ✅ WebSocket connected successfully
+2025-11-18 09:10:45,369 - token_tracker - INFO - ✅ Subscribed to Raydium_V4
+2025-11-18 09:10:45,370 - token_tracker - INFO - ✅ Subscribed to Raydium_CLMM
+2025-11-18 09:10:45,370 - token_tracker - INFO - ✅ Subscribed to Orca_Whirlpool
+2025-11-18 09:10:45,371 - token_tracker - INFO - ✅ Subscribed to Pump_fun
+2025-11-18 09:13:44,207 - token_tracker - INFO - Initializing application...
+2025-11-18 09:13:44,208 - token_tracker - INFO - Loaded 15 tokens from file
+2025-11-18 09:13:44,208 - token_tracker - INFO - 🔌 Connecting to WebSocket...
+2025-11-18 09:13:44,209 - token_tracker - INFO - Shutting down application...
+2025-11-18 09:14:20,930 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3P6q731eaf65fTTUy7DP5zwkz4MbcaM5nwKUjKAQTyWbihJwRAiAgvdyNyXTEXm8T2wGnPaidhWWiQJyjcPUrFrP
+2025-11-18 09:14:34,298 - token_tracker - ERROR - Transaction 3P6q731eaf65fTTUy7DP5zwkz4MbcaM5nwKUjKAQTyWbihJwRAiAgvdyNyXTEXm8T2wGnPaidhWWiQJyjcPUrFrP not available after 3 tries
+2025-11-18 09:15:03,310 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in ompu3AfBmr6EhxJkzCLCMhWdrGrNJ2gmdoTDAcBiYG9gw52KR7LaRzQYRChzrCtGt9dFja1cck4puZx7kxY4FRJ
+2025-11-18 09:15:18,441 - token_tracker - ERROR - Transaction ompu3AfBmr6EhxJkzCLCMhWdrGrNJ2gmdoTDAcBiYG9gw52KR7LaRzQYRChzrCtGt9dFja1cck4puZx7kxY4FRJ not available after 3 tries
+2025-11-18 09:15:18,478 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3UxZHynvFRFCJYipLbYMgQbxGaBB3uwWiypPqGJ4k6dqJA1QUozFAUkheou2VUGbyLihbvTbkFWsxV564QVSkDQV
+2025-11-18 09:15:28,447 - token_tracker - ERROR - Error processing message: unsupported operand type(s) for -: 'float' and 'str'
+2025-11-18 09:15:35,361 - token_tracker - INFO - ✅ Valid token: 2JVZ7LF7... (2JVZ...)
+2025-11-18 09:15:35,673 - token_tracker - INFO - ✅ Valid token: 5oBshGwH... (5oBs...)
+2025-11-18 09:15:36,090 - token_tracker - INFO - ✅ Valid token: F7pB3Zdf... (F7pB...)
+2025-11-18 09:15:49,807 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4cd6pYJEurAge9GSNkrmg3K9sBv7b1kYHfNFj5NPeeGdSUnxqkH81M1UAfAHr7QXaZXAQ5zVwUAfGo9LFux5FshU
+2025-11-18 09:16:03,971 - token_tracker - ERROR - Transaction 4cd6pYJEurAge9GSNkrmg3K9sBv7b1kYHfNFj5NPeeGdSUnxqkH81M1UAfAHr7QXaZXAQ5zVwUAfGo9LFux5FshU not available after 3 tries
+2025-11-18 09:16:33,733 - token_tracker - INFO - ✅ Valid token: 7XteziBH... (7Xte...)
+2025-11-18 09:16:33,777 - token_tracker - INFO - ✅ Valid token: 7XteziBH... (7Xte...)
+2025-11-18 09:40:06,845 - token_tracker - INFO - Initializing application...
+2025-11-18 09:40:06,846 - token_tracker - INFO - Loaded 0 tokens from file
+2025-11-18 09:40:06,846 - token_tracker - INFO - 🔌 Connecting to WebSocket...
+2025-11-18 09:40:07,267 - token_tracker - INFO - ✅ WebSocket connected successfully
+2025-11-18 09:40:07,268 - token_tracker - INFO - ✅ Subscribed to Raydium_V4
+2025-11-18 09:40:07,268 - token_tracker - INFO - ✅ Subscribed to Raydium_CLMM
+2025-11-18 09:40:07,268 - token_tracker - INFO - ✅ Subscribed to Orca_Whirlpool
+2025-11-18 09:40:07,268 - token_tracker - INFO - ✅ Subscribed to Pump_fun
+2025-11-18 09:41:18,919 - token_tracker - INFO - ✅ Valid token: 0x5C85D6... (0x5C...)
+2025-11-18 09:41:18,937 - token_tracker - INFO - ✅ Valid token: F7pB3Zdf... (F7pB...)
+2025-11-18 09:41:18,939 - token_tracker - INFO - ✅ Valid token: HbkQ5yQw... (HbkQ...)
+2025-11-18 09:41:18,941 - token_tracker - INFO - ✅ Valid token: HbkQ5yQw... (HbkQ...)
+2025-11-18 09:41:24,686 - token_tracker - INFO - ✅ Valid token: HTBycJzQ... (HTBy...)
+2025-11-18 09:42:05,135 - token_tracker - INFO - ✅ Valid token: 2JVZ7LF7... (2JVZ...)
+2025-11-18 09:42:05,666 - token_tracker - INFO - ✅ Valid token: 0x5820c2... (0x58...)
+2025-11-18 09:42:05,682 - token_tracker - INFO - ✅ Valid token: 2JVZ7LF7... (2JVZ...)
+2025-11-18 09:42:05,706 - token_tracker - INFO - ✅ Valid token: 0x5820c2... (0x58...)
+2025-11-18 09:42:17,646 - token_tracker - INFO - ✅ Valid token: DoaATuDo... (DoaA...)
+2025-11-18 09:44:18,755 - token_tracker - INFO - ✅ Valid token: 7EoxBarb... (7Eox...)
+2025-11-18 09:44:18,821 - token_tracker - INFO - ✅ Valid token: 7XteziBH... (7Xte...)
+2025-11-18 09:47:53,158 - token_tracker - INFO - Initializing application...
+2025-11-18 09:47:53,159 - token_tracker - INFO - Loaded 0 tokens from file
+2025-11-18 09:47:53,159 - token_tracker - INFO - 🔌 Connecting to WebSocket...
+2025-11-18 09:47:53,803 - token_tracker - INFO - ✅ WebSocket connected successfully
+2025-11-18 09:47:53,803 - token_tracker - INFO - ✅ Subscribed to Raydium_V4
+2025-11-18 09:47:53,804 - token_tracker - INFO - ✅ Subscribed to Raydium_CLMM
+2025-11-18 09:47:53,804 - token_tracker - INFO - ✅ Subscribed to Orca_Whirlpool
+2025-11-18 09:47:53,805 - token_tracker - INFO - ✅ Subscribed to Pump_fun
+2025-11-18 09:49:44,025 - token_tracker - INFO - ✅ Valid token: 8Dvn4hkh... (8Dvn...)
+2025-11-18 09:49:44,043 - token_tracker - INFO - ✅ Valid token: HbkQ5yQw... (HbkQ...)
+2025-11-18 09:49:44,066 - token_tracker - INFO - ✅ Valid token: xC7tWB3v... (xC7t...)
+2025-11-18 09:49:44,072 - token_tracker - INFO - ✅ Valid token: xC7tWB3v... (xC7t...)
+2025-11-18 09:49:44,075 - token_tracker - INFO - ✅ Valid token: 2JVZ7LF7... (2JVZ...)
+2025-11-18 09:49:44,079 - token_tracker - INFO - ✅ Valid token: HbkQ5yQw... (HbkQ...)
+2025-11-18 09:49:44,081 - token_tracker - INFO - ✅ Valid token: HbkQ5yQw... (HbkQ...)
+2025-11-18 09:49:44,099 - token_tracker - INFO - ✅ Valid token: HbkQ5yQw... (HbkQ...)
+2025-11-18 09:49:44,108 - token_tracker - INFO - ✅ Valid token: HbkQ5yQw... (HbkQ...)
+2025-11-18 09:49:44,112 - token_tracker - INFO - ✅ Valid token: Y2iFKnGu... (Y2iF...)
+2025-11-18 09:49:44,114 - token_tracker - INFO - ✅ Valid token: Y2iFKnGu... (Y2iF...)
+2025-11-18 09:49:44,143 - token_tracker - INFO - ✅ Valid token: Y2iFKnGu... (Y2iF...)
+2025-11-18 09:49:44,145 - token_tracker - INFO - ✅ Valid token: xC7tWB3v... (xC7t...)
+2025-11-18 09:49:44,151 - token_tracker - INFO - ✅ Valid token: xC7tWB3v... (xC7t...)
+2025-11-18 09:49:44,360 - token_tracker - INFO - ✅ Valid token: xC7tWB3v... (xC7t...)
+2025-11-18 09:49:44,365 - token_tracker - INFO - ✅ Valid token: LL2d4uyR... (LL2d...)
+2025-11-18 09:49:44,369 - token_tracker - INFO - ✅ Valid token: DoaATuDo... (DoaA...)
+2025-11-18 09:49:44,374 - token_tracker - INFO - ✅ Valid token: 5gsDMgG3... (5gsD...)
+2025-11-18 09:49:44,550 - token_tracker - INFO - ✅ Valid token: 5gsDMgG3... (5gsD...)
+2025-11-18 09:49:44,594 - token_tracker - INFO - ✅ Valid token: Y2iFKnGu... (Y2iF...)
+2025-11-18 09:49:44,597 - token_tracker - INFO - ✅ Valid token: 7XteziBH... (7Xte...)
+2025-11-18 09:50:34,162 - token_tracker - INFO - ✅ Valid token: Lhgmypk4... (Lhgm...)
+2025-11-18 09:51:53,321 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 45njhiM5zottGwDJJpJ8NtBKY1y7qG16afAtnBNHNYUriSvNoLf6SdgiBbcaMXwC6cFpar3aJUS9qsfwgepTVfCE
+2025-11-18 09:52:07,412 - token_tracker - ERROR - Transaction 45njhiM5zottGwDJJpJ8NtBKY1y7qG16afAtnBNHNYUriSvNoLf6SdgiBbcaMXwC6cFpar3aJUS9qsfwgepTVfCE not available after 3 tries
+2025-11-18 09:52:35,959 - token_tracker - INFO - ✅ Valid token: EWXzh7f1... (EWXz...)
+2025-11-18 09:53:09,256 - token_tracker - INFO - Initializing application...
+2025-11-18 09:53:09,257 - token_tracker - INFO - Loaded 0 tokens from file
+2025-11-18 09:53:09,257 - token_tracker - INFO - 🔌 Connecting to WebSocket...
+2025-11-18 09:53:10,003 - token_tracker - INFO - ✅ WebSocket connected successfully
+2025-11-18 09:53:10,003 - token_tracker - INFO - ✅ Subscribed to Raydium_V4
+2025-11-18 09:53:10,004 - token_tracker - INFO - ✅ Subscribed to Raydium_CLMM
+2025-11-18 09:53:10,004 - token_tracker - INFO - ✅ Subscribed to Orca_Whirlpool
+2025-11-18 09:53:10,004 - token_tracker - INFO - ✅ Subscribed to Pump_fun
+2025-11-18 09:53:34,897 - token_tracker - INFO - ✅ Valid token: 5oBshGwH... (5oBs...)
+2025-11-18 09:53:35,027 - token_tracker - INFO - ✅ Valid token: 7EoxBarb... (7Eox...)
+2025-11-18 09:55:21,092 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 47RDrw8eCZnJLHmJ4iA6fv76JzjhufZoXenYyc9NDbQpP1eM2FE99XnKGcbZashrVn1yej119whbXLui3F5Bu5ti
+2025-11-18 09:55:35,487 - token_tracker - ERROR - Transaction 47RDrw8eCZnJLHmJ4iA6fv76JzjhufZoXenYyc9NDbQpP1eM2FE99XnKGcbZashrVn1yej119whbXLui3F5Bu5ti not available after 3 tries
+2025-11-18 09:56:34,259 - token_tracker - INFO - ✅ Valid token: nevGs9Yy... (nevG...)
+2025-11-18 09:56:34,695 - token_tracker - INFO - ✅ Valid token: nevGs9Yy... (nevG...)
+2025-11-18 09:58:34,154 - token_tracker - INFO - ✅ Valid token: BqyXGyQ3... (BqyX...)
+2025-11-18 10:00:35,807 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4bVa1Wwn9xtp1gR1bH3ruuB6DbkJjyu8LAepa8pMWx6hgas978diKwowJx634E4hVd7Xqurz2ucKyo2D7zudXXEh
+2025-11-18 10:00:49,256 - token_tracker - ERROR - Transaction 4bVa1Wwn9xtp1gR1bH3ruuB6DbkJjyu8LAepa8pMWx6hgas978diKwowJx634E4hVd7Xqurz2ucKyo2D7zudXXEh not available after 3 tries
+2025-11-18 10:00:52,871 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2ZhkKM5FHDWQpsDT4Pr2xu94c8AMA3eP9j4onoTKdgQZRvbv2NTjAjxABDFabCSLoUt75KjzCb1HPqgcrtygD9dx
+2025-11-18 10:01:05,904 - token_tracker - ERROR - Transaction 2ZhkKM5FHDWQpsDT4Pr2xu94c8AMA3eP9j4onoTKdgQZRvbv2NTjAjxABDFabCSLoUt75KjzCb1HPqgcrtygD9dx not available after 3 tries
+2025-11-18 10:01:31,578 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5KUTCqaE2NnpK7iV9xnoF9rcSSymQZ35hVTGG1AmnG9pkUKNejc4pVbjFx7yfb6jg7twUjvYCoDCHNLKe9VPUP6y
+2025-11-18 10:01:45,260 - token_tracker - ERROR - Transaction 5KUTCqaE2NnpK7iV9xnoF9rcSSymQZ35hVTGG1AmnG9pkUKNejc4pVbjFx7yfb6jg7twUjvYCoDCHNLKe9VPUP6y not available after 3 tries
+2025-11-18 10:03:34,604 - token_tracker - INFO - ✅ Valid token: HSHwvvsa... (HSHw...)
+2025-11-18 10:07:28,596 - token_tracker - WARNING - WebSocket connection closed
+2025-11-18 10:07:28,598 - token_tracker - INFO - 🔄 Reconnecting in 1 seconds...
+2025-11-18 10:07:29,600 - token_tracker - INFO - 🔌 Connecting to WebSocket...
+2025-11-18 10:07:30,380 - token_tracker - INFO - ✅ WebSocket connected successfully
+2025-11-18 10:07:30,381 - token_tracker - INFO - ✅ Subscribed to Raydium_V4
+2025-11-18 10:07:30,381 - token_tracker - INFO - ✅ Subscribed to Raydium_CLMM
+2025-11-18 10:07:30,382 - token_tracker - INFO - ✅ Subscribed to Orca_Whirlpool
+2025-11-18 10:07:30,382 - token_tracker - INFO - ✅ Subscribed to Pump_fun
+2025-11-18 10:10:40,439 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4MUUJGodGDF4AkZTU1ZMLJJJBwru1EbCgQYq5TbYQwY2Z9w6TraAQkGwZg2AkW7vEgY9ikTBWNSHQbo5wQwyhtjQ
+2025-11-18 10:10:54,528 - token_tracker - ERROR - Transaction 4MUUJGodGDF4AkZTU1ZMLJJJBwru1EbCgQYq5TbYQwY2Z9w6TraAQkGwZg2AkW7vEgY9ikTBWNSHQbo5wQwyhtjQ not available after 3 tries
+2025-11-18 10:11:14,617 - token_tracker - INFO - ✅ Valid token: EBej9Lec... (EBej...)
+2025-11-18 10:11:14,667 - token_tracker - INFO - ✅ Valid token: EBej9Lec... (EBej...)
+2025-11-18 10:11:14,863 - token_tracker - INFO - ✅ Valid token: DoaATuDo... (DoaA...)
+2025-11-18 10:11:14,877 - token_tracker - INFO - ✅ Valid token: EWXzh7f1... (EWXz...)
+2025-11-18 10:11:24,675 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in AP7dbVAMm1zkTqyYKVJVrV4L7rLXgpQLLYpJRGPekRwdHS3wHVYxhDWKUvzTd2TjvzNsGaYuJe5GbrCttbmfX3d
+2025-11-18 10:11:28,700 - token_tracker - INFO - ✅ Valid token: HbkQ5yQw... (HbkQ...)
+2025-11-18 10:11:39,463 - token_tracker - ERROR - Transaction AP7dbVAMm1zkTqyYKVJVrV4L7rLXgpQLLYpJRGPekRwdHS3wHVYxhDWKUvzTd2TjvzNsGaYuJe5GbrCttbmfX3d not available after 3 tries
+2025-11-18 10:12:02,647 - token_tracker - INFO - Initializing application...
+2025-11-18 10:12:02,648 - token_tracker - INFO - Loaded 0 tokens from file
+2025-11-18 10:12:02,648 - token_tracker - INFO - 🔌 Connecting to WebSocket...
+2025-11-18 10:12:02,996 - token_tracker - INFO - ✅ WebSocket connected successfully
+2025-11-18 10:12:02,997 - token_tracker - INFO - ✅ Subscribed to Raydium_V4
+2025-11-18 10:12:02,997 - token_tracker - INFO - ✅ Subscribed to Raydium_CLMM
+2025-11-18 10:12:02,997 - token_tracker - INFO - ✅ Subscribed to Orca_Whirlpool
+2025-11-18 10:12:02,998 - token_tracker - INFO - ✅ Subscribed to Pump_fun
+2025-11-18 10:13:26,448 - token_tracker - INFO - ✅ Valid token: HbkQ5yQw... (HbkQ...)
+2025-11-18 10:13:26,450 - token_tracker - INFO - ➕ Added new token to track: TRUMP3 at $0.01612
+2025-11-18 10:13:26,454 - token_tracker - INFO - ✅ Valid token: EWXzh7f1... (EWXz...)
+2025-11-18 10:13:26,454 - token_tracker - INFO - ➕ Added new token to track: Ghostbird at $0.0006704
+2025-11-18 10:13:26,456 - token_tracker - INFO - ✅ Valid token: HbkQ5yQw... (HbkQ...)
+2025-11-18 10:13:26,456 - token_tracker - INFO - ➕ Added new token to track: TRUMP3 at $0.01612
+2025-11-18 10:13:26,471 - token_tracker - ERROR - Failed to execute buy order: 403 - {"detail":"Not authenticated"}
+2025-11-18 10:13:26,471 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for EWXzh7f1rEZ1FccBHRYe1HV6emiDPVGmHjHmo35Wpump at $0.00067040
+2025-11-18 10:13:26,472 - token_tracker - ERROR - Failed to execute buy order: 403 - {"detail":"Not authenticated"}
+2025-11-18 10:13:26,472 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for HbkQ5yQwYpGpz9mCHSg45yHfz2TEo4yst16ydF6Jpump at $0.01612000
+2025-11-18 10:13:26,472 - token_tracker - ERROR - Failed to execute buy order: 403 - {"detail":"Not authenticated"}
+2025-11-18 10:13:26,472 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for HbkQ5yQwYpGpz9mCHSg45yHfz2TEo4yst16ydF6Jpump at $0.01612000
+2025-11-18 10:13:26,489 - token_tracker - INFO - ✅ Valid token: EWXzh7f1... (EWXz...)
+2025-11-18 10:13:26,489 - token_tracker - INFO - ➕ Added new token to track: Ghostbird at $0.0006704
+2025-11-18 10:13:26,491 - token_tracker - ERROR - Failed to execute buy order: 403 - {"detail":"Not authenticated"}
+2025-11-18 10:13:26,491 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for EWXzh7f1rEZ1FccBHRYe1HV6emiDPVGmHjHmo35Wpump at $0.00067040
+2025-11-18 10:13:26,509 - token_tracker - INFO - ✅ Valid token: HSHwvvsa... (HSHw...)
+2025-11-18 10:13:26,510 - token_tracker - INFO - ➕ Added new token to track: bfc at $8.73e-05
+2025-11-18 10:13:26,512 - token_tracker - ERROR - Failed to execute buy order: 403 - {"detail":"Not authenticated"}
+2025-11-18 10:13:26,512 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for HSHwvvsaekJZFSorugkkCASkNzsu3ASmhTaDrkTEpump at $0.00008730
+2025-11-18 10:13:26,524 - token_tracker - INFO - ✅ Valid token: Y2iFKnGu... (Y2iF...)
+2025-11-18 10:13:26,524 - token_tracker - INFO - ➕ Added new token to track: 💎🙌 at $0.0004102
+2025-11-18 10:13:26,526 - token_tracker - ERROR - Failed to execute buy order: 403 - {"detail":"Not authenticated"}
+2025-11-18 10:13:26,526 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for Y2iFKnGuZrgMB7VbY3XbZU16qQQZcsWqSoLPpgTpump at $0.00041020
+2025-11-18 10:13:26,616 - token_tracker - INFO - ✅ Valid token: Y2iFKnGu... (Y2iF...)
+2025-11-18 10:13:26,616 - token_tracker - INFO - ➕ Added new token to track: 💎🙌 at $0.0004102
+2025-11-18 10:13:26,620 - token_tracker - ERROR - Failed to execute buy order: 403 - {"detail":"Not authenticated"}
+2025-11-18 10:13:26,620 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for Y2iFKnGuZrgMB7VbY3XbZU16qQQZcsWqSoLPpgTpump at $0.00041020
+2025-11-18 10:13:52,445 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5Tsuud1KQV9YUmT43aiHPn3DCwYS62YyvvLJ5Z9JMucYCUFxX3Gtwjq6b8MZyzaFocK57yhzUpBKRW5kr498bBxo
+2025-11-18 10:14:06,061 - token_tracker - ERROR - Transaction 5Tsuud1KQV9YUmT43aiHPn3DCwYS62YyvvLJ5Z9JMucYCUFxX3Gtwjq6b8MZyzaFocK57yhzUpBKRW5kr498bBxo not available after 3 tries
+2025-11-18 10:14:24,850 - token_tracker - INFO - ✅ Valid token: 5gsDMgG3... (5gsD...)
+2025-11-18 10:14:24,851 - token_tracker - INFO - ➕ Added new token to track: FAHHHH at $0.0007094
+2025-11-18 10:14:24,860 - token_tracker - ERROR - Failed to execute buy order: 403 - {"detail":"Not authenticated"}
+2025-11-18 10:14:24,861 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for 5gsDMgG3p1xZR7qvbS88EjNSDesBdJjYH7PGemUgpump at $0.00070940
+2025-11-18 10:14:25,085 - token_tracker - INFO - ✅ Valid token: 5gsDMgG3... (5gsD...)
+2025-11-18 10:14:25,085 - token_tracker - INFO - ➕ Added new token to track: FAHHHH at $0.0007094
+2025-11-18 10:14:25,088 - token_tracker - ERROR - Failed to execute buy order: 403 - {"detail":"Not authenticated"}
+2025-11-18 10:14:25,088 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for 5gsDMgG3p1xZR7qvbS88EjNSDesBdJjYH7PGemUgpump at $0.00070940
+2025-11-18 10:15:25,834 - token_tracker - INFO - ✅ Valid token: 2JVZ7LF7... (2JVZ...)
+2025-11-18 10:15:25,836 - token_tracker - INFO - ➕ Added new token to track: hope at $0.0004039
+2025-11-18 10:15:25,843 - token_tracker - ERROR - Failed to execute buy order: 403 - {"detail":"Not authenticated"}
+2025-11-18 10:15:25,843 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for 2JVZ7LF7dPj8EfmKcGe6CPjXZRLRZqe3wE66jR4Bpump at $0.00040390
+2025-11-18 10:15:25,909 - token_tracker - INFO - ✅ Valid token: BqyXGyQ3... (BqyX...)
+2025-11-18 10:15:25,910 - token_tracker - INFO - ➕ Added new token to track: TRUMP2 at $0.0004241
+2025-11-18 10:15:25,912 - token_tracker - ERROR - Failed to execute buy order: 403 - {"detail":"Not authenticated"}
+2025-11-18 10:15:25,913 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for BqyXGyQ3VYKyZS13HvzeVeUBiyKd4xMYXPDR9KWNpump at $0.00042410
+2025-11-18 10:16:09,962 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 36NXGdf4niLtuhmgHiT3vRdc18TZKWjdVkk7w2MFpJQUWitWettoLNdM11e8YYdGfhYoUf4THYQHa6RVifLmGcYb
+2025-11-18 10:16:24,460 - token_tracker - ERROR - Transaction 36NXGdf4niLtuhmgHiT3vRdc18TZKWjdVkk7w2MFpJQUWitWettoLNdM11e8YYdGfhYoUf4THYQHa6RVifLmGcYb not available after 3 tries
+2025-11-18 10:16:24,737 - token_tracker - INFO - ✅ Valid token: 9v4CsrUp... (9v4C...)
+2025-11-18 10:16:24,738 - token_tracker - INFO - ➕ Added new token to track: miaumiau at $0.0001071
+2025-11-18 10:16:24,748 - token_tracker - ERROR - Failed to execute buy order: 403 - {"detail":"Not authenticated"}
+2025-11-18 10:16:24,748 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for 9v4CsrUp99jBk9r9eK2axkbCL9KAyuqHVLTT9WyUpump at $0.00010710
+2025-11-18 10:16:40,885 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 397zKons7vDNb5yA5DHjBEtCQyiLLYob8QnAVQnj2fDooiKjCWibyiv25p1hNWxXb9bGwGuMBzgiMWpTd1BU261u
+2025-11-18 10:16:54,361 - token_tracker - ERROR - Transaction 397zKons7vDNb5yA5DHjBEtCQyiLLYob8QnAVQnj2fDooiKjCWibyiv25p1hNWxXb9bGwGuMBzgiMWpTd1BU261u not available after 3 tries
+2025-11-18 10:17:25,909 - token_tracker - INFO - ✅ Valid token: 5oBshGwH... (5oBs...)
+2025-11-18 10:17:25,910 - token_tracker - INFO - ➕ Added new token to track: PUMP2 at $0.0007283
+2025-11-18 10:17:25,918 - token_tracker - ERROR - Failed to execute buy order: 403 - {"detail":"Not authenticated"}
+2025-11-18 10:17:25,918 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for 5oBshGwHKNTSk4KrTridfMmNGWk39K3k8jnxm1hxpump at $0.00072830
+2025-11-18 10:17:25,926 - token_tracker - INFO - ✅ Valid token: 8Dvn4hkh... (8Dvn...)
+2025-11-18 10:17:25,926 - token_tracker - INFO - ➕ Added new token to track: Quarterzip at $0.0005372
+2025-11-18 10:17:25,929 - token_tracker - ERROR - Failed to execute buy order: 403 - {"detail":"Not authenticated"}
+2025-11-18 10:17:25,930 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for 8Dvn4hkhKG8Vn2NUEsFmofXJYrVrAkNTLwZyvMJNpump at $0.00053720
+2025-11-18 10:18:07,621 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 28hGouGrmwt1nxyxiKAfUiQ2iUw2USpFrRsBc494EJuNoQaujkE7U1GN6TukNGuNaRP8rT58GgYq2nGvkTYaYvQH
+2025-11-18 10:18:21,241 - token_tracker - ERROR - Transaction 28hGouGrmwt1nxyxiKAfUiQ2iUw2USpFrRsBc494EJuNoQaujkE7U1GN6TukNGuNaRP8rT58GgYq2nGvkTYaYvQH not available after 3 tries
+2025-11-18 10:18:24,611 - token_tracker - INFO - ✅ Valid token: Lhgmypk4... (Lhgm...)
+2025-11-18 10:18:24,612 - token_tracker - INFO - ➕ Added new token to track: SOYJAK at $9.133e-05
+2025-11-18 10:18:24,619 - token_tracker - ERROR - Failed to execute buy order: 403 - {"detail":"Not authenticated"}
+2025-11-18 10:18:24,619 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for Lhgmypk4MkeEeZUFRnxXFHhw6h5HbSHAteSx5D4pump at $0.00009133
+2025-11-18 13:00:14,391 - token_tracker - INFO - Initializing application...
+2025-11-18 13:00:14,392 - token_tracker - INFO - Loaded 11 tokens from file
+2025-11-18 13:00:14,393 - token_tracker - INFO - 🔌 Connecting to WebSocket...
+2025-11-18 13:00:14,861 - token_tracker - INFO - ✅ WebSocket connected successfully
+2025-11-18 13:00:14,861 - token_tracker - INFO - ✅ Subscribed to Raydium_V4
+2025-11-18 13:00:14,862 - token_tracker - INFO - ✅ Subscribed to Raydium_CLMM
+2025-11-18 13:00:14,863 - token_tracker - INFO - ✅ Subscribed to Orca_Whirlpool
+2025-11-18 13:00:14,863 - token_tracker - INFO - ✅ Subscribed to Pump_fun
+2025-11-18 13:00:57,487 - token_tracker - INFO - ✅ Valid token: E3nHk6yD... (E3nH...)
+2025-11-18 13:00:57,487 - token_tracker - INFO - ➕ Added new token to track: DAYJOB at $0.0002126
+2025-11-18 13:00:57,491 - token_tracker - ERROR - Failed to execute buy order: 403 - {"detail":"Not authenticated"}
+2025-11-18 13:00:57,491 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for E3nHk6yDCuSDFg4XkzQijvj4KoPpFm9ATmg4vqGmpump at $0.00021260
+2025-11-18 13:00:57,581 - token_tracker - INFO - ✅ Valid token: E3nHk6yD... (E3nH...)
+2025-11-18 13:00:57,581 - token_tracker - INFO - ➕ Added new token to track: DAYJOB at $0.0002126
+2025-11-18 13:00:57,584 - token_tracker - ERROR - Failed to execute buy order: 403 - {"detail":"Not authenticated"}
+2025-11-18 13:00:57,584 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for E3nHk6yDCuSDFg4XkzQijvj4KoPpFm9ATmg4vqGmpump at $0.00021260
+2025-11-18 13:00:57,628 - token_tracker - INFO - ✅ Valid token: 9AvytnUK... (9Avy...)
+2025-11-18 13:00:57,628 - token_tracker - INFO - ➕ Added new token to track: 67 at $0.02751
+2025-11-18 13:00:57,630 - token_tracker - ERROR - Failed to execute buy order: 403 - {"detail":"Not authenticated"}
+2025-11-18 13:00:57,630 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for 9AvytnUKsLxPxFHFqS6VLxaxt5p6BhYNr53SD2Chpump at $0.02751000
+2025-11-18 13:01:52,277 - token_tracker - INFO - ✅ Valid token: DoaATuDo... (DoaA...)
+2025-11-18 13:01:52,278 - token_tracker - INFO - ➕ Added new token to track: 67KID at $0.000113
+2025-11-18 13:01:52,283 - token_tracker - ERROR - Failed to execute buy order: 403 - {"detail":"Not authenticated"}
+2025-11-18 13:01:52,283 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for DoaATuDos54nQueANhoTLbwwBq6QAPvQ6WGstsbLpump at $0.00011300
+2025-11-18 13:01:54,950 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2ehcvuF3UQ9FK6aWTV5duYUzVpVUqEs9KnxEYm6cC2VfuTeKm5F24mmJiKcAch64zHZUs62ZtkeHYrkBieyuS9mC
+2025-11-18 13:01:54,951 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 45GwwKgAJhHYAJRH95mqJkeYfN84YcsX28hE2MWpD9rhEuArzA7ikixNSkvutU4A26sgyUFAit9JomudFb4UnveX
+2025-11-18 13:01:54,952 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4CHEuHJENT3yZhEyRC6rDqhE6LQA95cktv3sxNhrGsGXvKBaCLL8y81A2amJAsNiwkv2WoeBjMcw7hp3q4qsfmzY
+2025-11-18 13:01:54,952 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3kJu18AiBB7ENrVga7nmu1DHAGYv88yf1VMqieRJVi2xWnBeRpQdcktaxAFxq2hDHboGkJt2ZuJMgm3mLCgfedF1
+2025-11-18 13:01:54,953 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2mR1ForJ6RSU4dmWCEdvkUbgSwzDbWryHSf1YS23oLWkMtqSHGBtN839LSN93WUyAp8nN1KRaa9aTu4TzTsg1VG1
+2025-11-18 13:01:54,953 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5rWkuHmmpVwVXnGuKwZhJ221ntnnVjCJwEF3c5Gk9cesMFSfUAX4EsFPiDuKvJmfsXa2iTFQr8C4wHRoSXnkVWfc
+2025-11-18 13:02:07,571 - token_tracker - WARNING - [attempt 2] getTransaction failed for 2ehcvuF3UQ9FK6aWTV5duYUzVpVUqEs9KnxEYm6cC2VfuTeKm5F24mmJiKcAch64zHZUs62ZtkeHYrkBieyuS9mC: 
+2025-11-18 13:02:23,594 - token_tracker - WARNING - [attempt 2] getTransaction failed for 2mR1ForJ6RSU4dmWCEdvkUbgSwzDbWryHSf1YS23oLWkMtqSHGBtN839LSN93WUyAp8nN1KRaa9aTu4TzTsg1VG1: 
+2025-11-18 13:02:23,594 - token_tracker - WARNING - [attempt 3] getTransaction failed for 3kJu18AiBB7ENrVga7nmu1DHAGYv88yf1VMqieRJVi2xWnBeRpQdcktaxAFxq2hDHboGkJt2ZuJMgm3mLCgfedF1: 
+2025-11-18 13:02:23,596 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3VGwciAJS5V1iZtbqj99e1RPoAVwiG5s8CoQGAybsYvhMVsaYnNMishVqFBYCVtkg4yVVZvSMYAYKUE2fdad6vub
+2025-11-18 13:02:23,610 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2VmUGVfaFrReUYopfAzURWNtfg3SJbEVpw3VcEUR7UVHDVtp5jFHgiEeSnidP6mS5thuZKPJUhAXQ21oKJ9CutHo
+2025-11-18 13:02:23,615 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3YBwGEWFpT6SMZFs2CtEzx6P9iYykPJrgeq6ZnhrqDLm1Fkkqwv6dLfYY2Qyet2xro14MmjwvhE6aWmmb94RiX1F
+2025-11-18 13:02:24,126 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 24g8mA9th8JVseFT6PU4ZimcRg96gBMeARa34FA6jnhSQBfyQmQzAtMxadTRb2jCHqjtm82rSM43BXj3awjJdKRR
+2025-11-18 13:02:24,228 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in VjEEhz88hsRxLbkULiUv7tjjVetMkkgcLaaV2ngWtestzT53ggpRVzPRsNNJu7yzkSkCFHbyDAWPXGZmtEocNgB
+2025-11-18 13:02:24,415 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3mugVoYFZB96oA2RC8Rv33Cy666TKoJn54UBtzVTrQ65Q6HkTfHgAEDxzeGo9tZiEnzA9iDh14WjX7zfXkBroAxD
+2025-11-18 13:02:24,474 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in YpYTcrEmJYeRsTF4yxt9RXyAX7Xy7FEsX2zeoQn6UUKoPEpTDHYHg5TUhx975q1dEkHqD2aguA4bXXDCkNyZRN7
+2025-11-18 13:02:24,559 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3CabXApNpwcB1EZQDsTG58imJGUBQ93PwGuw17e9EYrV59MoZjVvETkaGHeQnmjvmAvJVTSebg5nKDnE19t9sbAE
+2025-11-18 13:02:24,587 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5i295Q1oxw4RWB96CJpDkKW9AsY1VR3SLLupppew9FybSaXrYnws4zcjCnuDsrnWUs5PrDdJpamMN7PD8wtv3TuX
+2025-11-18 13:02:24,645 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2mS2gWmQqjWTHz1KaNyKyvhN1Po8heCE9Xv9YXPXt2Mb5yiAGm8wELgXVn3dxBvkFcxWRiA6oeX9NS29w3hUuWtJ
+2025-11-18 13:02:24,707 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4VnpFyAgajJ117fMADgMoCDpzhPyh4HnX275MtjDMxmRiuwcZtmX31kGcfPK5GkVRU2AhQMDrrg3Tk2ZH5KrHiiq
+2025-11-18 13:02:24,793 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2MAVqsZY9bNQ6i24AkYKM5WdeoqCFktiryQCjthU7r5SABabzbVDTBsfGXMWrpYQGWv1A5u965Q3UAFDLbd17ZmU
+2025-11-18 13:02:24,815 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4CTLEHGXtkTAQLzCEAe7QyANh4NbLjCyUD2tNwxfJutzZWG3wyud5w9D5ojMTe2pXFoQBW6mGN59JK59KokeY7ji
+2025-11-18 13:02:24,853 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3cYpSvXC6Fx6NeQN3sXgybcuQYyimY42Rwnb6UErNYiZQGecFRU5jJkv7mDDodjiHPTc7KkB2urBc8iHokhjRyTe
+2025-11-18 13:02:24,910 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3yH4eu5wP6wxvRN6RcMrrYspqSgjRVTGswRxwjcUHgktkjJGttqTtCi48bpWVZj6E7MTLZn2t31wi9CvvyjYyyD2
+2025-11-18 13:02:24,968 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3w8Wr4XNUGJ928DLsztSPSuJekUPvWxSjgVkUNaoZNRxRb4VW4UTg4hCY8SbHrdBhWQTc5byEkxVHoYbLxR68WwA
+2025-11-18 13:02:25,058 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2xtyQwupzArXAr92vRC1XKCriiG9SZNjCzcVUYyYgPnnKwSCSh79b1v3BWax4E3T7tR8n7a2e5HHCmaTMCVRRLuK
+2025-11-18 13:02:25,082 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5oDWTYS5C7gixDoP23VXh3nJJrkMPPJCJsCcoGP9BBDbhDWauBHtbZ9fwEejSKvjvJQ7it1ofiwGyVg5KiiGqS6F
+2025-11-18 13:02:37,134 - token_tracker - ERROR - Transaction 3kJu18AiBB7ENrVga7nmu1DHAGYv88yf1VMqieRJVi2xWnBeRpQdcktaxAFxq2hDHboGkJt2ZuJMgm3mLCgfedF1 not available after 3 tries
+2025-11-18 13:02:37,171 - token_tracker - WARNING - [attempt 1] getTransaction failed for 5oDWTYS5C7gixDoP23VXh3nJJrkMPPJCJsCcoGP9BBDbhDWauBHtbZ9fwEejSKvjvJQ7it1ofiwGyVg5KiiGqS6F: 
+2025-11-18 13:02:47,138 - token_tracker - WARNING - WebSocket connection closed
+2025-11-18 13:02:47,138 - token_tracker - INFO - 🔄 Reconnecting in 1 seconds...
+2025-11-18 13:02:48,140 - token_tracker - INFO - 🔌 Connecting to WebSocket...
+2025-11-18 13:02:48,378 - token_tracker - INFO - ✅ WebSocket connected successfully
+2025-11-18 13:02:48,380 - token_tracker - INFO - ✅ Subscribed to Raydium_V4
+2025-11-18 13:02:48,381 - token_tracker - INFO - ✅ Subscribed to Raydium_CLMM
+2025-11-18 13:02:48,382 - token_tracker - INFO - ✅ Subscribed to Orca_Whirlpool
+2025-11-18 13:02:48,382 - token_tracker - INFO - ✅ Subscribed to Pump_fun
+2025-11-18 13:02:49,932 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3eQadaY6L5zMreQfKTVoFh788TCb1QqsXSTW9AfJYKt4cspvjnT9KfLhTMZPzQw8Y5qrA23piVm1xZD5UG1zeMf1
+2025-11-18 13:02:51,093 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3Dt9PuamdgRYahUhEYpEAj74FL457DbJEufrvkckb3j5VdSbEb7nVUA3JtRJiPzRia1pBP8UiFhNF5DSpfy5ydTF
+2025-11-18 13:03:09,914 - token_tracker - ERROR - Transaction 3Dt9PuamdgRYahUhEYpEAj74FL457DbJEufrvkckb3j5VdSbEb7nVUA3JtRJiPzRia1pBP8UiFhNF5DSpfy5ydTF not available after 3 tries
+2025-11-18 13:03:09,919 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 47Dd85T7pQEAuq1AGLhHDY941wtFhWNm5vuXP7yxk2Ppt9sshwjYurZ2kba1ZaXJQB1MQQLNAyf95BoCr4PEPmjS
+2025-11-18 13:03:09,926 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4ZMvC6n2hNwh5efpin4DFGCmzxUXjYHfioUqJr5NmyaS1smoctoVk3Zrxgw6bHxUurEuwgGfEcKtz6EpXa2d7iYt
+2025-11-18 13:03:09,934 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2pVL3zGRDyMECTjEZpicKzfNLHe2zkCvBebwxRLAExWrgJhYCsWqC8u8WKGwFK275zT1d8n8yaJQ77e1vyU382rm
+2025-11-18 13:03:09,937 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in Ynmwm4VLZv6NXrkbRCZF49cAaS8XKXU5xGUm1BeYEMuZ4BcMXazNUBRu7HEGefuGdBUqtKbDjTijdVACNjUjb9w
+2025-11-18 13:03:10,174 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2FsYEgbFVmj9hvRHMCefQweJfY2kotVYTJwqLUzQzL4pgbth7W7LqKMHnJzZYr2A5bgE4PAA4yevAsPgdYTA8eYh
+2025-11-18 13:03:10,196 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 23zEPKH3wifRV1sa9pjKnasr25xwH6NWsvUoGMBkq7nbPdQwuqc6n2sJjBRUGfxr61CGhqScYcqBDsq4k9y9b1to
+2025-11-18 13:03:10,232 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4RDsp1D3ze5KkEEDaYRJwducHUkb6cmQU2RieSvBpXP9xe4cAjPD1ucHyzRh9ZRGXkteiYAEgNtwFGf9Vw7SQMbZ
+2025-11-18 13:03:10,428 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2GG5yt1h2piJfwZhwtuEUZXysPobYG64wcVTk2CA9LwxKwED1J5KE89hRrqrj1jKeezbfAQf5UpenMrRtiBcz47f
+2025-11-18 13:03:10,429 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 43hhhC2BgdwZRsfssrAs16y3fPnNikchMEnRCaXe3BkNb4Q1sDpWVEZzomwGkAj5NPtmw6yn64UQ6rSQ6DDKAcez
+2025-11-18 13:03:10,556 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in iHdyeh7ruJ3c9GiFk5KLFuBFsXxoAmU3D6RVvjGgqkPoHXE3rXDzxsHg72xxyr2K5vsb5esPdniM2x7hMKTf6C6
+2025-11-18 13:03:10,594 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in hjBDU3opmTwaVBos7ieRHvXpKejdWDc9xuS6JHxNjA7KSUdqGemh5Zo91ZnodgXm47EEHzgW56akzC9WVnGJhd3
+2025-11-18 13:03:10,615 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3QMtRntzWEiGtAR88y7d8kseHCdLziD4tFXqagn3c1B3nSqZDG4W1kZM5GMS9v44jruC9XWNhJWpu9qaWN9YNY8Y
+2025-11-18 13:03:10,691 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2TTW5VmW8hgavUC2W6J3GRtNdYyFPvkek4buiXRihYN3C49BYzA1cKMEzhUvZkZvXkSSha8taenwZiz3H3YkNEiB
+2025-11-18 13:03:27,120 - token_tracker - WARNING - [attempt 1] getTransaction failed for 2pVL3zGRDyMECTjEZpicKzfNLHe2zkCvBebwxRLAExWrgJhYCsWqC8u8WKGwFK275zT1d8n8yaJQ77e1vyU382rm: 
+2025-11-18 13:03:27,121 - token_tracker - WARNING - [attempt 2] getTransaction failed for 23zEPKH3wifRV1sa9pjKnasr25xwH6NWsvUoGMBkq7nbPdQwuqc6n2sJjBRUGfxr61CGhqScYcqBDsq4k9y9b1to: 
+2025-11-18 13:03:27,122 - token_tracker - WARNING - [attempt 1] getTransaction failed for 43hhhC2BgdwZRsfssrAs16y3fPnNikchMEnRCaXe3BkNb4Q1sDpWVEZzomwGkAj5NPtmw6yn64UQ6rSQ6DDKAcez: 
+2025-11-18 13:03:27,122 - token_tracker - WARNING - [attempt 2] getTransaction failed for 2FsYEgbFVmj9hvRHMCefQweJfY2kotVYTJwqLUzQzL4pgbth7W7LqKMHnJzZYr2A5bgE4PAA4yevAsPgdYTA8eYh: 
+2025-11-18 13:03:31,142 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2SdDCduZ2cYWprnbxZxoy7CTZbR19RtNnYLfVktQ5CPWaun9X5UsQ1QvHPLKy41KRhMQkNEga4c3TU7N7vs8UF9R
+2025-11-18 13:03:31,161 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in TFEyzwVS8Kcqqho6MoWPWdmhbSfcicrhpnG5AXUs2WM8iGkjkVosnF2WvhyrX7rryJZ4y2uHnj57gRdndRoxhGJ
+2025-11-18 13:03:31,198 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4iszi7D8oyBKowD1B8FMameTa6uTM1w1jbYYbzg2qREMpHreGQKaFTM6sjAs4seLANSKuejgWjNdS1BfAjAPmCW9
+2025-11-18 13:03:31,462 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in ZeU4UE8SBpEVToSpw1dLAgTDBSXMb3gHKgYEsGTu5nqtP3vY8ubjEpadkovYdNn23bPdLJZTmnEcrDmLUJT1bWk
+2025-11-18 13:03:31,579 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3RkSoVQiKpVfi2f23zPfjFFhbB98oj4CvEzJchEEsYjR4CsQdztoADrksLdD2ZLnat3oE5rVNBdrrxn1t6HWv4ST
+2025-11-18 13:03:31,638 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in pAMyvKDuxMWrP8iWa7EWEjAoP2aKTQ4S7FtXRMLdasYFHRqKm16vqTjHzrwKBRgdrrw8J5TC1LpBywKYCCgtcjE
+2025-11-18 13:03:31,787 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in Zenfgnf5fKrqTgwxkzUK49hmUGt84Whc8CCWot1p2e2unZkj1kYGUfTMd26hPmCNo4YubUPMLunCAdvKrrQgteG
+2025-11-18 13:03:31,863 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3HAR7XGhwzSN4tpxT9C5R2bxhJKScsbvQgA5Fz7pwPfofUTrEkGubCYt1ZtvFPESLavjULL1hkZqw24Wb1Bw5tGu
+2025-11-18 13:03:31,924 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5Sm6w5poc8Q7iZYFhUZRkzxcRtb4jLXduZhsuSmedzb65RaLoLtSztJULVSdz3kgkr6ggb6V43PxBevAYppPvTAC
+2025-11-18 13:03:31,958 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2VEv5FzBa92M5bhgTp7odqcz4vf18TUx5FpQTzTwxbWQp7hG9KA7sFNcg1sRr25Y89zM3zRgu5zanE748ayfRLLq
+2025-11-18 13:03:32,037 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 46rJXxWdTktyUrM7wdF8u8LyZ7prLtw2N72PoQVrU96vQw3Dz5JhfZcy4rPPfKRBJ3t4CT7b84uDyHebVYksp6w7
+2025-11-18 13:03:32,052 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2UFUwDQ5j5q3HdyoL4Av1uH1tvKbdWaXnkRtKKWB154PKCZAkZKZepSPFSrVTSqUty8vRQQDWBg9NB9YFfiLmfea
+2025-11-18 13:03:32,074 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in oRtjNNXKR8wV8Z3XByz3hAKePWhfXxH9jX2Mec7y3q4jXJzjYkzBp7bEeNjvq45RFNVRSP8TdML6xSkPKFTvjut
+2025-11-18 13:03:41,467 - token_tracker - INFO - Initializing application...
+2025-11-18 13:03:41,468 - token_tracker - INFO - Loaded 0 tokens from file
+2025-11-18 13:03:41,468 - token_tracker - INFO - 🔌 Connecting to WebSocket...
+2025-11-18 13:03:42,260 - token_tracker - INFO - ✅ WebSocket connected successfully
+2025-11-18 13:03:42,261 - token_tracker - INFO - ✅ Subscribed to Raydium_V4
+2025-11-18 13:03:42,261 - token_tracker - INFO - ✅ Subscribed to Raydium_CLMM
+2025-11-18 13:03:42,261 - token_tracker - INFO - ✅ Subscribed to Orca_Whirlpool
+2025-11-18 13:03:42,261 - token_tracker - INFO - ✅ Subscribed to Pump_fun
+2025-11-18 13:03:52,596 - token_tracker - INFO - ✅ Valid token: 8Dvn4hkh... (8Dvn...)
+2025-11-18 13:03:52,597 - token_tracker - INFO - ➕ Added new token to track: Quarterzip at $0.0005384
+2025-11-18 13:03:54,646 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5yk5F1YM6TyDga19PzQJTxpgjqgmohpo3oALV37jKGRaVyHfYpfmX3hPvHS56gdZVZXFk8515EkvgGcNwDuCExYG
+2025-11-18 13:03:57,436 - token_tracker - INFO -  ^^^^^ Buy order response: {'success': True, 'message': 'Buy order for 0.0005384 USDC of Quarterzip', 'transaction_hash': "{'status': 'Success', 'signature': '5yk5F1YM6TyDga19PzQJTxpgjqgmohpo3oALV37jKGRaVyHfYpfmX3hPvHS56gdZVZXFk8515EkvgGcNwDuCExYG', 'slot': '380847360', 'code': 0, 'totalInputAmount': '1000000', 'totalOutputAmount': '1833198075', 'inputAmountResult': '999000', 'outputAmountResult': '1833198075'}", 'timestamp': '2025-11-18T13:03:55.770041'}
+2025-11-18 13:03:57,436 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for 8Dvn4hkhKG8Vn2NUEsFmofXJYrVrAkNTLwZyvMJNpump at $0.00053840
+2025-11-18 13:04:09,460 - token_tracker - ERROR - Transaction 5yk5F1YM6TyDga19PzQJTxpgjqgmohpo3oALV37jKGRaVyHfYpfmX3hPvHS56gdZVZXFk8515EkvgGcNwDuCExYG not available after 3 tries
+2025-11-18 13:04:50,659 - token_tracker - INFO - ✅ Valid token: BqyXGyQ3... (BqyX...)
+2025-11-18 13:04:50,659 - token_tracker - INFO - ➕ Added new token to track: TRUMP2 at $0.0005233
+2025-11-18 13:04:53,692 - token_tracker - INFO -  ^^^^^ Buy order response: {'success': True, 'message': 'Buy order for 0.0005233 USDC of TRUMP2', 'transaction_hash': "{'status': 'Success', 'signature': '3k5SmvUT1hbroSDrCEtaoCzeg2o28pi44LNmjX3Q76eu2JSrBg2jKfMxoby8xcJ8d8U4ffkcGZC1PDYJzF3KHMQh', 'slot': '380847508', 'code': 0, 'totalInputAmount': '1000000', 'totalOutputAmount': '1869184071', 'inputAmountResult': '999000', 'outputAmountResult': '1869184071', 'swapEvents': [{'inputMint': 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'inputAmount': '999000', 'outputMint': 'So11111111111111111111111111111111111111112', 'outputAmount': '7280505'}, {'inputMint': 'So11111111111111111111111111111111111111112', 'inputAmount': '7280505', 'outputMint': 'BqyXGyQ3VYKyZS13HvzeVeUBiyKd4xMYXPDR9KWNpump', 'outputAmount': '1869184071'}]}", 'timestamp': '2025-11-18T13:04:53.690814'}
+2025-11-18 13:04:53,693 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for BqyXGyQ3VYKyZS13HvzeVeUBiyKd4xMYXPDR9KWNpump at $0.00052330
+2025-11-18 13:05:02,133 - token_tracker - INFO - ✅ Valid token: 7EoxBarb... (7Eox...)
+2025-11-18 13:05:02,134 - token_tracker - INFO - ➕ Added new token to track: DIH at $0.000351
+2025-11-18 13:05:04,807 - token_tracker - INFO -  ^^^^^ Buy order response: {'success': True, 'message': 'Buy order for 0.000351 USDC of DIH', 'transaction_hash': "{'status': 'Success', 'signature': '5bwWSM19Vgtoo7SQEVk6R8CutYnbU1DAp8SEXLtVqZnmoT4J2uctMTLDmRinE8xECEotgoJJhGPUsxGeuAfYAm7a', 'slot': '380847537', 'code': 0, 'totalInputAmount': '1000000', 'totalOutputAmount': '2822230593', 'inputAmountResult': '999000', 'outputAmountResult': '2822230593'}", 'timestamp': '2025-11-18T13:05:04.806470'}
+2025-11-18 13:05:04,807 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for 7EoxBarbcbdmibuTZ4MgWzuBNQkXqKuonjfD7Eyepump at $0.00035100
+2025-11-18 13:05:52,211 - token_tracker - INFO - ✅ Valid token: Lhgmypk4... (Lhgm...)
+2025-11-18 13:05:52,211 - token_tracker - INFO - ➕ Added new token to track: SOYJAK at $8.68e-05
+2025-11-18 13:05:55,095 - token_tracker - INFO -  ^^^^^ Buy order response: {'success': True, 'message': 'Buy order for 8.68e-05 USDC of SOYJAK', 'transaction_hash': "{'status': 'Success', 'signature': '3XA1vdAQs6w4PvaMvKYbfoqv4WhniJAr6QZjJWCZ7LuTFrdZRi8C7yRQWEnyEeQS8BoPej7Zp4bs1HumYJHNsnDS', 'slot': '380847667', 'code': 0, 'totalInputAmount': '1000000', 'totalOutputAmount': '11399095433', 'inputAmountResult': '999000', 'outputAmountResult': '11399095433'}", 'timestamp': '2025-11-18T13:05:55.094479'}
+2025-11-18 13:05:55,095 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for Lhgmypk4MkeEeZUFRnxXFHhw6h5HbSHAteSx5D4pump at $0.00008680
+2025-11-18 13:06:52,769 - token_tracker - INFO - ✅ Valid token: 6pKDTUav... (6pKD...)
+2025-11-18 13:06:52,770 - token_tracker - INFO - ➕ Added new token to track: ZKFG at $0.0008428
+2025-11-18 13:06:52,910 - token_tracker - INFO - ✅ Valid token: 2JVZ7LF7... (2JVZ...)
+2025-11-18 13:06:52,910 - token_tracker - INFO - ➕ Added new token to track: hope at $0.000323
+2025-11-18 13:06:56,013 - token_tracker - INFO -  ^^^^^ Buy order response: {'success': True, 'message': 'Buy order for 0.0008428 USDC of ZKFG', 'transaction_hash': "{'status': 'Success', 'signature': '2QRxKUryMf9sMkgw3vi9ajTc69yEPGuDvgr9e4KFfpgr7kzGhNkEVh2Yq5cjPVZuoA6VKYMioWFjSvpqeDxjAcUP', 'slot': '380847824', 'code': 0, 'totalInputAmount': '1000000', 'totalOutputAmount': '1165899989', 'inputAmountResult': '999000', 'outputAmountResult': '1165899989', 'swapEvents': [{'inputMint': 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'inputAmount': '899100', 'outputMint': 'So11111111111111111111111111111111111111112', 'outputAmount': '6573383'}, {'inputMint': 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'inputAmount': '99900', 'outputMint': '27G8MtK7VtTcCHkpASjSDdkWWYfoqT6ggEuKidVJidD4', 'outputAmount': '21457'}, {'inputMint': '27G8MtK7VtTcCHkpASjSDdkWWYfoqT6ggEuKidVJidD4', 'inputAmount': '21457', 'outputMint': 'So11111111111111111111111111111111111111112', 'outputAmount': '730985'}, {'inputMint': 'So11111111111111111111111111111111111111112', 'inputAmount': '7304368', 'outputMint': '6pKDTUavWbdHH27nUBeZNGDSmg3gw5XMGq6gAPUf264F', 'outputAmount': '1165899989'}]}", 'timestamp': '2025-11-18T13:06:56.012467'}
+2025-11-18 13:06:56,014 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for 6pKDTUavWbdHH27nUBeZNGDSmg3gw5XMGq6gAPUf264F at $0.00084280
+2025-11-18 13:06:59,518 - token_tracker - INFO -  ^^^^^ Buy order response: {'success': True, 'message': 'Buy order for 0.000323 USDC of hope', 'transaction_hash': "{'status': 'Success', 'signature': '3uXsftVjx7xGQbW4fSRVuQjaPrLaqtbD3zCxv1BLmPK7GeHShJW9tVa1dAnR9gy6WxbeRStUvSwaivpwLxP2Ahz8', 'slot': '380847833', 'code': 0, 'totalInputAmount': '1000000', 'totalOutputAmount': '3033602775', 'inputAmountResult': '999000', 'outputAmountResult': '3033602775', 'swapEvents': [{'inputMint': 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'inputAmount': '999000', 'outputMint': 'USD1ttGY1N17NEEHLmELoaybftRBUSErhqYiQzvEmuB', 'outputAmount': '999710'}, {'inputMint': 'USD1ttGY1N17NEEHLmELoaybftRBUSErhqYiQzvEmuB', 'inputAmount': '999710', 'outputMint': 'So11111111111111111111111111111111111111112', 'outputAmount': '7297680'}, {'inputMint': 'So11111111111111111111111111111111111111112', 'inputAmount': '7297680', 'outputMint': '2JVZ7LF7dPj8EfmKcGe6CPjXZRLRZqe3wE66jR4Bpump', 'outputAmount': '3033602775'}]}", 'timestamp': '2025-11-18T13:06:59.517005'}
+2025-11-18 13:06:59,519 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for 2JVZ7LF7dPj8EfmKcGe6CPjXZRLRZqe3wE66jR4Bpump at $0.00032300
+2025-11-18 13:07:10,642 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in MaKMeahGptxJL4R45y54Q8cUuemH3QX1Kg3Xz8u4Ug8q26T8CjjyV7JjXj6e7VPaoXXFyeu3JGGKFYXyXYvyotC
+2025-11-18 13:07:25,049 - token_tracker - ERROR - Transaction MaKMeahGptxJL4R45y54Q8cUuemH3QX1Kg3Xz8u4Ug8q26T8CjjyV7JjXj6e7VPaoXXFyeu3JGGKFYXyXYvyotC not available after 3 tries
+2025-11-18 13:08:52,308 - token_tracker - INFO - ✅ Valid token: gFMSZ167... (gFMS...)
+2025-11-18 13:08:52,308 - token_tracker - INFO - ➕ Added new token to track: Huzz at $9.899e-05
+2025-11-18 13:08:54,371 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2kS8W3PDCWa9NaCQzLEwnuinKRiyFNoeahgBdZs9pfTcin5Y21LwzKCCJnVou8Chmkjd3CQJzCdvVnna6cz2JPQb
+2025-11-18 13:08:56,950 - token_tracker - INFO -  ^^^^^ Buy order response: {'success': True, 'message': 'Buy order for 9.899e-05 USDC of Huzz', 'transaction_hash': "{'status': 'Success', 'signature': '2kS8W3PDCWa9NaCQzLEwnuinKRiyFNoeahgBdZs9pfTcin5Y21LwzKCCJnVou8Chmkjd3CQJzCdvVnna6cz2JPQb', 'slot': '380848131', 'code': 0, 'totalInputAmount': '1000000', 'totalOutputAmount': '10014683599', 'inputAmountResult': '999000', 'outputAmountResult': '10014683599'}", 'timestamp': '2025-11-18T13:08:55.359410'}
+2025-11-18 13:08:56,950 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for gFMSZ167YfEUqVnRtDzv4GPCksZyXWRidWRVhy7pump at $0.00009899
+2025-11-18 13:09:07,847 - token_tracker - ERROR - Transaction 2kS8W3PDCWa9NaCQzLEwnuinKRiyFNoeahgBdZs9pfTcin5Y21LwzKCCJnVou8Chmkjd3CQJzCdvVnna6cz2JPQb not available after 3 tries
+2025-11-18 13:10:38,023 - token_tracker - INFO - Initializing application...
+2025-11-18 13:10:38,024 - token_tracker - INFO - Loaded 7 tokens from file
+2025-11-18 13:10:38,024 - token_tracker - INFO - 🔌 Connecting to WebSocket...
+2025-11-18 13:10:39,032 - token_tracker - INFO - ✅ WebSocket connected successfully
+2025-11-18 13:10:39,033 - token_tracker - INFO - ✅ Subscribed to Raydium_V4
+2025-11-18 13:10:39,034 - token_tracker - INFO - ✅ Subscribed to Raydium_CLMM
+2025-11-18 13:10:39,034 - token_tracker - INFO - ✅ Subscribed to Orca_Whirlpool
+2025-11-18 13:10:39,034 - token_tracker - INFO - ✅ Subscribed to Pump_fun
+2025-11-18 13:11:52,804 - token_tracker - INFO - ✅ Valid token: 5oBshGwH... (5oBs...)
+2025-11-18 13:11:52,804 - token_tracker - INFO - ➕ Added new token to track: PUMP2 at $0.0007261
+2025-11-18 13:11:55,782 - token_tracker - INFO -  ^^^^^ Buy order response: {'success': True, 'message': 'Buy order for 0.0007261 USDC of PUMP2', 'transaction_hash': "{'status': 'Success', 'signature': '3RRx41xKKLQuMa2dSu9wUGcnNAWLprub9PFTSdPsh7vLRScELiEoJXDG1ABLKL5uqB36gXWcRd7rxVzjwG2VwHFF', 'slot': '380848589', 'code': 0, 'totalInputAmount': '1000000', 'totalOutputAmount': '1390280063', 'inputAmountResult': '999000', 'outputAmountResult': '1390280063', 'swapEvents': [{'inputMint': 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'inputAmount': '59940', 'outputMint': 'KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS', 'outputAmount': '1104449'}, {'inputMint': 'KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS', 'inputAmount': '1104449', 'outputMint': 'So11111111111111111111111111111111111111112', 'outputAmount': '437738'}, {'inputMint': 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'inputAmount': '939060', 'outputMint': 'So11111111111111111111111111111111111111112', 'outputAmount': '6845128'}, {'inputMint': 'So11111111111111111111111111111111111111112', 'inputAmount': '7282866', 'outputMint': '5oBshGwHKNTSk4KrTridfMmNGWk39K3k8jnxm1hxpump', 'outputAmount': '1390280063'}]}", 'timestamp': '2025-11-18T13:11:55.780787'}
+2025-11-18 13:11:55,782 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for 5oBshGwHKNTSk4KrTridfMmNGWk39K3k8jnxm1hxpump at $0.00072610
+2025-11-18 13:12:50,917 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3udDQWx7iWj8nMJUfCEEDaCNjB6rRXpTEZUSySoEyfrX2vakG9eS4D1DEi2N1C1CQNR7jML7uL2hnD4sNdDh1Cuo
+2025-11-18 13:13:10,264 - token_tracker - ERROR - Transaction 3udDQWx7iWj8nMJUfCEEDaCNjB6rRXpTEZUSySoEyfrX2vakG9eS4D1DEi2N1C1CQNR7jML7uL2hnD4sNdDh1Cuo not available after 3 tries
+2025-11-18 13:13:33,919 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4Udo5J7QnZ7cCdYSLsiqG8eaQeJnAc6uSUFHn2HohnzEpSdMExson2P4EeUtcPicsQA4u7jfQioY1b65MKGBtYhj
+2025-11-18 13:13:53,333 - token_tracker - ERROR - Transaction 4Udo5J7QnZ7cCdYSLsiqG8eaQeJnAc6uSUFHn2HohnzEpSdMExson2P4EeUtcPicsQA4u7jfQioY1b65MKGBtYhj not available after 3 tries
+2025-11-18 13:13:53,543 - token_tracker - INFO - ✅ Valid token: qZtEkb7K... (qZtE...)
+2025-11-18 13:13:53,543 - token_tracker - INFO - ➕ Added new token to track: LUCID at $0.0004527
+2025-11-18 13:13:56,501 - token_tracker - INFO -  ^^^^^ Buy order response: {'success': True, 'message': 'Buy order for 0.0004527 USDC of LUCID', 'transaction_hash': "{'status': 'Success', 'signature': 'Ppgem1wHUphqn5VPuXT1Rnh45wM98zCbY3j7VoWTeecB77iHPhs5vyZF4fxsGaN8qbCA3v4GUZNv3m96abPrcqx', 'slot': '380848894', 'code': 0, 'totalInputAmount': '1000000', 'totalOutputAmount': '2184437028', 'inputAmountResult': '999000', 'outputAmountResult': '2184437028', 'swapEvents': [{'inputMint': 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'inputAmount': '9990', 'outputMint': 'pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn', 'outputAmount': '3248767'}, {'inputMint': 'pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn', 'inputAmount': '3248767', 'outputMint': 'So11111111111111111111111111111111111111112', 'outputAmount': '72899'}, {'inputMint': 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'inputAmount': '989010', 'outputMint': 'So11111111111111111111111111111111111111112', 'outputAmount': '7205065'}, {'inputMint': 'So11111111111111111111111111111111111111112', 'inputAmount': '7277964', 'outputMint': 'qZtEkb7KAPDtgx8AzeMPWMvXAiYXto5dGbJGk9Zpump', 'outputAmount': '2184437028'}]}", 'timestamp': '2025-11-18T13:13:56.499802'}
+2025-11-18 13:13:56,502 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for qZtEkb7KAPDtgx8AzeMPWMvXAiYXto5dGbJGk9Zpump at $0.00045270
+2025-11-18 13:15:28,396 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in QQSwKDZvkBEQM9MVRqYZY2LywaNG2m4EQWHHZeFbzdSY7tA2vm3UvnXxEpnCiNBcSA85dGSV9GYLthq8VXP4mb8
+2025-11-18 13:15:49,233 - token_tracker - ERROR - Transaction QQSwKDZvkBEQM9MVRqYZY2LywaNG2m4EQWHHZeFbzdSY7tA2vm3UvnXxEpnCiNBcSA85dGSV9GYLthq8VXP4mb8 not available after 3 tries
+2025-11-18 13:18:11,093 - token_tracker - INFO - ✅ Valid token: 0x4c0b3f... (0x4c...)
+2025-11-18 13:18:11,094 - token_tracker - INFO - ➕ Added new token to track: 2021 at $1.217e-08
+2025-11-18 13:18:11,869 - token_tracker - INFO -  ^^^^^ Buy order response: {'success': False, 'message': 'Buy order for 1.217e-08 USDC of 2021', 'transaction_hash': None, 'timestamp': '2025-11-18T13:18:11.868059'}
+2025-11-18 13:18:11,870 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for 0x4c0b3fa9B7727C14bc55C9555CAF5d13F1d960A3 at $0.00000001
+2025-11-18 13:20:36,532 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in m5ki3L9pdkw28pPFGDFFa3oKygQ27mXvxhhdudnxNzoAECruMc7kGUqn8N6Ph7q9Z8vZhNjrdtPA7oqW9rbrtXi
+2025-11-18 13:20:36,535 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in m5ki3L9pdkw28pPFGDFFa3oKygQ27mXvxhhdudnxNzoAECruMc7kGUqn8N6Ph7q9Z8vZhNjrdtPA7oqW9rbrtXi
+2025-11-18 13:20:55,577 - token_tracker - INFO - 🛑 STOP LOSS triggered for TRUMP2: -99.42%
+2025-11-18 13:20:55,577 - token_tracker - INFO - 🚨 EXECUTING SELL ORDER for BqyXGyQ3VYKyZS13HvzeVeUBiyKd4xMYXPDR9KWNpump
+2025-11-18 13:20:55,578 - token_tracker - INFO -    Symbol: TRUMP2
+2025-11-18 13:20:55,578 - token_tracker - INFO -    Initial Price: $0.00052330
+2025-11-18 13:20:55,578 - token_tracker - INFO -    Current Price: $0.00000301
+2025-11-18 13:20:55,578 - token_tracker - INFO -    P/L: -99.42%
+2025-11-18 13:20:55,578 - token_tracker - INFO -    Status: TokenStatus.EXITED_STOPLOSS
+2025-11-18 13:22:38,287 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4H98JRo7o8cqZB9HKcu1gAuHUVkwttEJ7Uajv4xznZGji7LWK1kSridQ6as9SvRdmH7zTSf2HkC5m3t329dVTkYk
+2025-11-18 13:22:58,145 - token_tracker - ERROR - Transaction 4H98JRo7o8cqZB9HKcu1gAuHUVkwttEJ7Uajv4xznZGji7LWK1kSridQ6as9SvRdmH7zTSf2HkC5m3t329dVTkYk not available after 3 tries
+2025-11-18 13:23:55,287 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 63wrYxUaCxsDNF2GPakDK5Gbivp7xyRQWJ3x5nhCN2AajkCx6928xxmZXK85Za3ZERdHc1GJdiEEEDWS8nVXHqWM
+2025-11-18 13:23:59,058 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2uByLkrkRp5m5YtzVrytKqxL7vbpjfVWu2BzEoRoujx7iwG7UQSC9m7NzWiW3Yw4emd2mYgvcCmn88LZS3B5zG3H
+2025-11-18 13:24:17,435 - token_tracker - ERROR - Transaction 63wrYxUaCxsDNF2GPakDK5Gbivp7xyRQWJ3x5nhCN2AajkCx6928xxmZXK85Za3ZERdHc1GJdiEEEDWS8nVXHqWM not available after 3 tries
+2025-11-18 13:25:52,914 - token_tracker - INFO - ✅ Valid token: BjcRmwm8... (BjcR...)
+2025-11-18 13:25:52,915 - token_tracker - INFO - ➕ Added new token to track: IDLE at $0.001724
+2025-11-18 13:25:53,097 - token_tracker - INFO - ✅ Valid token: BjcRmwm8... (BjcR...)
+2025-11-18 13:25:53,098 - token_tracker - INFO - ➕ Added new token to track: IDLE at $0.001724
+2025-11-18 13:25:56,148 - token_tracker - INFO -  ^^^^^ Buy order response: {'success': True, 'message': 'Buy order for 0.001724 USDC of IDLE', 'transaction_hash': "{'status': 'Success', 'signature': 'JX2JnmceP3uoHuiZYheKh8XuTJwatj77STFCvbLaiqLrV5pXUgJe6Z8nr6aCG8khnx179KoEzWztNo8Tzgz14LY', 'slot': '380850705', 'code': 0, 'totalInputAmount': '1000000', 'totalOutputAmount': '577743551906', 'inputAmountResult': '999000', 'outputAmountResult': '577743551906', 'swapEvents': [{'inputMint': 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'inputAmount': '19980', 'outputMint': 'pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn', 'outputAmount': '6546276'}, {'inputMint': 'pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn', 'inputAmount': '6546276', 'outputMint': 'So11111111111111111111111111111111111111112', 'outputAmount': '146548'}, {'inputMint': 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'inputAmount': '979020', 'outputMint': 'So11111111111111111111111111111111111111112', 'outputAmount': '7149074'}, {'inputMint': 'So11111111111111111111111111111111111111112', 'inputAmount': '7295622', 'outputMint': 'BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT', 'outputAmount': '577743551906'}]}", 'timestamp': '2025-11-18T13:25:56.147197'}
+2025-11-18 13:25:56,149 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT at $0.00172400
+2025-11-18 13:25:59,635 - token_tracker - INFO -  ^^^^^ Buy order response: {'success': True, 'message': 'Buy order for 0.001724 USDC of IDLE', 'transaction_hash': "{'status': 'Success', 'signature': 'tQHeVRp2m3X7RVNzoAbXfoKsM6kJAkWoQtAx2opxW27vZf4qYu3QmaCULRG2eat4HURtwYJxyYie5zqToy643Bq', 'slot': '380850712', 'code': 0, 'totalInputAmount': '1000000', 'totalOutputAmount': '577695419695', 'inputAmountResult': '999000', 'outputAmountResult': '577695419695', 'swapEvents': [{'inputMint': 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'inputAmount': '989010', 'outputMint': 'So11111111111111111111111111111111111111112', 'outputAmount': '7222135'}, {'inputMint': 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'inputAmount': '9990', 'outputMint': '27G8MtK7VtTcCHkpASjSDdkWWYfoqT6ggEuKidVJidD4', 'outputAmount': '2145'}, {'inputMint': '27G8MtK7VtTcCHkpASjSDdkWWYfoqT6ggEuKidVJidD4', 'inputAmount': '2145', 'outputMint': 'So11111111111111111111111111111111111111112', 'outputAmount': '72989'}, {'inputMint': 'So11111111111111111111111111111111111111112', 'inputAmount': '7295124', 'outputMint': 'BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT', 'outputAmount': '577695419695'}]}", 'timestamp': '2025-11-18T13:25:59.633463'}
+2025-11-18 13:25:59,635 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT at $0.00172400
+2025-11-18 13:26:04,335 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2qkrybbujakHN47SsdsR5hTyPYqgpAdafK9c3m7amJ6v38N7npZYXpSJX6f3x8LwFVoVr1xRF5VopRSkmn321f1c
+2025-11-18 13:26:08,106 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2ByR4BaZLvwqjCy6CPXvAz8u1pg38hgGtjXGMcDBNEAxTuyqBJ1dDJmT23taijD8kLuqFeudmAiFsvjDPXFCivAk
+2025-11-18 13:26:26,510 - token_tracker - ERROR - Transaction 2qkrybbujakHN47SsdsR5hTyPYqgpAdafK9c3m7amJ6v38N7npZYXpSJX6f3x8LwFVoVr1xRF5VopRSkmn321f1c not available after 3 tries
+2025-11-18 13:28:06,685 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 45nLybvKTjHDub9Gdn5kgdbuKZKQygTDSJxr9atFG1PLDeHeM5BLFLRwUg3pBdQFoPd1f9fhahge5mkYXgRt7DVb
+2025-11-18 13:28:21,070 - token_tracker - INFO - 🛑 STOP LOSS triggered for ZKFG: -32.68%
+2025-11-18 13:28:21,070 - token_tracker - INFO - 🚨 EXECUTING SELL ORDER for 6pKDTUavWbdHH27nUBeZNGDSmg3gw5XMGq6gAPUf264F
+2025-11-18 13:28:21,070 - token_tracker - INFO -    Symbol: ZKFG
+2025-11-18 13:28:21,070 - token_tracker - INFO -    Initial Price: $0.00084280
+2025-11-18 13:28:21,070 - token_tracker - INFO -    Current Price: $0.00056734
+2025-11-18 13:28:21,071 - token_tracker - INFO -    P/L: -32.68%
+2025-11-18 13:28:21,071 - token_tracker - INFO -    Status: TokenStatus.EXITED_STOPLOSS
+2025-11-18 13:30:36,809 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3Vpjbvmt2vioD52W5AVEtwzGd3oA6eYfCcshAG6wivjjkW5DcwaA4ajJFTPcVv4kSkXnEkgFVMrsGzTpy9nTBwco
+2025-11-18 13:30:56,865 - token_tracker - ERROR - Transaction 3Vpjbvmt2vioD52W5AVEtwzGd3oA6eYfCcshAG6wivjjkW5DcwaA4ajJFTPcVv4kSkXnEkgFVMrsGzTpy9nTBwco not available after 3 tries
+2025-11-18 13:32:41,014 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3iPmatunhBDgytcUPXjH4igtMbUFxP978xvLm11jjGLJ5B8H6pnYNz6yHpyGAT84Zd4n85GADPVCsFvdtNn6FT5Y
+2025-11-18 13:32:44,952 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4P4LnPB5rfK6wmSNAuKWsf6ACxD4g1wBrrRVpDb3NtKo5nAWTEQpMgaeS4xCSRMaMVdYXYYefBQMT6BJHszBotbv
+2025-11-18 13:32:44,956 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4P4LnPB5rfK6wmSNAuKWsf6ACxD4g1wBrrRVpDb3NtKo5nAWTEQpMgaeS4xCSRMaMVdYXYYefBQMT6BJHszBotbv
+2025-11-18 13:33:06,203 - token_tracker - ERROR - Transaction 3iPmatunhBDgytcUPXjH4igtMbUFxP978xvLm11jjGLJ5B8H6pnYNz6yHpyGAT84Zd4n85GADPVCsFvdtNn6FT5Y not available after 3 tries
+2025-11-18 13:33:12,218 - token_tracker - WARNING - [attempt 2] getTransaction failed for 4P4LnPB5rfK6wmSNAuKWsf6ACxD4g1wBrrRVpDb3NtKo5nAWTEQpMgaeS4xCSRMaMVdYXYYefBQMT6BJHszBotbv: 
+2025-11-18 13:33:12,609 - token_tracker - INFO - 🛑 STOP LOSS triggered for LUCID: -33.82%
+2025-11-18 13:33:12,609 - token_tracker - INFO - 🚨 EXECUTING SELL ORDER for qZtEkb7KAPDtgx8AzeMPWMvXAiYXto5dGbJGk9Zpump
+2025-11-18 13:33:12,609 - token_tracker - INFO -    Symbol: LUCID
+2025-11-18 13:33:12,610 - token_tracker - INFO -    Initial Price: $0.00045270
+2025-11-18 13:33:12,610 - token_tracker - INFO -    Current Price: $0.00029961
+2025-11-18 13:33:12,610 - token_tracker - INFO -    P/L: -33.82%
+2025-11-18 13:33:12,610 - token_tracker - INFO -    Status: TokenStatus.EXITED_STOPLOSS
+2025-11-18 13:33:49,981 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in ryn8NkYEbpC5G85EQ9fPW6js6BmXdRTALs3HxhHbH5Jn5SYH3mrNnic6YqdWVwE3pfEqcghvkSMqF84iXsmgw2Z
+2025-11-18 13:34:09,725 - token_tracker - ERROR - Transaction ryn8NkYEbpC5G85EQ9fPW6js6BmXdRTALs3HxhHbH5Jn5SYH3mrNnic6YqdWVwE3pfEqcghvkSMqF84iXsmgw2Z not available after 3 tries
+2025-11-18 13:34:17,736 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5Ry9NB4SZC8X4ncqpQjp1AE59MK3nTSWQuJwsNonmJTG1tZPDuVEiW56ANzhDjPdsMtLiQcd95NozDNHBMXsp23v
+2025-11-18 13:34:37,335 - token_tracker - ERROR - Transaction 5Ry9NB4SZC8X4ncqpQjp1AE59MK3nTSWQuJwsNonmJTG1tZPDuVEiW56ANzhDjPdsMtLiQcd95NozDNHBMXsp23v not available after 3 tries
+2025-11-18 13:35:40,214 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3SguJej4f1kb55Y134fGQEyxRTBaBvyQLR7tSEN9e1CjbUZw6wXS1y4UR1w3ihkc8EKAvRsZJ9Knphy9ssk6g6oZ
+2025-11-18 13:35:59,866 - token_tracker - ERROR - Transaction 3SguJej4f1kb55Y134fGQEyxRTBaBvyQLR7tSEN9e1CjbUZw6wXS1y4UR1w3ihkc8EKAvRsZJ9Knphy9ssk6g6oZ not available after 3 tries
+2025-11-18 13:37:47,598 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 37fxoVt2dSC8atVtdeCEgP2zcsqMrJzjDPZYhZfEbr7Lb7ixEf7ecZY3Kpaj2EaLPYFu9xQuMc1hPFM9Rh8bBsNn
+2025-11-18 13:37:58,666 - token_tracker - INFO - ✅ Valid token: 7wbiW1Xu... (7wbi...)
+2025-11-18 13:37:58,666 - token_tracker - INFO - ➕ Added new token to track: LOOKSMAX at $0.0001726
+2025-11-18 13:38:07,987 - token_tracker - ERROR - Transaction 37fxoVt2dSC8atVtdeCEgP2zcsqMrJzjDPZYhZfEbr7Lb7ixEf7ecZY3Kpaj2EaLPYFu9xQuMc1hPFM9Rh8bBsNn not available after 3 tries
+2025-11-18 13:38:07,990 - token_tracker - INFO -  ^^^^^ Buy order response: {'success': True, 'message': 'Buy order for 0.0001726 USDC of LOOKSMAX', 'transaction_hash': "{'status': 'Success', 'signature': '38UQMd4EqxZHdDnJ8b9Hgm8N4B7Sb5jfbwUaaHy57v8QLcKU3MAPWE9n52cDyQfaQx82sSG18m3pJqZqMhp9rct6', 'slot': '380852524', 'code': 0, 'totalInputAmount': '1000000', 'totalOutputAmount': '5775167122', 'inputAmountResult': '999000', 'outputAmountResult': '5775167122', 'swapEvents': [{'inputMint': 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'inputAmount': '59940', 'outputMint': 'So11111111111111111111111111111111111111112', 'outputAmount': '437147'}, {'inputMint': 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'inputAmount': '519480', 'outputMint': 'So11111111111111111111111111111111111111112', 'outputAmount': '3788369'}, {'inputMint': 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'inputAmount': '419580', 'outputMint': 'So11111111111111111111111111111111111111112', 'outputAmount': '3059931'}, {'inputMint': 'So11111111111111111111111111111111111111112', 'inputAmount': '7285447', 'outputMint': '7wbiW1XuGD77F4tSDWyMu73bJKwWX4zKwDfjdPRMpump', 'outputAmount': '5775167122'}]}", 'timestamp': '2025-11-18T13:38:02.042827'}
+2025-11-18 13:38:07,991 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for 7wbiW1XuGD77F4tSDWyMu73bJKwWX4zKwDfjdPRMpump at $0.00017260
+2025-11-18 13:38:11,497 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 65kgEcGF5einpVLtoJTRvdr6dgcSjxotw7Nno1vcR9WxVqfAqSrub2zLxTH5Z9X1chkyE6vAR5s3uxAJDWmdCngX
+2025-11-18 13:38:31,487 - token_tracker - ERROR - Transaction 65kgEcGF5einpVLtoJTRvdr6dgcSjxotw7Nno1vcR9WxVqfAqSrub2zLxTH5Z9X1chkyE6vAR5s3uxAJDWmdCngX not available after 3 tries
+2025-11-18 13:39:27,027 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 59XxTeLYmjBpJXa1xiYSsr9MYoEV9APMt7tBgT7KaUpzqbV8CYTLxPFLV5S2CUXSDLGhG81kyUWux1zrgD7CxvmJ
+2025-11-18 13:39:46,482 - token_tracker - ERROR - Transaction 59XxTeLYmjBpJXa1xiYSsr9MYoEV9APMt7tBgT7KaUpzqbV8CYTLxPFLV5S2CUXSDLGhG81kyUWux1zrgD7CxvmJ not available after 3 tries
+2025-11-18 13:42:53,059 - token_tracker - INFO - ✅ Valid token: F7pB3Zdf... (F7pB...)
+2025-11-18 13:42:53,059 - token_tracker - INFO - ➕ Added new token to track: NOTHING at $0.0009458
+2025-11-18 13:42:55,393 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4PLbzSVtn7d5B45vU297ih1DsHHRi65M4RU7P7dJUTucZGxeMAiDNrCS8U9vXwZse7ZFyPRtWkGDHbKvrNnUJVSp
+2025-11-18 13:42:59,277 - token_tracker - INFO -  ^^^^^ Buy order response: {'success': True, 'message': 'Buy order for 0.0009458 USDC of NOTHING', 'transaction_hash': "{'status': 'Success', 'signature': '4PLbzSVtn7d5B45vU297ih1DsHHRi65M4RU7P7dJUTucZGxeMAiDNrCS8U9vXwZse7ZFyPRtWkGDHbKvrNnUJVSp', 'slot': '380853263', 'code': 0, 'totalInputAmount': '1000000', 'totalOutputAmount': '1014923334', 'inputAmountResult': '999000', 'outputAmountResult': '1014923334'}", 'timestamp': '2025-11-18T13:42:56.380260'}
+2025-11-18 13:42:59,277 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for F7pB3ZdfBnyFw2LRHydWEn9BmhEa5XihXLjhySFRpump at $0.00094580
+2025-11-18 13:43:16,222 - token_tracker - ERROR - Transaction 4PLbzSVtn7d5B45vU297ih1DsHHRi65M4RU7P7dJUTucZGxeMAiDNrCS8U9vXwZse7ZFyPRtWkGDHbKvrNnUJVSp not available after 3 tries
+2025-11-18 13:46:19,674 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2oubwhmQgJULYhXkRF8SNoQhYQ4idfpShGjkmvfXQnYtZJzH4zhtZdRUTNNLjpjD9xLgHGiCvownTpWj4SUhtpi4
+2025-11-18 13:46:39,257 - token_tracker - ERROR - Transaction 2oubwhmQgJULYhXkRF8SNoQhYQ4idfpShGjkmvfXQnYtZJzH4zhtZdRUTNNLjpjD9xLgHGiCvownTpWj4SUhtpi4 not available after 3 tries
+2025-11-18 13:47:02,362 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3kczbCaZTxMBad9hus6aQGVrZkvXLismQqVd61H66Q62v69vccGRN4Xx5pdVeuiLF6QiFR11PU5iPsnPYYWzMefo
+2025-11-18 13:47:12,505 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2XmUeFb39JRAhvbyK1K7DwLb4JovwrTaoCLNDqxstNkvX9mPen8UBDkwAgikK3SWZRJaT6vb3QbLhRvJZonwucP6
+2025-11-18 13:47:21,844 - token_tracker - ERROR - Transaction 3kczbCaZTxMBad9hus6aQGVrZkvXLismQqVd61H66Q62v69vccGRN4Xx5pdVeuiLF6QiFR11PU5iPsnPYYWzMefo not available after 3 tries
+2025-11-18 13:48:00,786 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2CyXanzk9HYC5x4vRDqgEnj2ww4egBFd3JTAtf7W1S3YogQDWeTrRfUuAFnmyZK9joKobLxpEpVEJUqyConkwfx1
+2025-11-18 13:49:33,485 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 29xBAqxFLJ5nJC2PiZS7Hk7Vs4t81rVpCi4Py99p9gUX8T8S6xfjjvERg2e3QQX6a5Dt6Uz8mn8aKjZTQPxf9weA
+2025-11-18 13:49:53,304 - token_tracker - ERROR - Transaction 29xBAqxFLJ5nJC2PiZS7Hk7Vs4t81rVpCi4Py99p9gUX8T8S6xfjjvERg2e3QQX6a5Dt6Uz8mn8aKjZTQPxf9weA not available after 3 tries
+2025-11-18 13:50:52,696 - token_tracker - INFO - ✅ Valid token: 92qShDEJ... (92qS...)
+2025-11-18 13:50:52,696 - token_tracker - INFO - ➕ Added new token to track: MFC at $0.00276
+2025-11-18 13:50:56,055 - token_tracker - INFO -  ^^^^^ Buy order response: {'success': True, 'message': 'Buy order for 0.00276 USDC of MFC', 'transaction_hash': "{'status': 'Success', 'signature': '5MXcaTSqUyn1ZFysR3k6RcW2BYLo7EzBmfPNLDDpjcQqrKCgDejYuiUs7CxXZ6Pas5UtGAuXZaNtgBW47Y4nU49V', 'slot': '380854473', 'code': 0, 'totalInputAmount': '1000000', 'totalOutputAmount': '353944877', 'inputAmountResult': '999000', 'outputAmountResult': '353944877', 'swapEvents': [{'inputMint': 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', 'inputAmount': '999000', 'outputMint': 'So11111111111111111111111111111111111111112', 'outputAmount': '7277768'}, {'inputMint': 'So11111111111111111111111111111111111111112', 'inputAmount': '7277768', 'outputMint': '92qShDEJKE5djAD81rCzeew3DLYGF8SmzsPQ3AJWpump', 'outputAmount': '353944877'}]}", 'timestamp': '2025-11-18T13:50:56.054018'}
+2025-11-18 13:50:56,055 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for 92qShDEJKE5djAD81rCzeew3DLYGF8SmzsPQ3AJWpump at $0.00276000
+2025-11-18 13:51:04,322 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2Cj2fX4zZiCSoushwRf3MGiHBHtuuMxEUjoisFC28VJiG4sbke9ooR37EssW6T2HdZY43iz1L1S7B79C7YTmYDpa
+2025-11-18 13:51:25,009 - token_tracker - ERROR - Transaction 2Cj2fX4zZiCSoushwRf3MGiHBHtuuMxEUjoisFC28VJiG4sbke9ooR37EssW6T2HdZY43iz1L1S7B79C7YTmYDpa not available after 3 tries
+2025-11-18 13:54:47,814 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3F2pB8r2TB1MXhqur6u6rJfoxLE9F5uWYFitdNCQ4L1vQqDh83AFG2GSeMA9CHViFhzCidbpLNn76L8vMkwQL11R
+2025-11-18 13:54:58,334 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5EWveFu34dE8BDtGa4ooA12BTvV1s4jziLGH9rs3sYZZPMkw3HaJND6W8hQqgdXVbLmK8gaV4A9maRrzvXBxgugR
+2025-11-18 13:55:08,077 - token_tracker - ERROR - Transaction 3F2pB8r2TB1MXhqur6u6rJfoxLE9F5uWYFitdNCQ4L1vQqDh83AFG2GSeMA9CHViFhzCidbpLNn76L8vMkwQL11R not available after 3 tries
+2025-11-18 13:55:14,433 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3oXXZK7VXhZXLhcywuz9GGpYBWcRQhcwGyX4J2RREMoXvgZqvukeMJAwuCPudDvmNMuytJzfU2TUfq9m9LqX3HSm
+2025-11-18 13:55:34,054 - token_tracker - ERROR - Transaction 3oXXZK7VXhZXLhcywuz9GGpYBWcRQhcwGyX4J2RREMoXvgZqvukeMJAwuCPudDvmNMuytJzfU2TUfq9m9LqX3HSm not available after 3 tries
+2025-11-18 13:55:34,074 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2qXgigiof1iekQy5n87Rys3UWut7nhRVkxad1c8oBbHXVVkdjvcuyvauxrMRsmphNLUP3ZNzwWfACVatrHjvxJ13
+2025-11-18 13:55:44,887 - token_tracker - INFO - 📈 MFC: $0.00223707 (-18.95%)
+2025-11-18 13:58:53,465 - token_tracker - INFO - ✅ Valid token: 5gsDMgG3... (5gsD...)
+2025-11-18 13:58:53,466 - token_tracker - INFO - ➕ Added new token to track: FAHHHH at $0.0007484
+2025-11-18 13:58:55,537 - token_tracker - INFO -  ^^^^^ Buy order response: {'success': False, 'message': 'Buy order for 0.0007484 USDC of FAHHHH', 'transaction_hash': None, 'timestamp': '2025-11-18T13:58:55.535333'}
+2025-11-18 13:58:55,537 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for 5gsDMgG3p1xZR7qvbS88EjNSDesBdJjYH7PGemUgpump at $0.00074840
+2025-11-18 14:00:00,539 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5YZoBmjqCxw31tD4PkBQyMas8VJbM7NwYaL9VWFypgYN7bNz4kDyYwscvC7k7MCZ7zj8dqD3mMEh3WiBgQggGdCK
+2025-11-18 14:00:21,914 - token_tracker - ERROR - Transaction 5YZoBmjqCxw31tD4PkBQyMas8VJbM7NwYaL9VWFypgYN7bNz4kDyYwscvC7k7MCZ7zj8dqD3mMEh3WiBgQggGdCK not available after 3 tries
+2025-11-18 14:00:58,600 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3VAabQqA8Zq8NtUtWbeXxWcBDAUwW7yrBGr7uwsizVNZGFgQH2vsU56SaKEmqmdfjgNsfpBsm22JLBLGwjCQXJYS
+2025-11-18 14:01:18,698 - token_tracker - ERROR - Transaction 3VAabQqA8Zq8NtUtWbeXxWcBDAUwW7yrBGr7uwsizVNZGFgQH2vsU56SaKEmqmdfjgNsfpBsm22JLBLGwjCQXJYS not available after 3 tries
+2025-11-18 14:02:26,562 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2pCdjscZkVagAD6i1Z1dc8bcQxLkD94ksJdjyudtAve47PomXyNzb7MCxjzffD1Mwu4fnsF5QUYn2TWz96oa8fso
+2025-11-18 14:02:45,904 - token_tracker - ERROR - Transaction 2pCdjscZkVagAD6i1Z1dc8bcQxLkD94ksJdjyudtAve47PomXyNzb7MCxjzffD1Mwu4fnsF5QUYn2TWz96oa8fso not available after 3 tries
+2025-11-18 14:02:49,943 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3pMEgWBXFFdc79ZNw1gKSUt9nDJhxRFTmvewk3m2z3c5b6gM1whJpvxmgSq94GrATZx4EW6YhwUuehyKczoQr2wM
+2025-11-18 14:03:09,252 - token_tracker - ERROR - Transaction 3pMEgWBXFFdc79ZNw1gKSUt9nDJhxRFTmvewk3m2z3c5b6gM1whJpvxmgSq94GrATZx4EW6YhwUuehyKczoQr2wM not available after 3 tries
+2025-11-18 14:03:10,050 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in iMnAMfsYkrmrawSZCRbmv9gYsJtTgUzL5L4xPyAZHJoQ3pnTSNDPj7KuQN5dCAzKd8inEHGt4upTcy98CpCTam5
+2025-11-18 14:03:29,301 - token_tracker - ERROR - Transaction iMnAMfsYkrmrawSZCRbmv9gYsJtTgUzL5L4xPyAZHJoQ3pnTSNDPj7KuQN5dCAzKd8inEHGt4upTcy98CpCTam5 not available after 3 tries
+2025-11-18 14:03:30,262 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4U76CdTzyS4o6Ld4CRyirmZMFMuNwHCXvJm6mA6uY7KgVinQvnyXmdaSANB21RsqJPwW52Ec1zZkVjEpTNeaGwH8
+2025-11-18 14:03:49,510 - token_tracker - ERROR - Transaction 4U76CdTzyS4o6Ld4CRyirmZMFMuNwHCXvJm6mA6uY7KgVinQvnyXmdaSANB21RsqJPwW52Ec1zZkVjEpTNeaGwH8 not available after 3 tries
+2025-11-18 14:04:17,871 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4H6V2Zrg4SFiG3iLegWJMUaHHDLQsrS5tHMYRAbDSd4S9fg1SQPyWKmBugJJpkMQwZqxpfhQ9m1GQPvo5vdZLioa
+2025-11-18 14:04:31,318 - token_tracker - INFO - 🛑 STOP LOSS triggered for DIH: -99.96%
+2025-11-18 14:04:31,319 - token_tracker - INFO - 🚨 EXECUTING SELL ORDER for 7EoxBarbcbdmibuTZ4MgWzuBNQkXqKuonjfD7Eyepump
+2025-11-18 14:04:31,319 - token_tracker - INFO -    Symbol: DIH
+2025-11-18 14:04:31,319 - token_tracker - INFO -    Initial Price: $0.00035100
+2025-11-18 14:04:31,320 - token_tracker - INFO -    Current Price: $0.00000013
+2025-11-18 14:04:31,320 - token_tracker - INFO -    P/L: -99.96%
+2025-11-18 14:04:31,320 - token_tracker - INFO -    Status: TokenStatus.EXITED_STOPLOSS
+2025-11-18 14:07:21,066 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 25bTY36374j5WLf76JGkF2CBKWPtAanEUQLUSGZ2dKv3XYk1Dp8VFM1eWfB9o75WD4dYcouPxG4wWqD9T2uG4Rx5
+2025-11-18 14:07:24,968 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5ikgvwysF46p5Bje1JtXZk7D6PuK9GkhpMw2ifKQz7hEQg4os4dLMKXqL2Z2hxxorcw18NJnaeVVd8oi954LS7Yq
+2025-11-18 14:07:43,314 - token_tracker - ERROR - Transaction 25bTY36374j5WLf76JGkF2CBKWPtAanEUQLUSGZ2dKv3XYk1Dp8VFM1eWfB9o75WD4dYcouPxG4wWqD9T2uG4Rx5 not available after 3 tries
+2025-11-18 14:07:49,346 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in EKsbHhy4JV7qVUEHVU47py2zvNvQwrYyXhFfGjDHNBDv1jkguPuKKoSzv7fmtEQg3grwPodf3g3uA543WbJ7RU7
+2025-11-18 14:07:52,862 - token_tracker - INFO - 🛑 STOP LOSS triggered for MFC: -87.67%
+2025-11-18 14:07:52,863 - token_tracker - INFO - 🚨 EXECUTING SELL ORDER for 92qShDEJKE5djAD81rCzeew3DLYGF8SmzsPQ3AJWpump
+2025-11-18 14:07:52,863 - token_tracker - INFO -    Symbol: MFC
+2025-11-18 14:07:52,863 - token_tracker - INFO -    Initial Price: $0.00276000
+2025-11-18 14:07:52,863 - token_tracker - INFO -    Current Price: $0.00034033
+2025-11-18 14:07:52,863 - token_tracker - INFO -    P/L: -87.67%
+2025-11-18 14:07:52,863 - token_tracker - INFO -    Status: TokenStatus.EXITED_STOPLOSS
+2025-11-18 14:08:17,285 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4xJB7fjwvYJC3V4ckNXrV2D8NuNeFKCQZJSQ4C84ptRYjHStDDYjsBApwQMN9eqQcegjtaYzuZgMzawTsU91DGZ9
+2025-11-18 14:08:37,244 - token_tracker - ERROR - Transaction 4xJB7fjwvYJC3V4ckNXrV2D8NuNeFKCQZJSQ4C84ptRYjHStDDYjsBApwQMN9eqQcegjtaYzuZgMzawTsU91DGZ9 not available after 3 tries
+2025-11-18 14:10:39,108 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5wTfD1RiqEzmRbeXWU4dNCf3vVPDhk9sd92rFtxy7FPF72awiJo43sBKvLMPQpjmPHNfV3LDKbb2seRkJdCwsnvh
+2025-11-18 14:11:00,466 - token_tracker - ERROR - Transaction 5wTfD1RiqEzmRbeXWU4dNCf3vVPDhk9sd92rFtxy7FPF72awiJo43sBKvLMPQpjmPHNfV3LDKbb2seRkJdCwsnvh not available after 3 tries
+2025-11-18 14:11:26,517 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 49m6PrApPfvZ71Jf1eWeX9fkmepEgF3twceaxfByB2wER1FRDKCmVM2bW4J15kN3zeiTtcXmartPCNrXdHWSjzkE
+2025-11-18 14:11:46,375 - token_tracker - ERROR - Transaction 49m6PrApPfvZ71Jf1eWeX9fkmepEgF3twceaxfByB2wER1FRDKCmVM2bW4J15kN3zeiTtcXmartPCNrXdHWSjzkE not available after 3 tries
+2025-11-18 14:12:13,326 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4z86J8KAcHuaYgfoUJm5NVGNm5ukT6XnNggHhydwcNWDEcbpmHKJNuDB9rguLq9WJy8NZuMQdGC6FeZJTvFquRVi
+2025-11-18 14:12:17,873 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3NGyKfkPyEA7JpWdmFTQL6GEmGQeTyChEf3gCNjefNQxD6BVoPVSRnGLdoZf9ZjMbkD7LmkHRtDj1anbtgd8CcAf
+2025-11-18 14:12:36,308 - token_tracker - ERROR - Transaction 4z86J8KAcHuaYgfoUJm5NVGNm5ukT6XnNggHhydwcNWDEcbpmHKJNuDB9rguLq9WJy8NZuMQdGC6FeZJTvFquRVi not available after 3 tries
+2025-11-18 14:12:47,003 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2V8YmwQBH5Uq5tnFSpenLUoBrgVDsFBHGyH2QjsVmp6RebHXmnurSAEU8Yk4VqbQbZMh24BefsHMxVPjZSE95f6J
+2025-11-18 14:12:47,011 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3J8Smv9bwVeT7FPwqttKRxtThMxx8ogZEXEQ88BPzjrmiN7vL4Wk9GjemUYLhbux9NSd1fh7GdjHJ54WGD7ufW7i
+2025-11-18 14:12:47,148 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 65NdxzXzj9wqTJ3u5MygyBu7XPKCWmtpHkVLiEj4wENhvKcpNHeXEY9seV3SzkT2onJHjJGpnTTFo1QFtapC4ors
+2025-11-18 14:12:47,322 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in kwDCbj4D25eSYEuTHzx2zr8vBu1BW6NY9Zz5pq7pVzbr8pNanjqXwsAfDrnMpg4Q134jNGEkz2MMeetiF3oZZ2o
+2025-11-18 14:13:11,454 - token_tracker - WARNING - [attempt 2] getTransaction failed for 3J8Smv9bwVeT7FPwqttKRxtThMxx8ogZEXEQ88BPzjrmiN7vL4Wk9GjemUYLhbux9NSd1fh7GdjHJ54WGD7ufW7i: 
+2025-11-18 14:13:11,459 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in jCnAFPFwUFgkbK1SUUouFP7UzF6qE2t6d3vAgeoLLBEAwoCpT6B9LrHjDQx4E1peD6U4X5mvoeKsJ5EdwEJCXLV
+2025-11-18 14:13:11,512 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4ambyEfDRyn7ccBfPLZJt2vcuHwTFtmKGJHaCi3zeHwWbkLg1XiwmL9zCmBzfz1BfrpdPA5PK8tdjxhinjWcZY2i
+2025-11-18 14:13:12,209 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3A9uCz515iTTjdGgAJxzLCakVbVz1qzdPMquQc5nUTXB91parkz8hkhh2q4qcoGUwQkHJfYCcJnK8FYdVBpa4ySU
+2025-11-18 14:13:12,291 - token_tracker - INFO - 🛑 STOP LOSS triggered for SOYJAK: -44.96%
+2025-11-18 14:13:12,292 - token_tracker - INFO - 🚨 EXECUTING SELL ORDER for Lhgmypk4MkeEeZUFRnxXFHhw6h5HbSHAteSx5D4pump
+2025-11-18 14:13:12,292 - token_tracker - INFO -    Symbol: SOYJAK
+2025-11-18 14:13:12,292 - token_tracker - INFO -    Initial Price: $0.00008680
+2025-11-18 14:13:12,292 - token_tracker - INFO -    Current Price: $0.00004778
+2025-11-18 14:13:12,292 - token_tracker - INFO -    P/L: -44.96%
+2025-11-18 14:13:12,293 - token_tracker - INFO -    Status: TokenStatus.EXITED_STOPLOSS
+2025-11-18 14:13:46,571 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 37392yrvd516cxpywaSxBMqQGRYYSnPiwzzd9Lqyn4Frv5JgbCgYCKEWXK9mV8S3SnQMmFKb4KGcCqdszSFVRYoz
+2025-11-18 14:13:56,969 - token_tracker - INFO - ✅ Valid token: 8vErJhFe... (8vEr...)
+2025-11-18 14:13:56,969 - token_tracker - INFO - ➕ Added new token to track: 61 at $2.344e-05
+2025-11-18 14:14:06,066 - token_tracker - ERROR - Transaction 37392yrvd516cxpywaSxBMqQGRYYSnPiwzzd9Lqyn4Frv5JgbCgYCKEWXK9mV8S3SnQMmFKb4KGcCqdszSFVRYoz not available after 3 tries
+2025-11-18 14:14:06,069 - token_tracker - WARNING - Failed to get metadata for 8vErJhFeyoc63dx9BrN7UuHch5bT4DyPqqpLV2dpump: 
+2025-11-18 14:14:06,070 - token_tracker - INFO - ✅ Valid token: 8vErJhFe... (8vEr...)
+2025-11-18 14:14:06,070 - token_tracker - INFO - ➕ Added new token to track: 61 at $2.344e-05
+2025-11-18 14:14:06,072 - token_tracker - INFO -  ^^^^^ Buy order response: {'success': False, 'message': 'Buy order for 2.344e-05 USDC of 61', 'transaction_hash': None, 'timestamp': '2025-11-18T14:13:59.295127'}
+2025-11-18 14:14:06,072 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for 8vErJhFeyoc63dx9BrN7UuHch5bT4DyPqqpLV2dpump at $0.00002344
+2025-11-18 14:14:08,237 - token_tracker - INFO -  ^^^^^ Buy order response: {'success': False, 'message': 'Buy order for 2.344e-05 USDC of 61', 'transaction_hash': None, 'timestamp': '2025-11-18T14:14:08.236355'}
+2025-11-18 14:14:08,237 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for 8vErJhFeyoc63dx9BrN7UuHch5bT4DyPqqpLV2dpump at $0.00002344
+2025-11-18 17:50:04,288 - token_tracker - INFO - Initializing application...
+2025-11-18 17:50:04,289 - token_tracker - INFO - Loaded 16 tokens from file
+2025-11-18 17:50:04,289 - token_tracker - INFO - 🔌 Connecting to WebSocket...
+2025-11-18 17:50:04,938 - token_tracker - INFO - ✅ WebSocket connected successfully
+2025-11-18 17:50:04,940 - token_tracker - INFO - ✅ Subscribed to Raydium_V4
+2025-11-18 17:50:04,941 - token_tracker - INFO - ✅ Subscribed to Raydium_CLMM
+2025-11-18 17:50:04,942 - token_tracker - INFO - ✅ Subscribed to Orca_Whirlpool
+2025-11-18 17:50:04,942 - token_tracker - INFO - ✅ Subscribed to Pump_fun
+2025-11-18 17:51:16,140 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3nfPQCATN7Wz7S6L9XEpUnp5jNWpZRhBkCXpHAvxQk8rcdEVoFrNYnpQ4QBz57SmMCS84iNa2WbbPUVn21B7hwEX
+2025-11-18 17:51:36,174 - token_tracker - ERROR - Transaction 3nfPQCATN7Wz7S6L9XEpUnp5jNWpZRhBkCXpHAvxQk8rcdEVoFrNYnpQ4QBz57SmMCS84iNa2WbbPUVn21B7hwEX not available after 3 tries
+2025-11-18 17:51:58,985 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4NNFCzE2eBNQUSe6Gxw9A33BaLCfQCaEyDivTGEZjBinWxXYgZr78BZk1wx8Grfv7rHem1PzjJ93qydYQL47Mu1P
+2025-11-18 17:52:03,050 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in RPz1kbLU1Cz6tg5QXQxphfdxkH86hJt3fKMGHX3fUhYjnecB1LTp1o5EPzfrVmjcbCnyCUMsH5K69RH5VLapNbM
+2025-11-18 17:52:21,438 - token_tracker - ERROR - Transaction 4NNFCzE2eBNQUSe6Gxw9A33BaLCfQCaEyDivTGEZjBinWxXYgZr78BZk1wx8Grfv7rHem1PzjJ93qydYQL47Mu1P not available after 3 tries
+2025-11-18 17:52:28,426 - token_tracker - INFO - 📈 FAHHHH: $0.00057885 (-22.65%)
+2025-11-18 17:52:37,454 - token_tracker - WARNING - WebSocket connection closed
+2025-11-18 17:52:37,454 - token_tracker - INFO - 🔄 Reconnecting in 1 seconds...
+2025-11-18 17:52:38,456 - token_tracker - INFO - 🔌 Connecting to WebSocket...
+2025-11-18 17:52:38,956 - token_tracker - INFO - ✅ WebSocket connected successfully
+2025-11-18 17:52:38,957 - token_tracker - INFO - ✅ Subscribed to Raydium_V4
+2025-11-18 17:52:38,957 - token_tracker - INFO - ✅ Subscribed to Raydium_CLMM
+2025-11-18 17:52:38,957 - token_tracker - INFO - ✅ Subscribed to Orca_Whirlpool
+2025-11-18 17:52:38,958 - token_tracker - INFO - ✅ Subscribed to Pump_fun
+2025-11-18 17:53:52,711 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5V4wwbiuPdboi5PgxMAA9WMEr45mYGhRKkz1kF1mmXojUJfsdtkQkNDzvsQUGcUBgydbrPB2cTG1czN3YZSnnP9e
+2025-11-18 17:54:12,134 - token_tracker - ERROR - Transaction 5V4wwbiuPdboi5PgxMAA9WMEr45mYGhRKkz1kF1mmXojUJfsdtkQkNDzvsQUGcUBgydbrPB2cTG1czN3YZSnnP9e not available after 3 tries
+2025-11-18 17:57:34,385 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2UMFgoeHykYa91EnxJ4SBCE2rdrSmrrgUeDU6qsA9nUMzd8KeawdA9WK7QhxiKRpWa2rwA7gHopSuWB7tkpaztdN
+2025-11-18 17:57:54,069 - token_tracker - ERROR - Transaction 2UMFgoeHykYa91EnxJ4SBCE2rdrSmrrgUeDU6qsA9nUMzd8KeawdA9WK7QhxiKRpWa2rwA7gHopSuWB7tkpaztdN not available after 3 tries
+2025-11-18 17:58:06,828 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5W7RHmE5pyCgfgvzLFLe8YkJKddV4wgSjYkzowcddHE4pwUNmGuDAeUyM4RxEXfdMz72Wf94nMeARDAEqKZwUepW
+2025-11-18 17:58:26,414 - token_tracker - ERROR - Transaction 5W7RHmE5pyCgfgvzLFLe8YkJKddV4wgSjYkzowcddHE4pwUNmGuDAeUyM4RxEXfdMz72Wf94nMeARDAEqKZwUepW not available after 3 tries
+2025-11-18 18:03:30,332 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4i7NerR94u6fH2TvxfCKKktS85YV85N8yG1iRwaKoQZp3LqqWWhZq4HaVfkcvcgXyQgdDes8WHjNKSdTw7vB1DPP
+2025-11-18 18:03:49,673 - token_tracker - ERROR - Transaction 4i7NerR94u6fH2TvxfCKKktS85YV85N8yG1iRwaKoQZp3LqqWWhZq4HaVfkcvcgXyQgdDes8WHjNKSdTw7vB1DPP not available after 3 tries
+2025-11-18 18:04:24,823 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5JE7Ezj6x2sfgXVeozjiUd9NRiRJoTpbr6GCy31LQJYn6Zf5pwVFpCjkALczHR1pRfmbiHkGK8R4LwdQeyLex4ru
+2025-11-18 18:04:44,354 - token_tracker - ERROR - Transaction 5JE7Ezj6x2sfgXVeozjiUd9NRiRJoTpbr6GCy31LQJYn6Zf5pwVFpCjkALczHR1pRfmbiHkGK8R4LwdQeyLex4ru not available after 3 tries
+2025-11-18 18:05:22,660 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5SDib8Be6Xk8rWKJ2kXVUmkUBN4N1Y4dNVvHZfhtCqf2cgmriG7q3i1vWqn3WRXDcyfum1wKSKTr1MKyDQfjoGRr
+2025-11-18 18:05:35,414 - token_tracker - INFO - 🛑 STOP LOSS triggered for PUMP2: -62.57%
+2025-11-18 18:05:35,414 - token_tracker - INFO - 🚨 EXECUTING SELL ORDER for 5oBshGwHKNTSk4KrTridfMmNGWk39K3k8jnxm1hxpump
+2025-11-18 18:05:35,414 - token_tracker - INFO -    Symbol: PUMP2
+2025-11-18 18:05:35,414 - token_tracker - INFO -    Initial Price: $0.00072610
+2025-11-18 18:05:35,415 - token_tracker - INFO -    Current Price: $0.00027181
+2025-11-18 18:05:35,415 - token_tracker - INFO -    P/L: -62.57%
+2025-11-18 18:05:35,415 - token_tracker - INFO -    Status: TokenStatus.EXITED_STOPLOSS
+2025-11-18 18:05:46,316 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5NuACCB3vLdGtwUHUhfxjJFiU7925U9KDQ6eQCEgK3n9xtzx3PzxoskQpSYfzSFMufSfmmQoHqC4ds7NMYtcmSbU
+2025-11-18 18:06:05,970 - token_tracker - ERROR - Transaction 5NuACCB3vLdGtwUHUhfxjJFiU7925U9KDQ6eQCEgK3n9xtzx3PzxoskQpSYfzSFMufSfmmQoHqC4ds7NMYtcmSbU not available after 3 tries
+2025-11-18 18:06:46,424 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5YzDkPiWWt4LuntcEdgLiwnW8QqYAt5a6f2VQqBjfrpKUFPzZm6eo17ZFXxwXLUZpv21gcmMNzBKiN1N5jVWr3Aw
+2025-11-18 18:07:05,923 - token_tracker - ERROR - Transaction 5YzDkPiWWt4LuntcEdgLiwnW8QqYAt5a6f2VQqBjfrpKUFPzZm6eo17ZFXxwXLUZpv21gcmMNzBKiN1N5jVWr3Aw not available after 3 tries
+2025-11-18 18:07:13,339 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2TxejsbNGEY5RdJDvrXJGQTsGWUmwjogxARqSibdRebfWqxKDsUeDavMsZvJSKLhNnZLyC9duq8Uuf4RTPuviWw6
+2025-11-18 18:07:33,052 - token_tracker - ERROR - Transaction 2TxejsbNGEY5RdJDvrXJGQTsGWUmwjogxARqSibdRebfWqxKDsUeDavMsZvJSKLhNnZLyC9duq8Uuf4RTPuviWw6 not available after 3 tries
+2025-11-18 18:08:50,239 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 55rYzVb1QrpRsFh2ckZ6piUzXcVKkXNUubRiD7qRhNgGECkX8dafTfoMuWwGcWf8TnkbAwAth7nkjFq7TMAp3yhq
+2025-11-18 18:09:10,273 - token_tracker - ERROR - Transaction 55rYzVb1QrpRsFh2ckZ6piUzXcVKkXNUubRiD7qRhNgGECkX8dafTfoMuWwGcWf8TnkbAwAth7nkjFq7TMAp3yhq not available after 3 tries
+2025-11-18 18:09:27,820 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in XxrdcP9EbvE2MBHM9ATeG3h7ve39WARSCs7rsGvUWCGvngrduszXSmQeFdNJC9jmTjnpB7TdfM19uBLePAMbZFd
+2025-11-18 18:09:27,822 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in XxrdcP9EbvE2MBHM9ATeG3h7ve39WARSCs7rsGvUWCGvngrduszXSmQeFdNJC9jmTjnpB7TdfM19uBLePAMbZFd
+2025-11-18 18:10:03,279 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in DfTvmeUqdRAACVD1u2vjDkEwUKvTmZawmPZp8nLFeq9862vep8YWB7sinzff81oMKCT5joVwzTMLFULsyyknmEg
+2025-11-18 18:10:13,595 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 4aqjHW8ptC27WxZRf3Qzg1sfx96LZABd2CJrMB64yyv6rZz1m339SCQ9xJ5f5wk83DyEXuPvAwVdReh5Vk21Ueri
+2025-11-18 18:10:13,597 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 2b4GuEYsewa6oY55FnYZ6oTDQ9L1rms98qf1Vb1UkHxnLk9BDjiEwpu4eR1ZxgZrsngjW97QMThr7J885YHpDx8j
+2025-11-18 18:10:13,597 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 1hHjk2NVNEnUMPdUEmnzbhdRLPuMt9ZxzoQQm7YTdgd5TiznrAq6x42JsxwPQASejMSujtrHFnYS5cur519PTc4
+2025-11-18 18:10:22,993 - token_tracker - ERROR - Transaction DfTvmeUqdRAACVD1u2vjDkEwUKvTmZawmPZp8nLFeq9862vep8YWB7sinzff81oMKCT5joVwzTMLFULsyyknmEg not available after 3 tries
+2025-11-18 18:10:41,755 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 3cYZKJH5xxs3NkouzXCSVeVsf6KpgjttHZp5rmgt4Zsfe1ZQxAGn3G1Tr6BGphGgdDyLWut2ewB5ZjMY8BGTwZr3
+2025-11-18 18:11:01,715 - token_tracker - ERROR - Transaction 3cYZKJH5xxs3NkouzXCSVeVsf6KpgjttHZp5rmgt4Zsfe1ZQxAGn3G1Tr6BGphGgdDyLWut2ewB5ZjMY8BGTwZr3 not available after 3 tries
+2025-11-18 18:12:40,348 - token_tracker - INFO - 🔍 Activity detected for 2 tracked tokens in 4Da9bLuGMPW418r99scChsyXkj1WsSpFCCuBx3hxTLFqXVpTvTFHpSkJa6cAjRZxJ3vSTTU9nzSCxb2UdTDKM6Jw
+2025-11-18 18:13:00,089 - token_tracker - ERROR - Transaction 4Da9bLuGMPW418r99scChsyXkj1WsSpFCCuBx3hxTLFqXVpTvTFHpSkJa6cAjRZxJ3vSTTU9nzSCxb2UdTDKM6Jw not available after 3 tries
+2025-11-18 18:15:44,961 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5WYK4xtUZsexj8siYKWkA2nquHwMHiDbZkkdBJPMA215mGtby8UXTSSwuPoBSrpaav3KVH4opBZnVgkYe9abVuPN
+2025-11-18 18:16:04,577 - token_tracker - ERROR - Transaction 5WYK4xtUZsexj8siYKWkA2nquHwMHiDbZkkdBJPMA215mGtby8UXTSSwuPoBSrpaav3KVH4opBZnVgkYe9abVuPN not available after 3 tries
+2025-11-18 18:16:15,476 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in xqc9afAaBd6m3dGSyCQYPe23GiyPhofTfBJEUUyxJyvTHPggCJjxg5zCeyUoYrmMjNG4S6doPx9kZhXF9ZaRmJs
+2025-11-18 18:16:35,035 - token_tracker - ERROR - Transaction xqc9afAaBd6m3dGSyCQYPe23GiyPhofTfBJEUUyxJyvTHPggCJjxg5zCeyUoYrmMjNG4S6doPx9kZhXF9ZaRmJs not available after 3 tries
+2025-11-18 18:35:31,283 - token_tracker - WARNING - WebSocket connection closed
+2025-11-18 18:35:31,285 - token_tracker - INFO - 🔄 Reconnecting in 1 seconds...
+2025-11-18 18:35:32,285 - token_tracker - INFO - 🔌 Connecting to WebSocket...
+2025-11-18 18:35:32,805 - token_tracker - INFO - ✅ WebSocket connected successfully
+2025-11-18 18:35:32,806 - token_tracker - INFO - ✅ Subscribed to Raydium_V4
+2025-11-18 18:35:32,806 - token_tracker - INFO - ✅ Subscribed to Raydium_CLMM
+2025-11-18 18:35:32,806 - token_tracker - INFO - ✅ Subscribed to Orca_Whirlpool
+2025-11-18 18:35:32,806 - token_tracker - INFO - ✅ Subscribed to Pump_fun
+2025-11-18 18:35:45,507 - token_tracker - INFO - 🔍 Activity detected for 1 tracked tokens in 5GGnRzbccf2rnZ4EV7G4Byx5NxjJTQQqArUZt65pEmQF9WqkUo5vT2p1jgQJaQ829GkFFDygTyMxHaSAXUhvtszL
+2025-11-18 18:36:05,153 - token_tracker - ERROR - Transaction 5GGnRzbccf2rnZ4EV7G4Byx5NxjJTQQqArUZt65pEmQF9WqkUo5vT2p1jgQJaQ829GkFFDygTyMxHaSAXUhvtszL not available after 3 tries
+2025-11-18 18:36:40,260 - token_tracker - INFO - ✅ Valid token: CB9dDufT... (CB9d...)
+2025-11-18 18:36:40,262 - token_tracker - INFO - ➕ Added new token to track: USDUC at $0.006436
+2025-11-18 18:36:40,291 - token_tracker - INFO - ✅ Valid token: E3nHk6yD... (E3nH...)
+2025-11-18 18:36:40,291 - token_tracker - INFO - ➕ Added new token to track: DAYJOB at $0.0003001
+2025-11-18 18:36:40,300 - token_tracker - INFO - ✅ Valid token: E3nHk6yD... (E3nH...)
+2025-11-18 18:36:40,300 - token_tracker - INFO - ➕ Added new token to track: DAYJOB at $0.0003001
+2025-11-18 18:36:40,333 - token_tracker - INFO - ✅ Valid token: E3nHk6yD... (E3nH...)
+2025-11-18 18:36:40,333 - token_tracker - INFO - ➕ Added new token to track: DAYJOB at $0.0003001
+2025-11-18 18:36:43,032 - token_tracker - INFO -  ^^^^^ Buy order response: {'success': False, 'message': 'Buy order for 0.006436 USDC of USDUC', 'transaction_hash': None, 'timestamp': '2025-11-18T18:36:43.031172'}
+2025-11-18 18:36:43,033 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for CB9dDufT3ZuQXqqSfa1c5kY935TEreyBw9XJXxHKpump at $0.00643600
+2025-11-18 18:36:45,306 - token_tracker - INFO -  ^^^^^ Buy order response: {'success': False, 'message': 'Buy order for 0.0003001 USDC of DAYJOB', 'transaction_hash': None, 'timestamp': '2025-11-18T18:36:45.304965'}
+2025-11-18 18:36:45,307 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for E3nHk6yDCuSDFg4XkzQijvj4KoPpFm9ATmg4vqGmpump at $0.00030010
+2025-11-18 18:36:46,602 - token_tracker - INFO -  ^^^^^ Buy order response: {'success': False, 'message': 'Buy order for 0.0003001 USDC of DAYJOB', 'transaction_hash': None, 'timestamp': '2025-11-18T18:36:46.599887'}
+2025-11-18 18:36:46,602 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for E3nHk6yDCuSDFg4XkzQijvj4KoPpFm9ATmg4vqGmpump at $0.00030010
+2025-11-18 18:36:47,790 - token_tracker - INFO -  ^^^^^ Buy order response: {'success': False, 'message': 'Buy order for 0.0003001 USDC of DAYJOB', 'transaction_hash': None, 'timestamp': '2025-11-18T18:36:47.789936'}
+2025-11-18 18:36:47,790 - token_tracker - INFO - ✅ EXECUTING BUY ORDER for E3nHk6yDCuSDFg4XkzQijvj4KoPpFm9ATmg4vqGmpump at $0.00030010

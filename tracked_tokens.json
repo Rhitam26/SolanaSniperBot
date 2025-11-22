@@ -1,0 +1,164 @@
+{
+  "8Dvn4hkhKG8Vn2NUEsFmofXJYrVrAkNTLwZyvMJNpump": {
+    "symbol": "Quarterzip",
+    "initial_price": 0.0005384,
+    "current_price": 0.0005384,
+    "status": "under_track",
+    "last_updated": "2025-11-18T13:03:57.436471",
+    "entry_time": "2025-11-18T13:03:57.436467",
+    "exit_time": null
+  },
+  "BqyXGyQ3VYKyZS13HvzeVeUBiyKd4xMYXPDR9KWNpump": {
+    "symbol": "TRUMP2",
+    "initial_price": 0.0005233,
+    "current_price": 1.9410655902703456e-07,
+    "status": "exited_with_stoploss",
+    "last_updated": "2025-11-18T13:48:13.567418",
+    "entry_time": "2025-11-18T13:04:53.693306",
+    "exit_time": "2025-11-18T13:20:55.578554"
+  },
+  "7EoxBarbcbdmibuTZ4MgWzuBNQkXqKuonjfD7Eyepump": {
+    "symbol": "DIH",
+    "initial_price": 0.000351,
+    "current_price": 1.2773605061265067e-07,
+    "status": "exited_with_stoploss",
+    "last_updated": "2025-11-18T14:04:31.318775",
+    "entry_time": "2025-11-18T13:05:04.808051",
+    "exit_time": "2025-11-18T14:04:31.320453"
+  },
+  "Lhgmypk4MkeEeZUFRnxXFHhw6h5HbSHAteSx5D4pump": {
+    "symbol": "SOYJAK",
+    "initial_price": 8.68e-05,
+    "current_price": 4.724495819291342e-05,
+    "status": "exited_with_stoploss",
+    "last_updated": "2025-11-18T14:13:12.581164",
+    "entry_time": "2025-11-18T13:05:55.095557",
+    "exit_time": "2025-11-18T14:13:12.293174"
+  },
+  "6pKDTUavWbdHH27nUBeZNGDSmg3gw5XMGq6gAPUf264F": {
+    "symbol": "ZKFG",
+    "initial_price": 0.0008428,
+    "current_price": 0.0006039237438928721,
+    "status": "exited_with_stoploss",
+    "last_updated": "2025-11-18T18:10:32.712160",
+    "entry_time": "2025-11-18T13:06:56.014567",
+    "exit_time": "2025-11-18T13:28:21.071333"
+  },
+  "2JVZ7LF7dPj8EfmKcGe6CPjXZRLRZqe3wE66jR4Bpump": {
+    "symbol": "hope",
+    "initial_price": 0.000323,
+    "current_price": 0.000323,
+    "status": "under_track",
+    "last_updated": "2025-11-18T13:06:59.519230",
+    "entry_time": "2025-11-18T13:06:59.519227",
+    "exit_time": null
+  },
+  "gFMSZ167YfEUqVnRtDzv4GPCksZyXWRidWRVhy7pump": {
+    "symbol": "Huzz",
+    "initial_price": 9.899e-05,
+    "current_price": 9.899e-05,
+    "status": "under_track",
+    "last_updated": "2025-11-18T13:08:56.950882",
+    "entry_time": "2025-11-18T13:08:56.950877",
+    "exit_time": null
+  },
+  "5oBshGwHKNTSk4KrTridfMmNGWk39K3k8jnxm1hxpump": {
+    "symbol": "PUMP2",
+    "initial_price": 0.0007261,
+    "current_price": 0.00027181328163488163,
+    "status": "exited_with_stoploss",
+    "last_updated": "2025-11-18T18:05:35.414030",
+    "entry_time": "2025-11-18T13:11:55.782873",
+    "exit_time": "2025-11-18T18:05:35.415381"
+  },
+  "qZtEkb7KAPDtgx8AzeMPWMvXAiYXto5dGbJGk9Zpump": {
+    "symbol": "LUCID",
+    "initial_price": 0.0004527,
+    "current_price": 0.0002996111712819414,
+    "status": "exited_with_stoploss",
+    "last_updated": "2025-11-18T13:33:16.330535",
+    "entry_time": "2025-11-18T13:13:56.502177",
+    "exit_time": "2025-11-18T13:33:12.610441"
+  },
+  "0x4c0b3fa9B7727C14bc55C9555CAF5d13F1d960A3": {
+    "symbol": "2021",
+    "initial_price": 1.217e-08,
+    "current_price": 1.217e-08,
+    "status": "under_track",
+    "last_updated": "2025-11-18T13:18:11.870320",
+    "entry_time": "2025-11-18T13:18:11.870317",
+    "exit_time": null
+  },
+  "BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT": {
+    "symbol": "IDLE",
+    "initial_price": 0.001724,
+    "current_price": 0.001724,
+    "status": "under_track",
+    "last_updated": "2025-11-18T13:25:59.635770",
+    "entry_time": "2025-11-18T13:25:59.635767",
+    "exit_time": null
+  },
+  "7wbiW1XuGD77F4tSDWyMu73bJKwWX4zKwDfjdPRMpump": {
+    "symbol": "LOOKSMAX",
+    "initial_price": 0.0001726,
+    "current_price": 0.0001726,
+    "status": "under_track",
+    "last_updated": "2025-11-18T13:38:07.991275",
+    "entry_time": "2025-11-18T13:38:07.991271",
+    "exit_time": null
+  },
+  "F7pB3ZdfBnyFw2LRHydWEn9BmhEa5XihXLjhySFRpump": {
+    "symbol": "NOTHING",
+    "initial_price": 0.0009458,
+    "current_price": 0.0009458,
+    "status": "under_track",
+    "last_updated": "2025-11-18T13:42:59.277842",
+    "entry_time": "2025-11-18T13:42:59.277836",
+    "exit_time": null
+  },
+  "92qShDEJKE5djAD81rCzeew3DLYGF8SmzsPQ3AJWpump": {
+    "symbol": "MFC",
+    "initial_price": 0.00276,
+    "current_price": 0.0003403313950098867,
+    "status": "exited_with_stoploss",
+    "last_updated": "2025-11-18T14:07:52.862849",
+    "entry_time": "2025-11-18T13:50:56.056062",
+    "exit_time": "2025-11-18T14:07:52.863211"
+  },
+  "5gsDMgG3p1xZR7qvbS88EjNSDesBdJjYH7PGemUgpump": {
+    "symbol": "FAHHHH",
+    "initial_price": 0.0007484,
+    "current_price": 0.0005788522078201077,
+    "status": "under_track",
+    "last_updated": "2025-11-18T17:52:28.424231",
+    "entry_time": "2025-11-18T13:58:55.537611",
+    "exit_time": null
+  },
+  "8vErJhFeyoc63dx9BrN7UuHch5bT4DyPqqpLV2dpump": {
+    "symbol": "61",
+    "initial_price": 2.344e-05,
+    "current_price": 2.344e-05,
+    "status": "under_track",
+    "last_updated": "2025-11-18T14:14:08.238102",
+    "entry_time": "2025-11-18T14:14:08.238099",
+    "exit_time": null
+  },
+  "CB9dDufT3ZuQXqqSfa1c5kY935TEreyBw9XJXxHKpump": {
+    "symbol": "USDUC",
+    "initial_price": 0.006436,
+    "current_price": 0.006436,
+    "status": "under_track",
+    "last_updated": "2025-11-18T18:36:43.033201",
+    "entry_time": "2025-11-18T18:36:43.033193",
+    "exit_time": null
+  },
+  "E3nHk6yDCuSDFg4XkzQijvj4KoPpFm9ATmg4vqGmpump": {
+    "symbol": "DAYJOB",
+    "initial_price": 0.0003001,
+    "current_price": 0.0003001,
+    "status": "under_track",
+    "last_updated": "2025-11-18T18:36:47.790628",
+    "entry_time": "2025-11-18T18:36:47.790626",
+    "exit_time": null
+  }
+}
