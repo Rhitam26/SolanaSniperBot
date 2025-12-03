@@ -54,7 +54,13 @@ async def start_telegram_listener():
         print(f"🕒 Time: {msg_data['date']}")
         print(f"📝 Text: {msg_data['text'][:100]}{'...' if len(msg_data['text']) > 100 else ''}")
         match = re.search(r'/\s*(.*?)\*', msg_data['text'])
-       
+        print("Match is ", match)
+        print(match.group(1).upper())
+        print("*****************************")
+        print(active_symbols)
+        print("*****************************")
+        print(rejected_symbols)
+
         if match:
             coin_symbol = match.group(1).upper()
             # check if coin symbol does not exist in active_symbols
@@ -88,9 +94,9 @@ async def send_to_helius_server(mint_address: str, symbol: str, price_usd: str):
                 HELIUS_SERVER_URL,
                 json=payload
             )
-            print(f"Sent {symbol} to Binance server. Status: {response.status_code}")
+            print(f"Sent {symbol} to Helius server. Status: {response.status_code}")
     except Exception as e:
-        print(f"Error sending to Binance server: {e}")
+        print(f"Error sending to Helius server: {e}")
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
