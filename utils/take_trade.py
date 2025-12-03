@@ -10,7 +10,6 @@ from datetime import datetime
 # Solana imports
 from solders.keypair import Keypair
 from solana.rpc.api import Client
-from solana.transaction import Transaction
 from solders.transaction import VersionedTransaction
 from spl.token.instructions import get_associated_token_address, create_associated_token_account
 from solders.pubkey import Pubkey
