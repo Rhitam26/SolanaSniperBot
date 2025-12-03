@@ -16,14 +16,17 @@ import time
 import os
 from dataclasses import dataclass
 from enum import Enum
+from asyncio import Queue
+import random
+from collections import defaultdict, deque
 
 # Configuration
 HELIUS_WS_URL = "wss://mainnet.helius-rpc.com/?api-key=ee69b8b0-0db1-4a72-be5d-c507781837d7"
 HELIUS_RPC_URL = "https://mainnet.helius-rpc.com/?api-key=ee69b8b0-0db1-4a72-be5d-c507781837d7"
 TRADING_ENDPOINT = 'http://localhost:8081'  # Placeholder trading endpoint
 # Trading configuration
-STOP_LOSS_PERCENT = 0.25  # 25%
-TAKE_PROFIT_PERCENT = 0.50  # 50%
+STOP_LOSS_PERCENT = 0.75  # 75%
+TAKE_PROFIT_PERCENT = 1.50  # 150%
 
 # Logging setup
 logging.basicConfig(
@@ -67,6 +70,109 @@ class TokenResponse(BaseModel):
     profit_loss_percent: Optional[float]
     last_updated: Optional[datetime]
 
+class TransactionProcessor:
+    def __init__(self):
+        self.recent_signatures = set()
+        self.signature_cache = {}  # Cache successful fetches
+        self.failed_signatures = defaultdict(int)  # Track failures
+        
+    async def process_with_deduplication(self, signature: str, mentioned_tokens: List[str]):
+        """Process transaction with deduplication and caching"""
+        
+        # Skip if recently processed
+        if signature in self.recent_signatures:
+            logger.debug(f"⏭️ Skipping duplicate signature: {signature[:16]}...")
+            return
+        
+        # Check cache first
+        if signature in self.signature_cache:
+            tx = self.signature_cache[signature]
+            await self._process_transaction_data(tx, mentioned_tokens, signature)
+            return
+        
+        # Skip if failed too many times
+        if self.failed_signatures.get(signature, 0) >= 3:
+            logger.debug(f"⏭️ Skipping previously failed signature: {signature[:16]}...")
+            return
+        
+        # Add to recent set to prevent duplicates
+        self.recent_signatures.add(signature)
+        
+        try:
+            # Fetch transaction
+            tx = await price_tracker.fetch_transaction(signature)
+            
+            if tx:
+                # Cache successful fetch
+                self.signature_cache[signature] = tx
+                
+                # Process the transaction
+                await self._process_transaction_data(tx, mentioned_tokens, signature)
+            else:
+                # Track failures
+                self.failed_signatures[signature] += 1
+                logger.warning(f"Failed to fetch transaction {signature[:16]}...")
+                
+        except Exception as e:
+            logger.error(f"Error processing {signature[:16]}...: {e}")
+            self.failed_signatures[signature] += 1
+        finally:
+            # Clean up recent signatures after a delay
+            await self._cleanup_signature(signature)
+    
+    async def _process_transaction_data(self, tx: Dict, mentioned_tokens: List[str], signature: str):
+        """Process transaction data"""
+        try:
+            swap_info = await price_tracker.parse_swap_data(tx, mentioned_tokens)
+            
+            if swap_info and swap_info['token'] in app_state.tracked_tokens:
+                token_state = app_state.tracked_tokens[swap_info['token']]
+                
+                # Only update if we have a valid price
+                if swap_info['price_usd'] and swap_info['price_usd'] > 0:
+                    token_state.current_price = swap_info['price_usd']
+                    token_state.last_updated = datetime.now()
+                    
+                    # Set initial price if first valid price
+                    if token_state.status == TokenStatus.WAITING_FOR_PRICE:
+                        token_state.initial_price = swap_info['price_usd']
+                        token_state.status = TokenStatus.TRACKING
+                        token_state.entry_time = datetime.now()
+                        logger.info(f"🎯 Started tracking {token_state.symbol or swap_info['token'][:8]}... at ${swap_info['price_usd']:.8f}")
+                    
+                    # Check trading conditions
+                    await check_trading_conditions(token_state)
+                    
+                    # Log update
+                    if token_state.status == TokenStatus.TRACKING and token_state.initial_price:
+                        price_change = ((token_state.current_price - token_state.initial_price) / 
+                                      token_state.initial_price)
+                        logger.info(
+                            f"📈 {token_state.symbol or swap_info['token'][:8]}...: "
+                            f"${token_state.current_price:.8f} "
+                            f"({price_change:+.2%})"
+                        )
+                    
+                    await save_tokens_to_file()
+                    
+        except Exception as e:
+            logger.error(f"Error processing transaction data for {signature[:16]}...: {e}")
+    
+    async def _cleanup_signature(self, signature: str):
+        """Remove signature from recent set after delay"""
+        await asyncio.sleep(60)  # Keep in recent set for 60 seconds
+        if signature in self.recent_signatures:
+            self.recent_signatures.remove(signature)
+            
+    def cleanup_cache(self):
+        """Clean up old cache entries"""
+        # Keep only last 1000 entries
+        if len(self.signature_cache) > 1000:
+            # Remove oldest entries
+            keys_to_remove = list(self.signature_cache.keys())[:-1000]
+            for key in keys_to_remove:
+                del self.signature_cache[key]
+
 # Global state
 class AppState:
     def __init__(self):
@@ -75,6 +181,7 @@ class AppState:
         self.websocket_task = None
         self.session = None
         self.shutdown_event = asyncio.Event()
+        self.transaction_processor = TransactionProcessor()  # Add this
 
 app_state = AppState()
 
@@ -92,11 +199,17 @@ async def lifespan(app: FastAPI):
     # Start WebSocket listener
     app_state.websocket_task = asyncio.create_task(websocket_listener())
     
+    # Start cleanup task
+    cleanup_task = asyncio.create_task(periodic_cleanup())
+    
     yield
     
     # Shutdown
     logger.info("Shutting down application...")
     app_state.shutdown_event.set()
+    
+    if cleanup_task:
+        cleanup_task.cancel()
     
     if app_state.websocket_task:
         app_state.websocket_task.cancel()
@@ -252,8 +365,8 @@ class PriceTracker:
             logger.error(f"Error parsing swap data: {e}")
             return None
     
-    async def fetch_transaction(self, signature: str, max_retries: int = 3) -> Optional[Dict]:
-        """Fetch transaction with retry logic"""
+    async def fetch_transaction(self, signature: str, max_retries: int = 5) -> Optional[Dict]:
+        """Fetch transaction with intelligent waiting and validation"""
         payload = {
             "jsonrpc": "2.0",
             "id": 1,
@@ -267,24 +380,92 @@ class PriceTracker:
             ]
         }
 
+        last_error = None
+        
         for attempt in range(1, max_retries + 1):
             try:
-                async with app_state.session.post(HELIUS_RPC_URL, json=payload, timeout=10) as response:
-                    if response.status == 200:
-                        data = await response.json()
-                        tx = data.get("result")
-                        if tx is not None:
-                            return tx
+                # Create a new session for this request to avoid connection pool issues
+                timeout = aiohttp.ClientTimeout(total=15, connect=5, sock_read=10)
                 
-                # Wait before retry
-                delay = 3
-                time.sleep(delay * attempt)
+                async with aiohttp.ClientSession(timeout=timeout) as session:
+                    async with session.post(HELIUS_RPC_URL, json=payload) as response:
+                        if response.status == 200:
+                            data = await response.json()
+                            tx = data.get("result")
+                            
+                            if tx is not None:
+                                # Validate that transaction has the necessary data
+                                if self._is_valid_transaction(tx):
+                                    logger.info(f"✅ Successfully fetched transaction {signature[:16]}... on attempt {attempt}")
+                                    return tx
+                                else:
+                                    logger.warning(f"⚠️ Transaction {signature[:16]}... has incomplete data")
+                                    last_error = "Incomplete transaction data"
+                            else:
+                                logger.debug(f"Transaction {signature[:16]}... not found yet (attempt {attempt})")
+                                last_error = "Transaction not found in RPC"
+                        
+                        elif response.status == 429:
+                            # Rate limited - use exponential backoff with jitter
+                            wait_time = min(2 ** attempt + random.uniform(0, 1), 30)
+                            logger.warning(f"⏳ Rate limited, waiting {wait_time:.1f}s for {signature[:16]}...")
+                            await asyncio.sleep(wait_time)
+                            continue
+                        else:
+                            last_error = f"HTTP {response.status}"
+                            logger.warning(f"[attempt {attempt}] HTTP {response.status} for {signature[:16]}...")
+                
+                # Calculate wait time with exponential backoff and jitter
+                if attempt < max_retries:
+                    base_wait = min(2.5 * attempt, 15)  # Cap at 15 seconds
+                    jitter = random.uniform(0.5, 1.5)  # Add randomness
+                    wait_time = base_wait * jitter
+                    
+                    logger.debug(f"🔄 Waiting {wait_time:.1f}s before retry {attempt+1} for {signature[:16]}...")
+                    await asyncio.sleep(wait_time)
+                    
+            except asyncio.TimeoutError:
+                last_error = "Timeout"
+                logger.warning(f"[attempt {attempt}] Timeout for {signature[:16]}...")
+                if attempt < max_retries:
+                    await asyncio.sleep(min(3 * attempt, 20))
+            except aiohttp.ClientError as e:
+                last_error = f"Client error: {str(e)}"
+                logger.warning(f"[attempt {attempt}] Network error for {signature[:16]}...: {e}")
+                if attempt < max_retries:
+                    await asyncio.sleep(min(2 * attempt, 15))
             except Exception as e:
-                logger.warning(f"[attempt {attempt}] getTransaction failed for {signature}: {e}")
-                await asyncio.sleep(attempt * 2)
+                last_error = str(e)
+                logger.error(f"[attempt {attempt}] Unexpected error for {signature[:16]}...: {e}")
+                if attempt < max_retries:
+                    await asyncio.sleep(min(3 * attempt, 20))
 
-        logger.error(f"Transaction {signature} not available after {max_retries} tries")
+        logger.error(f"❌ Failed to fetch transaction {signature[:16]}... after {max_retries} attempts. Last error: {last_error}")
         return None
+
+    def _is_valid_transaction(self, tx: Dict) -> bool:
+        """Validate that transaction has the necessary data for parsing"""
+        try:
+            if not isinstance(tx, dict):
+                return False
+            
+            # Check for basic structure
+            required_keys = ['transaction', 'meta', 'slot']
+            if not all(key in tx for key in required_keys):
+                return False
+            
+            # Check for token balances (needed for swap parsing)
+            meta = tx.get('meta', {})
+            if not meta:
+                return False
+            
+            # Should have preTokenBalances or postTokenBalances
+            if 'preTokenBalances' not in meta and 'postTokenBalances' not in meta:
+                return False
+            
+            return True
+        except Exception:
+            return False
 
 price_tracker = PriceTracker()
 
@@ -315,7 +496,6 @@ async def load_tokens_from_file():
 async def save_tokens_to_file():
     """Save tracked tokens to JSON file"""
     try:
-
         data = {}
         for mint, token_state in app_state.tracked_tokens.items():
             data[mint] = {
@@ -387,7 +567,7 @@ async def execute_sell_order(token_state: TokenState):
 
         payload ={
             "coin_symbol" : token_state.symbol,
-            "coint_mint" : token_state.mint,
+            "coin_mint" : token_state.mint,
             "percentage": 100.0
         }
         bearer_token  = '23265688'
@@ -401,7 +581,7 @@ async def execute_sell_order(token_state: TokenState):
                 data = await response.json()
                 logger.info(f" ^^^^^ Sell order response: {data}")
             else:
-                logger.error(f"Failed to execute buy order: {response.status} - {await response.text()}")
+                logger.error(f"Failed to execute sell order: {response.status} - {await response.text()}")
 
         # Update token state
         token_state.exit_time = datetime.now()
@@ -432,7 +612,7 @@ async def check_trading_conditions(token_state: TokenState):
         await execute_sell_order(token_state)
 
 async def process_transaction_message(message: str):
-    """Process WebSocket message containing transaction data"""
+    """Process WebSocket message - non-blocking with deduplication"""
     try:
         parsed = json.loads(message)
         
@@ -446,6 +626,11 @@ async def process_transaction_message(message: str):
             value = result.get('value', {})
             
             signature = value.get('signature', 'N/A')
+            
+            # Early validation
+            if not signature or signature == 'N/A':
+                return
+            
             logs = value.get('logs', [])
             
             # Check for tracked tokens in logs
@@ -453,45 +638,15 @@ async def process_transaction_message(message: str):
             mentioned_tokens = [token for token in app_state.tracked_tokens.keys() if token in logs_text]
             
             if mentioned_tokens:
-                logger.info(f"🔍 Activity detected for {len(mentioned_tokens)} tracked tokens in {signature}")
+                logger.debug(f"🔍 Activity for {len(mentioned_tokens)} tokens in {signature[:16]}...")
                 
-                # Fetch transaction data
-                transaction_data = await price_tracker.fetch_transaction(signature)
-                if transaction_data:
-                    swap_info = await price_tracker.parse_swap_data(transaction_data, mentioned_tokens)
-                    
-                    if swap_info and swap_info['token'] in app_state.tracked_tokens:
-                        token_state = app_state.tracked_tokens[swap_info['token']]
-                        token_metadata = await price_tracker.get_token_metadata(swap_info['token'])
-                        
-                        # Update token state
-                        token_state.current_price = swap_info['price_usd']
-                        token_state.last_updated = datetime.now()
-                        
-                        # If this is the first valid price, set initial price
-                        if token_state.status == TokenStatus.WAITING_FOR_PRICE and swap_info['price_usd'] > 0:
-                            token_state.initial_price = swap_info['price_usd']
-                            token_state.status = TokenStatus.TRACKING
-                            token_state.entry_time = datetime.now()
-                            logger.info(f"🎯 Started tracking {token_state.symbol or token_metadata.get('name')} at ${swap_info['price_usd']:.8f}")
-                        
-                        # Check trading conditions
-                        await check_trading_conditions(token_state)
-                        
-                        # Save state
-                        print("@@@@@@ Saving tokens to file... for coin "+str(token_state.symbol) or swap_info['token']+" at price ", str(token_state.current_price))
-                        await save_tokens_to_file()
-                        
-                        # Log the update
-                        if token_state.status == TokenStatus.TRACKING:
-                            price_change = ((token_state.current_price - token_state.initial_price) / 
-                                          token_state.initial_price) if token_state.initial_price else 0
-                            logger.info(
-                                f"📈 {token_state.symbol or token_metadata.get('name')}: "
-                                f"${token_state.current_price:.8f} "
-                                f"({price_change:+.2%})"
-                            )
-                    
+                # Process in background with deduplication
+                asyncio.create_task(
+                    app_state.transaction_processor.process_with_deduplication(
+                        signature, mentioned_tokens
+                    )
+                )
+                
     except json.JSONDecodeError as e:
         logger.error(f"JSON decode error: {e}")
     except Exception as e:
@@ -545,6 +700,16 @@ async def websocket_listener():
             logger.info(f"🔄 Reconnecting in {reconnect_delay} seconds...")
             await asyncio.sleep(reconnect_delay)
             reconnect_delay = min(reconnect_delay * 2, max_reconnect_delay)
+
+async def periodic_cleanup():
+    """Periodic cleanup of caches"""
+    while not app_state.shutdown_event.is_set():
+        try:
+            await asyncio.sleep(300)  # Every 5 minutes
+            app_state.transaction_processor.cleanup_cache()
+            logger.debug("🔄 Cleaned up transaction cache")
+        except Exception as e:
+            logger.error(f"Error during cleanup: {e}")
 
 # API Routes
 @app.get("/")
