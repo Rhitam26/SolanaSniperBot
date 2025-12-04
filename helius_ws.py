@@ -30,8 +30,8 @@ TRADING_ENDPOINT = os.getenv('TRADING_ENDPOINT', 'http://localhost:8081')
 TRADING_AUTH_TOKEN = os.getenv('TRADING_AUTH_TOKEN', '23265688')
 
 # Trading configuration
-STOP_LOSS_PERCENT = float(os.getenv('STOP_LOSS_PERCENT', '0.25'))
-TAKE_PROFIT_PERCENT = float(os.getenv('TAKE_PROFIT_PERCENT', '0.50'))
+STOP_LOSS_PERCENT = float(os.getenv('STOP_LOSS_PERCENT', '0.75'))
+TAKE_PROFIT_PERCENT = float(os.getenv('TAKE_PROFIT_PERCENT', '1.50'))
 
 # EC2-specific settings
 MAX_CONCURRENT_TASKS = int(os.getenv('MAX_CONCURRENT_TASKS', '50'))
@@ -76,7 +76,7 @@ logger.addHandler(console_handler)
 
 # File handler for main log
 main_log_path = os.path.join(LOG_DIR, 'token_tracker.log')
-file_handler = logging.FileHandler(main_log_path, maxBytes=10485760, backupCount=10)
+file_handler = logging.FileHandler(main_log_path)
 file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 
