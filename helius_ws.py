@@ -82,7 +82,7 @@ logger.addHandler(file_handler)
 
 # File handler for errors
 error_log_path = os.path.join(LOG_DIR, 'error.log')
-error_handler = logging.FileHandler(error_log_path, level=logging.ERROR)
+error_handler = logging.FileHandler(error_log_path)
 error_handler.setFormatter(formatter)
 logger.addHandler(error_handler)
 
