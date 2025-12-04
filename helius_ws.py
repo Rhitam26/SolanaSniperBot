@@ -40,7 +40,7 @@ REQUEST_TIMEOUT = int(os.getenv('REQUEST_TIMEOUT', '30'))
 MEMORY_LIMIT_MB = int(os.getenv('MEMORY_LIMIT_MB', '512'))
 
 # File paths for EC2
-DATA_DIR = os.getenv('DATA_DIR', '/')
+DATA_DIR = os.getenv('DATA_DIR', '/var/lib/token-tracker')
 TOKENS_FILE = os.path.join(DATA_DIR, 'tracked_tokens.json')
 LOG_DIR = os.path.join(DATA_DIR, 'logs')
 
