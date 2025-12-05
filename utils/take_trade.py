@@ -6,7 +6,7 @@ import base58
 import base64
 import os
 from datetime import datetime
-
+from solana.rpc import types
 # Solana imports
 from solders.keypair import Keypair
 from solana.rpc.api import Client
@@ -15,6 +15,14 @@ from spl.token.instructions import get_associated_token_address
 from solders.pubkey import Pubkey
 from solders.message import to_bytes_versioned
 from dotenv import load_dotenv
+from solana.rpc.async_api import AsyncClient
+from pathlib import Path
+import asyncio
+import aiofiles
+
+
+json_lock = asyncio.Lock()
+
 
 load_dotenv()
 import requests
@@ -28,6 +36,12 @@ app = FastAPI(
 
 # Security
 security = HTTPBearer()
+
+DATA_DIR = os.getenv('DATA_DIR', str(Path.home() / 'token-tracker'))
+print("DATA DIR AT :",DATA_DIR)
+# Alternative: DATA_DIR = os.getenv('DATA_DIR', '/tmp/token-tracker')
+
+TOKENS_FILE = os.path.join(DATA_DIR, 'tracked_tokens.json')
 
 # Configuration from environment variables
 class Config:
@@ -92,33 +106,48 @@ class SolanaTrader:
         self.wallet = wallet
         self.sender_pubkey = str(self.wallet.pubkey())
         self.client = Client(rpc_url)
+        self.rpc_url = rpc_url
         self.jupiter_base_url = "https://api.jup.ag"
+
+    async def get_token_balance(self, token_mint: str):
+        """Reliable method to get balance, even for uninitialized token accounts."""
+        if not os.path.exists(TOKENS_FILE):
+            return None
+
+        async with json_lock:  # avoid collisions with save
+            try:
+                async with aiofiles.open(TOKENS_FILE, mode="r") as f:
+                    content = await f.read()
+                    data = json.loads(content)
+                # Mint not present
+
+                if token_mint not in data:
+                    return None
+
+                token_entry = data[token_mint]
+
+                # Return only quantity (convert to float if needed)
+                quantity_str = token_entry.get("quantity")
+                if quantity_str is None:
+                    return None
+
+                return float(quantity_str)
+
+            except Exception as e:
+                print(f"Error reading quantity for mint {token_mint}: {e}")
+                return None
+
         
-    def get_token_balance(self, token_mint: str):
-        """Get balance of a specific token"""
-        try:
-            token_mint_pubkey = Pubkey.from_string(token_mint)
-            associated_token_address = get_associated_token_address(
-                self.wallet.pubkey(), token_mint_pubkey
-            )
-            balance_response = self.client.get_token_account_balance(associated_token_address)
-            if balance_response.value:
-                return float(balance_response.value.amount) / 10**balance_response.value.decimals
-            return 0
-        except Exception as e:
-            print(f"Error getting token balance: {e}")
-            return 0
-    
     def get_sol_balance(self):
         """Get SOL balance"""
         balance_response = self.client.get_balance(self.wallet.pubkey())
         return balance_response.value / 10**9
     
-    def get_usdc_balance(self):
+    async def get_usdc_balance(self):
         """Get USDC balance on Mainnet"""
         try:
             usdc_mint = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
-            balance = self.get_token_balance(usdc_mint)
+            balance = await self.get_token_balance(usdc_mint)
             print(f"USDC balance check - Mint: {usdc_mint}, Balance: {balance}")
             return balance
         except Exception as e:
@@ -204,11 +233,11 @@ class SolanaTrader:
         except Exception as e:
             return False, str(e)
     
-    def sell_meme_coin(self, token_mint: str, percentage: float = 100.0):
+    async def sell_meme_coin(self, token_mint: str, percentage: float = 100.0):
         """Sell meme coin for USDC using Jupiter's new API"""
         try:
             # Get token balance
-            balance = self.get_token_balance(token_mint)
+            balance = await self.get_token_balance(token_mint)
             print(f"Token balance to sell: {balance}")
             
             if balance <= 0:
@@ -291,6 +320,7 @@ class SolanaTrader:
         except requests.exceptions.RequestException as e:
             return False, f"Jupiter API error: {str(e)}"
         except Exception as e:
+            print(e)
             return False, str(e)
 
 class TelegramNotifier:
@@ -351,7 +381,8 @@ class MemeCoinTrader:
                 
                 # Calculate quantity received
                 output_amount = int(result.get('expected_output', 0))
-                quantity_received = output_amount / (10 ** decimals)
+                quantity_received = (output_amount / (10 ** decimals))-35.00
+
                 result['quantity'] = str(quantity_received)
                 
                 print(f"Quantity received: {quantity_received} tokens")
@@ -374,14 +405,14 @@ class MemeCoinTrader:
             self.notifier.send_message(error_msg)
             return False, str(e), coin_symbol
     
-    def sell_with_alert(self, coin_symbol: str, coin_mint: str, percentage: float = 100.0):
+    async def sell_with_alert(self, coin_symbol: str, coin_mint: str, percentage: float = 100.0):
         """Sell meme coin and send notification"""
         try:
             # Validate mint address format
             Pubkey.from_string(coin_mint)
             print(f"Selling {coin_symbol} ({coin_mint}) at {percentage}%")
             
-            success, result = self.trader.sell_meme_coin(coin_mint, percentage)
+            success, result = await self.trader.sell_meme_coin(coin_mint, percentage)
             
             if success and isinstance(result, dict):
                 # Calculate USDC received
@@ -406,10 +437,10 @@ class MemeCoinTrader:
             self.notifier.send_message(error_msg)
             return False, str(e), coin_symbol, "0"
     
-    def get_portfolio(self):
+    async def get_portfolio(self):
         """Get complete portfolio including SOL, USDC, and all tokens"""
         sol_balance = self.trader.get_sol_balance()
-        usdc_balance = self.trader.get_usdc_balance()
+        usdc_balance = await self.trader.get_usdc_balance()
         
         print(f"SOL Balance: {sol_balance}")
         print(f"USDC Balance: {usdc_balance}")
@@ -419,11 +450,11 @@ class MemeCoinTrader:
         
         return sol_balance, usdc_balance, token_balances
     
-    def get_token_balance(self, coin_mint: str):
+    async def get_token_balance(self, coin_mint: str):
         """Get balance for a specific token mint"""
         try:
             Pubkey.from_string(coin_mint)
-            return self.trader.get_token_balance(coin_mint)
+            return await self.trader.get_token_balance(coin_mint)
         except Exception as e:
             print(f"Error getting balance: {e}")
             return 0
@@ -456,7 +487,7 @@ async def root():
 async def health_check():
     try:
         sol_balance = trader.trader.get_sol_balance()
-        usdc_balance = trader.trader.get_usdc_balance()
+        usdc_balance = await trader.trader.get_usdc_balance()
         return {
             "status": "healthy",
             "wallet_connected": config.wallet is not None,
@@ -503,7 +534,7 @@ async def sell_coin(
 ):
     """Sell a meme coin using Jupiter's new API"""
     try:
-        success, result, coin_symbol, amount = trader.sell_with_alert(
+        success, result, coin_symbol, amount = await trader.sell_with_alert(
             sell_request.coin_symbol,
             sell_request.coin_mint,
             sell_request.percentage
@@ -534,7 +565,7 @@ async def sell_coin(
 async def get_portfolio(api_key: HTTPBearer = Depends(verify_api_key)):
     """Get current portfolio with all token balances"""
     try:
-        sol_balance, usdc_balance, token_balances = trader.get_portfolio()
+        sol_balance, usdc_balance, token_balances = await trader.get_portfolio()
         return PortfolioResponse(
             sol_balance=sol_balance,
             usdc_balance=usdc_balance,
@@ -567,7 +598,7 @@ async def send_custom_alert(
 async def get_usdc_balance(api_key: HTTPBearer = Depends(verify_api_key)):
     """Get USDC balance only"""
     try:
-        balance = trader.trader.get_usdc_balance()
+        balance = await trader.trader.get_usdc_balance()
         return {"usdc_balance": balance}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
@@ -588,7 +619,7 @@ async def get_token_balance(
 ):
     """Get specific token balance by mint address"""
     try:
-        balance = trader.get_token_balance(balance_request.coin_mint)
+        balance = await trader.get_token_balance(balance_request.coin_mint)
         return {
             "coin_mint": balance_request.coin_mint,
             "balance": balance,
