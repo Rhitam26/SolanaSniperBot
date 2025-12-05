@@ -11,13 +11,12 @@ from datetime import datetime
 from solders.keypair import Keypair
 from solana.rpc.api import Client
 from solders.transaction import VersionedTransaction
-from spl.token.instructions import get_associated_token_address, create_associated_token_account
+from spl.token.instructions import get_associated_token_address
 from solders.pubkey import Pubkey
 from solders.message import to_bytes_versioned
 from dotenv import load_dotenv
 
 load_dotenv()
-# Import our trading classes
 import requests
 import json
 
@@ -38,7 +37,7 @@ class Config:
         self.telegram_chat_id = '1678865548'
         self.rpc_url = os.getenv("SOLANA_RPC_URL", "https://api.mainnet-beta.solana.com")
         self.api_key = '23265688'
-        self.jupiter_api_key =  os.getenv('JUPITER_API_KEY')
+        self.jupiter_api_key = os.getenv('JUPITER_API_KEY')
         
         # Initialize wallet
         if self.private_key:
@@ -75,7 +74,7 @@ class TradeResponse(BaseModel):
     message: str
     transaction_hash: Optional[str] = None
     timestamp: str
-    quantity : str
+    quantity: str
 
 class PortfolioResponse(BaseModel):
     sol_balance: float
@@ -87,12 +86,13 @@ class AlertRequest(BaseModel):
     message: str
     priority: str = "info"
 
-# Reuse the trading classes from previous code (with minor adjustments)
+# Updated SolanaTrader class with Jupiter's new API
 class SolanaTrader:
     def __init__(self, wallet, rpc_url="https://api.mainnet-beta.solana.com"):
         self.wallet = wallet
         self.sender_pubkey = str(self.wallet.pubkey())
         self.client = Client(rpc_url)
+        self.jupiter_base_url = "https://api.jup.ag"
         
     def get_token_balance(self, token_mint: str):
         """Get balance of a specific token"""
@@ -105,23 +105,18 @@ class SolanaTrader:
             if balance_response.value:
                 return float(balance_response.value.amount) / 10**balance_response.value.decimals
             return 0
-        except:
+        except Exception as e:
+            print(f"Error getting token balance: {e}")
             return 0
     
     def get_sol_balance(self):
         """Get SOL balance"""
-        token_mint_pubkey = Pubkey.from_string('BjcRmwm8e25RgjkyaFE56fc7bxRgGPw96JUkXRJFEroT')
-        response = self.client.get_token_supply(token_mint_pubkey)
-        decimals = response.value.decimals
-        print(f"Token has {decimals} decimals")
-
         balance_response = self.client.get_balance(self.wallet.pubkey())
         return balance_response.value / 10**9
     
     def get_usdc_balance(self):
         """Get USDC balance on Mainnet"""
         try:
-            # Mainnet USDC mint address
             usdc_mint = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
             balance = self.get_token_balance(usdc_mint)
             print(f"USDC balance check - Mint: {usdc_mint}, Balance: {balance}")
@@ -131,126 +126,170 @@ class SolanaTrader:
             return 0
 
     def create_swap_transaction(self, token_mint: str, amount_usdc: float, slippage: float = 10.0):
-        """Create a swap transaction using Jupiter API"""
+        """Create a swap transaction using Jupiter's new API"""
         try:
-            # Get quote from Jupiter
-            jupiter_url = "https://lite-api.jup.ag/ultra/v1/order"
+            # Prepare headers with API key if available
+            headers = {
+                "Accept": "application/json",
+                "Content-Type": "application/json",
+            }
+            if config.jupiter_api_key:
+                headers["x-api-key"] = config.jupiter_api_key
+            
+            # Step 1: Get quote from Jupiter's new API
+            quote_url = f"{self.jupiter_base_url}/swap/v1/quote"
             params = {
                 "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",  # USDC on Mainnet
                 "outputMint": token_mint,
-                "amount": 1000000,  # Assuming USDC has 6 decimals
-                "taker": self.sender_pubkey
+                "amount": int(1 * 10**6),  # Convert USDC amount to lamports (6 decimals)
+                "slippageBps": int(slippage * 100),  # Convert percentage to basis points
+                "swapMode": "ExactIn",
+                "userPublicKey": self.sender_pubkey
             }
-            headers = {"Accept": "application/json"}
             
-            response = requests.get(jupiter_url, params=params, headers=headers)
+            response = requests.get(quote_url, params=params, headers=headers)
+            response.raise_for_status()
             quote_data = response.json()
+            
             print(f"Quote data: {quote_data}")
             if "routePlan" not in quote_data:
                 raise HTTPException(status_code=500, detail="No route found for the swap")
-            transaction_base64 = quote_data['transaction']
+            
+            # Step 2: Get swap transaction
+            swap_url = f"{self.jupiter_base_url}/swap/v1/swap"
+            swap_payload = {
+                "userPublicKey": self.sender_pubkey,
+                "quoteResponse": quote_data,
+                "wrapAndUnwrapSol": True,
+                "dynamicComputeUnitLimit": True,
+                "useSharedAccounts": True,
+            }
+            
+            swap_response = requests.post(swap_url, json=swap_payload, headers=headers)
+            swap_response.raise_for_status()
+            swap_data = swap_response.json()
+            
+            # Get transaction and sign it
+            transaction_base64 = swap_data['swapTransaction']
             transaction_bytes = base64.b64decode(transaction_base64)
             transaction = VersionedTransaction.from_bytes(transaction_bytes)
 
             signature = self.wallet.sign_message(to_bytes_versioned(transaction.message))
-              # Create a new signed transaction with the signature
-            signed_transaction = VersionedTransaction.populate(transaction.message,[signature])
-            signed_transaction_b64 = base64.b64encode(bytes(signed_transaction)).decode('utf-8')
-            print("Transaction signed successfully!")
+            signed_transaction = VersionedTransaction.populate(transaction.message, [signature])
+            
+            # Send the transaction
+            print("Sending transaction...")
+            txn_signature = self.client.send_raw_transaction(bytes(signed_transaction))
+            
+            print(f"Transaction sent with signature: {txn_signature}")
             print(f"Expected output: {quote_data.get('outAmount')} tokens")
 
-            # Get swap transaction
-            payload = {
-            "requestId": quote_data['requestId'],
-            "signedTransaction": signed_transaction_b64
-            }
-            swap_url = "https://lite-api.jup.ag/ultra/v1/execute"
-            swap_response = requests.post(swap_url, json=payload, headers=headers)
-            swap_transaction_data = swap_response.json()
-            # print("EXECUTED !!!")
-            # print(swap_transaction_data['swapEvents'])
-            # print(quote_data.get('outAmount'))
-
             return {
-                'result': swap_transaction_data,
+                'success': True,
+                'signature': str(txn_signature),
                 'expected_output': quote_data.get('outAmount'),
-                'swap_events' : swap_transaction_data['swapEvents']
+                'input_amount': quote_data.get('inAmount')
             }
         
+        except requests.exceptions.RequestException as e:
+            raise HTTPException(status_code=500, detail=f"Jupiter API error: {str(e)}")
         except Exception as e:
-            raise HTTPException(status_code=500, detail=f"Error creating swap transaction: {e}")
+            raise HTTPException(status_code=500, detail=f"Error creating swap transaction: {str(e)}")
     
-    def execute_swap(self, token_mint: str, amount_usdc: float, slippage: float = 10.0):
-        """Execute a swap transaction"""
+    def buy_meme_coin(self, token_mint: str, amount_usdc: float, slippage: float = 10.0):
+        """Buy meme coin with USDC using Jupiter's new API"""
         try:
-            swap_transaction = self.create_swap_transaction(token_mint, amount_usdc, slippage)
-            print("Got Swap Transaction details..")
-            if not swap_transaction:
-                return False, "Failed to create swap transaction"
-            result = swap_transaction
+            result = self.create_swap_transaction(token_mint, amount_usdc, slippage)
             return True, result
         except Exception as e:
             return False, str(e)
     
-    def buy_meme_coin(self, token_mint: str, amount_usdc: float, slippage: float = 10.0):
-        """Buy meme coin with USDC"""
-        return self.execute_swap(token_mint, amount_usdc, slippage)
-    
-    def sell_meme_coin(self, token_mint: str):
-        """Sell meme coin for USDC"""
+    def sell_meme_coin(self, token_mint: str, percentage: float = 100.0):
+        """Sell meme coin for USDC using Jupiter's new API"""
         try:
+            # Get token balance
             balance = self.get_token_balance(token_mint)
-            print(balance)
+            print(f"Token balance to sell: {balance}")
+            
             if balance <= 0:
                 return False, "No balance to sell"
             
-            print("Taker is :",self.sender_pubkey)
+            # Get token decimals
             token_mint_pubkey = Pubkey.from_string(token_mint)
             response = self.client.get_token_supply(token_mint_pubkey)
             decimals = response.value.decimals
-            print("OUTPUT AMOUNT ",balance)
-            print("DECIMALS: ",decimals)
-            amount = int(float(balance)*float(10**decimals))
-            # Get quote for sellingå
-            jupiter_url = "https://lite-api.jup.ag/ultra/v1/order"
+            print(f"Token decimals: {decimals}")
             
+            # Calculate amount to sell based on percentage
+            amount_to_sell = balance * (percentage / 100.0)
+            amount_in_lamports = int(amount_to_sell * (10**decimals))
+            print(f"Amount to sell in lamports: {amount_in_lamports}")
+            
+            # Prepare headers with API key if available
+            headers = {
+                "Accept": "application/json",
+                "Content-Type": "application/json",
+            }
+            if config.jupiter_api_key:
+                headers["x-api-key"] = config.jupiter_api_key
+            
+            # Step 1: Get quote for selling
+            quote_url = f"{self.jupiter_base_url}/swap/v1/quote"
             params = {
-                "inputMint": str(token_mint),
-                "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",  # USDC on Mainnet
-                "amount": int(amount),  # Assuming 6 decimals
-                "taker": self.sender_pubkey,  
+                "inputMint": token_mint,
+                "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",  # USDC
+                "amount": amount_in_lamports,
+                "slippageBps": 100,  # 1% slippage
+                "swapMode": "ExactIn",
+                "userPublicKey": self.sender_pubkey
             }
             
-            response = requests.get(jupiter_url, params=params)
+            response = requests.get(quote_url, params=params, headers=headers)
+            response.raise_for_status()
             quote_data = response.json()
-            print(quote_data)
+            
+            print(f"Sell quote data: {quote_data}")
             if "routePlan" not in quote_data:
                 raise HTTPException(status_code=500, detail="No route found for the swap")
-            transaction_base64 = quote_data['transaction']
+            
+            # Step 2: Get swap transaction
+            swap_url = f"{self.jupiter_base_url}/swap/v1/swap"
+            swap_payload = {
+                "userPublicKey": self.sender_pubkey,
+                "quoteResponse": quote_data,
+                "wrapAndUnwrapSol": True,
+                "dynamicComputeUnitLimit": True,
+                "useSharedAccounts": True,
+            }
+            
+            swap_response = requests.post(swap_url, json=swap_payload, headers=headers)
+            swap_response.raise_for_status()
+            swap_data = swap_response.json()
+            
+            # Get transaction and sign it
+            transaction_base64 = swap_data['swapTransaction']
             transaction_bytes = base64.b64decode(transaction_base64)
             transaction = VersionedTransaction.from_bytes(transaction_bytes)
+            
             signature = self.wallet.sign_message(to_bytes_versioned(transaction.message))
-            signed_transaction = VersionedTransaction.populate(transaction.message,[signature])
-            signed_transaction_b64 = base64.b64encode(bytes(signed_transaction)).decode('utf-8')
-            print("Transaction signed successfully!")
+            signed_transaction = VersionedTransaction.populate(transaction.message, [signature])
+            
+            # Send the transaction
+            print("Sending sell transaction...")
+            txn_signature = self.client.send_raw_transaction(bytes(signed_transaction))
+            
+            print(f"Sell transaction sent with signature: {txn_signature}")
             print(f"Expected output: {quote_data.get('outAmount')} USDC")
             
-            # Execute swap
-            swap_url = "https://lite-api.jup.ag/ultra/v1/execute"
-
-            payload = {
-            "requestId": quote_data['requestId'],
-            "signedTransaction": signed_transaction_b64}
-
-            swap_response = requests.post(swap_url, json=payload)
-            swap_transaction_data = swap_response.json()
-            print("===================================")
-            print(swap_transaction_data)
             return True, {
-                'result': str(swap_transaction_data),
-                'expected_output': quote_data.get('outAmount')
+                'success': True,
+                'signature': str(txn_signature),
+                'expected_output': quote_data.get('outAmount'),
+                'amount_sold': amount_to_sell
             }
-
+            
+        except requests.exceptions.RequestException as e:
+            return False, f"Jupiter API error: {str(e)}"
         except Exception as e:
             return False, str(e)
 
@@ -294,48 +333,6 @@ class MemeCoinTrader:
         self.trader = SolanaTrader(wallet, rpc_url)
         self.notifier = TelegramNotifier(telegram_bot_token, telegram_chat_id)
         self.client = Client(rpc_url)
-
-    def get_token_decimals_from_swap_events(self,swap_events, output_mint):
-        """Extract decimals from swap events by finding the matching output mint"""
-        for event in swap_events:
-            if event.get('outputMint') == output_mint:
-                # Estimate decimals based on the output amount
-                output_amount = int(event.get('outputAmount', 0))
-                if output_amount > 0:
-                    # This is a heuristic - we assume the actual value should be reasonable
-                    # If output amount is very large (> 1e9), it's likely a low decimal token
-                    # If output amount is moderate, it's likely a standard decimal token
-                    if output_amount > 1e12:
-                        return 0  # Very low decimal token
-                    elif output_amount > 1e9:
-                        return 6  # Medium decimal token
-                    else:
-                        return 9  # Standard 9 decimal token
-        return 6  # Default to 6 if cannot determine
-
-    def calculate_actual_quantity(self,output_amount_result, swap_events, output_mint):
-        """Calculate actual quantity received by determining the correct decimal places"""
-        try:
-            # First try to get decimals from swap events
-            decimals = self.get_token_decimals_from_swap_events(swap_events, output_mint)
-            
-            # Convert to actual quantity
-            actual_quantity = int(output_amount_result) / (10 ** decimals)
-            
-            print(f"Quantity calculation: raw={output_amount_result}, decimals={decimals}, actual={actual_quantity}")
-            return actual_quantity
-        except Exception as e:
-            print(f"Error calculating quantity: {e}")
-            # Fallback: try common decimal values
-            for decimals in [6, 9, 0, 2]:
-                try:
-                    quantity = int(output_amount_result) / (10 ** decimals)
-                    if 0.0001 <= quantity <= 1000000000:  # Reasonable range for token quantity
-                        print(f"Used fallback decimals {decimals}, quantity: {quantity}")
-                        return quantity
-                except:
-                    continue
-            return float(output_amount_result)  # Last resort return raw value
   
     def buy_with_alert(self, coin_symbol: str, coin_mint: str, amount_usdc: float, slippage: float = 10.0):
         """Buy meme coin and send notification"""
@@ -344,37 +341,32 @@ class MemeCoinTrader:
             Pubkey.from_string(coin_mint)
             
             success, result = self.trader.buy_meme_coin(coin_mint, amount_usdc, slippage)
-            print("*****",type(result['result']))
-            result = result['result']
-            # result = json.loads(result)
-            print(f"Buy result: success={success}, result={str(result)}")
+            print(f"Buy result: success={success}, result={result}")
 
             if success and isinstance(result, dict):
-                # Extract quantity from the swap result
-                output_amount_result = result.get('totalOutputAmount', '0')
-                swap_events = result.get('swapEvents', [])
-                
-                # Calculate actual quantity received
-                # quantity_received = self.calculate_actual_quantity(output_amount_result, swap_events, coin_mint)
+                # Get token decimals for quantity calculation
                 token_mint_pubkey = Pubkey.from_string(coin_mint)
                 response = self.client.get_token_supply(token_mint_pubkey)
                 decimals = response.value.decimals
-                print("OUTPUT AMOUNT ",output_amount_result)
-                print("DECIMALS: ",decimals)
-                quantity_received = str(float(output_amount_result)/float(10**decimals))
-
-                print("QUANTITY RECIEVED : ",str(quantity_received))
+                
+                # Calculate quantity received
+                output_amount = int(result.get('expected_output', 0))
+                quantity_received = output_amount / (10 ** decimals)
                 result['quantity'] = str(quantity_received)
-            if success:
+                
+                print(f"Quantity received: {quantity_received} tokens")
+                
+                # Send Telegram alert
                 self.notifier.send_trade_alert(
                     f"BUY {coin_symbol}",
                     coin_symbol,
                     f"{amount_usdc} USDC",
-                    result
+                    result.get('signature')
                 )
                 return True, result, coin_symbol
             else:
-                self.notifier.send_message(f"❌ Buy failed for {coin_symbol}: {result}")
+                error_msg = f"❌ Buy failed for {coin_symbol}: {result}"
+                self.notifier.send_message(error_msg)
                 return False, result, coin_symbol
                 
         except Exception as e:
@@ -387,35 +379,45 @@ class MemeCoinTrader:
         try:
             # Validate mint address format
             Pubkey.from_string(coin_mint)
-            print("The meme coin address to sell is ", coin_mint)
-            success, result = self.trader.sell_meme_coin(coin_mint)
-            amount= float(result['expected_output'])/float(10**6)
+            print(f"Selling {coin_symbol} ({coin_mint}) at {percentage}%")
             
-            if success:
+            success, result = self.trader.sell_meme_coin(coin_mint, percentage)
+            
+            if success and isinstance(result, dict):
+                # Calculate USDC received
+                usdc_amount = int(result.get('expected_output', 0)) / (10 ** 6)
+                amount_str = f"{usdc_amount:.2f} USDC"
+                
+                # Send Telegram alert
                 self.notifier.send_trade_alert(
                     f"SELL {coin_symbol}",
                     coin_symbol,
-                    f"{percentage}%",
-                    result
+                    f"{percentage}% → {amount_str}",
+                    result.get('signature')
                 )
-                return True, str(result), coin_symbol
+                return True, str(result), coin_symbol, str(usdc_amount)
             else:
-                self.notifier.send_message(f"❌ Sell failed for {coin_symbol}: {result}")
-                return False, result, coin_symbol, amount
+                error_msg = f"❌ Sell failed for {coin_symbol}: {result}"
+                self.notifier.send_message(error_msg)
+                return False, result, coin_symbol, "0"
                 
         except Exception as e:
             error_msg = f"❌ Sell error for {coin_symbol}: {str(e)}"
             self.notifier.send_message(error_msg)
-            return False, str(e), coin_symbol, 0
+            return False, str(e), coin_symbol, "0"
     
     def get_portfolio(self):
         """Get complete portfolio including SOL, USDC, and all tokens"""
-        # sol_balance = self.trader.get_sol_balance()
-        # print(f"SOL Balance: {sol_balance}")
+        sol_balance = self.trader.get_sol_balance()
         usdc_balance = self.trader.get_usdc_balance()
+        
+        print(f"SOL Balance: {sol_balance}")
         print(f"USDC Balance: {usdc_balance}")
         
-        return usdc_balance
+        # Note: You would need to track token holdings separately
+        token_balances = {}
+        
+        return sol_balance, usdc_balance, token_balances
     
     def get_token_balance(self, coin_mint: str):
         """Get balance for a specific token mint"""
@@ -425,7 +427,6 @@ class MemeCoinTrader:
         except Exception as e:
             print(f"Error getting balance: {e}")
             return 0
-        
 
 # Initialize trader
 trader = MemeCoinTrader(
@@ -458,7 +459,7 @@ async def health_check():
         usdc_balance = trader.trader.get_usdc_balance()
         return {
             "status": "healthy",
-            "wallet_connected": True,
+            "wallet_connected": config.wallet is not None,
             "sol_balance": sol_balance,
             "usdc_balance": usdc_balance,
             "timestamp": datetime.now().isoformat()
@@ -472,7 +473,7 @@ async def buy_coin(
     background_tasks: BackgroundTasks,
     api_key: HTTPBearer = Depends(verify_api_key)
 ):
-    """Buy a meme coin"""
+    """Buy a meme coin using Jupiter's new API"""
     try:
         success, result, coin_symbol = trader.buy_with_alert(
             trade_request.coin_symbol,
@@ -480,18 +481,19 @@ async def buy_coin(
             trade_request.amount_usdc,
             trade_request.slippage
         )
-        # print("Pydentic hagibo KELA!")
+        
+        quantity = result.get('quantity', '0') if isinstance(result, dict) else '0'
+        
         return TradeResponse(
             success=success,
             message=f"Buy order for {trade_request.amount_usdc} USDC of {trade_request.coin_symbol}",
-            transaction_hash=str(result) if success else None,
+            transaction_hash=result.get('signature') if success and isinstance(result, dict) else None,
             timestamp=datetime.now().isoformat(),
-            quantity = str(result['quantity'])
+            quantity=quantity
         )
     except Exception as e:
         print(str(e))
         raise HTTPException(status_code=500, detail=str(e))
-
 
 @app.post("/trade/sell", response_model=TradeResponse)
 async def sell_coin(
@@ -499,25 +501,34 @@ async def sell_coin(
     background_tasks: BackgroundTasks,
     api_key: HTTPBearer = Depends(verify_api_key)
 ):
-    """Sell a meme coin"""
+    """Sell a meme coin using Jupiter's new API"""
     try:
-        success, result, amount = trader.sell_with_alert(
+        success, result, coin_symbol, amount = trader.sell_with_alert(
             sell_request.coin_symbol,
             sell_request.coin_mint,
             sell_request.percentage
         )
         
+        # Extract signature from result
+        transaction_hash = None
+        if success and isinstance(result, str):
+            try:
+                # Try to parse the result to get signature
+                import json
+                result_dict = json.loads(result)
+                transaction_hash = result_dict.get('signature')
+            except:
+                pass
+        
         return TradeResponse(
             success=success,
             message=f"Sell order for {sell_request.percentage}% of {sell_request.coin_symbol}",
-            transaction_hash=result if success else None,
+            transaction_hash=transaction_hash,
             timestamp=datetime.now().isoformat(),
             quantity=str(amount)
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-
-
 
 @app.get("/portfolio", response_model=PortfolioResponse)
 async def get_portfolio(api_key: HTTPBearer = Depends(verify_api_key)):
@@ -531,7 +542,6 @@ async def get_portfolio(api_key: HTTPBearer = Depends(verify_api_key)):
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-    
 
 @app.get("/coins", response_model=List[CoinInfo])
 async def get_supported_coins():
