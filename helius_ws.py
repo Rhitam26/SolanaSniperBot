@@ -40,9 +40,14 @@ REQUEST_TIMEOUT = int(os.getenv('REQUEST_TIMEOUT', '30'))
 MEMORY_LIMIT_MB = int(os.getenv('MEMORY_LIMIT_MB', '512'))
 
 # File paths for EC2
-DATA_DIR = os.getenv('DATA_DIR', '/var/lib/token-tracker')
+DATA_DIR = os.getenv('DATA_DIR', str(Path.home() / 'token-tracker'))
+print("DATA DIR AT :",DATA_DIR)
+# Alternative: DATA_DIR = os.getenv('DATA_DIR', '/tmp/token-tracker')
+
 TOKENS_FILE = os.path.join(DATA_DIR, 'tracked_tokens.json')
 LOG_DIR = os.path.join(DATA_DIR, 'logs')
+
+print("TOKEN FILES ", TOKENS_FILE)
 
 # Ensure directories exist with proper permissions
 os.makedirs(DATA_DIR, exist_ok=True, mode=0o755)
@@ -107,6 +112,7 @@ class TokenState:
     last_updated: Optional[datetime] = None
     entry_time: Optional[datetime] = None
     exit_time: Optional[datetime] = None
+    quantity : Optional[float]= None
 
 class AddTokenRequest(BaseModel):
     mint_address: str = Field(..., description="Token mint address to track")
@@ -637,7 +643,9 @@ async def save_tokens_to_file():
                     'status': token_state.status.value,
                     'last_updated': token_state.last_updated.isoformat() if token_state.last_updated else None,
                     'entry_time': token_state.entry_time.isoformat() if token_state.entry_time else None,
-                    'exit_time': token_state.exit_time.isoformat() if token_state.exit_time else None
+                    'exit_time': token_state.exit_time.isoformat() if token_state.exit_time else None, 
+                    'quantity': token_state.quantity
+
                 }
             
             # Write to temporary file first
@@ -682,14 +690,16 @@ async def execute_buy_order(token_state: TokenState, price_usd: float):
         ) as response:
             if response.status == 200:
                 data = await response.json()
+                quantity = data.get('quantity')
                 logger.info(f"✅ Buy order response: {data}")
             else:
                 logger.error(f"Failed buy order: {response.status} - {await response.text()}")
 
         logger.info(f"✅ BUY ORDER for {token_state.symbol or token_state.mint[:8]}... at ${price_usd:.8f}")
-        
+        # quantity = response['quantity']
         token_state.initial_price = price_usd
         token_state.current_price = price_usd
+        token_state.quantity = quantity
         token_state.status = TokenStatus.TRACKING
         token_state.entry_time = datetime.now()
         token_state.last_updated = datetime.now()
@@ -903,10 +913,11 @@ async def add_token(request: AddTokenRequest, background_tasks: BackgroundTasks)
     )
     
     app_state.tracked_tokens[mint] = token_state
-    background_tasks.add_task(save_tokens_to_file)
+    # background_tasks.add_task(save_tokens_to_file)
 
     if request.price_usd:
         background_tasks.add_task(execute_buy_order, token_state, request.price_usd)
+        
     
     logger.info(f"➕ Added token: {request.symbol or mint} at ${request.price_usd if request.price_usd else 'TBD'}")
     
