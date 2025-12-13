@@ -30,8 +30,8 @@ TRADING_ENDPOINT = os.getenv('TRADING_ENDPOINT', 'http://localhost:8081')
 TRADING_AUTH_TOKEN = os.getenv('TRADING_AUTH_TOKEN', '23265688')
 
 # Trading configuration
-STOP_LOSS_PERCENT = float(os.getenv('STOP_LOSS_PERCENT', '0.75'))
-TAKE_PROFIT_PERCENT = float(os.getenv('TAKE_PROFIT_PERCENT', '1.50'))
+STOP_LOSS_PERCENT = float(os.getenv('STOP_LOSS_PERCENT', '0.5'))
+TAKE_PROFIT_PERCENT = float(os.getenv('TAKE_PROFIT_PERCENT', '.70'))
 
 # EC2-specific settings
 MAX_CONCURRENT_TASKS = int(os.getenv('MAX_CONCURRENT_TASKS', '50'))
