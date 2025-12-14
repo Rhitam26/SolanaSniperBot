@@ -48,7 +48,9 @@ class Config:
     def __init__(self):
         self.private_key = os.getenv('SOLANA_PRIVATE_KEY')
         self.telegram_bot_token = os.getenv('TELEGRAM_BOT_TOKEN')
-        self.telegram_chat_id = '1678865548'
+        # Convert to list of strings (comma-separated in environment variable)
+        chat_ids_str = os.getenv('TELEGRAM_CHAT_ID', '1678865548,1730454128')
+        self.telegram_chat_ids = [cid.strip() for cid in chat_ids_str.split(',')]
         self.rpc_url = os.getenv("SOLANA_RPC_URL", "https://api.mainnet-beta.solana.com")
         self.api_key = '23265688'
         self.jupiter_api_key = os.getenv('JUPITER_API_KEY')
@@ -324,28 +326,41 @@ class SolanaTrader:
             return False, str(e)
 
 class TelegramNotifier:
-    def __init__(self, bot_token: str, chat_id: str):
+    def __init__(self, bot_token: str, chat_ids: List[str]):  # Changed from chat_id
         self.bot_token = bot_token
-        self.chat_id = chat_id
+        self.chat_ids = chat_ids  # Now a list
     
     def send_message(self, message: str):
-        """Send message via Telegram bot"""
-        url = f"https://api.telegram.org/bot{self.bot_token}/sendMessage"
-        data = {
-            "chat_id": self.chat_id,
-            "text": message,
-            "parse_mode": "HTML"
-        }
+        """Send message to multiple Telegram chats"""
+        results = []
+        for chat_id in self.chat_ids:
+            url = f"https://api.telegram.org/bot{self.bot_token}/sendMessage"
+            data = {
+                "chat_id": chat_id,
+                "text": message,
+                "parse_mode": "HTML"
+            }
+            
+            try:
+                response = requests.post(url, data=data)
+                results.append({
+                    "chat_id": chat_id,
+                    "success": response.status_code == 200,
+                    "status_code": response.status_code
+                })
+            except Exception as e:
+                results.append({
+                    "chat_id": chat_id,
+                    "success": False,
+                    "error": str(e)
+                })
+                print(f"Failed to send Telegram message to {chat_id}: {e}")
         
-        try:
-            response = requests.post(url, data=data)
-            return response.status_code == 200
-        except Exception as e:
-            print(f"Failed to send Telegram message: {e}")
-            return False
+        # Return True if at least one message was sent successfully
+        return any(result.get("success", False) for result in results)
     
     def send_trade_alert(self, action: str, token: str, amount: float, tx_hash: str = None):
-        """Send trade notification"""
+        """Send trade notification to all chats"""
         message = f"🚀 <b>Trade Executed</b> 🚀\n"
         message += f"Action: {action}\n"
         message += f"Token: {token}\n"
@@ -357,11 +372,11 @@ class TelegramNotifier:
         return self.send_message(message)
 
 class MemeCoinTrader:
-    def __init__(self, private_key: str, telegram_bot_token: str, telegram_chat_id: str, rpc_url: str):
+    def __init__(self, private_key: str, telegram_bot_token: str, telegram_chat_ids: List[str], rpc_url: str):  # Changed from chat_id to chat_ids
         private_key_bytes = base58.b58decode(private_key)
         wallet = Keypair.from_bytes(private_key_bytes)
         self.trader = SolanaTrader(wallet, rpc_url)
-        self.notifier = TelegramNotifier(telegram_bot_token, telegram_chat_id)
+        self.notifier = TelegramNotifier(telegram_bot_token, telegram_chat_ids)  # Pass list
         self.client = Client(rpc_url)
   
     def buy_with_alert(self, coin_symbol: str, coin_mint: str, amount_usdc: float, slippage: float = 10.0):
@@ -463,7 +478,7 @@ class MemeCoinTrader:
 trader = MemeCoinTrader(
     private_key=config.private_key,
     telegram_bot_token=config.telegram_bot_token,
-    telegram_chat_id=config.telegram_chat_id,
+    telegram_chat_ids=config.telegram_chat_ids,  
     rpc_url=config.rpc_url
 )
 
@@ -475,7 +490,7 @@ def verify_api_key(credentials: HTTPBearer = Depends(security)):
 
 # Background task for sending alerts
 def send_telegram_alert(message: str):
-    notifier = TelegramNotifier(config.telegram_bot_token, config.telegram_chat_id)
+    notifier = TelegramNotifier(config.telegram_bot_token, config.telegram_chat_ids)  # Pass list
     notifier.send_message(message)
 
 # API Routes
